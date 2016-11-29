@@ -98,6 +98,7 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service References\MyWebService\Reference.cs">
       <AutoGen>True</AutoGen>
@@ -157,6 +158,9 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\MyWebService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="View\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
