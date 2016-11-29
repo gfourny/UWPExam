@@ -9,6 +9,5 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <GridView x:Name="MyGridView"/>
-        <RichTextBlock x:Name="tet"></RichTextBlock>
     </Grid>
 </Page>
