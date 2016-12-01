@@ -13,6 +13,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using UWPService.Views;
 
 // Pour plus d'informations sur le modèle d'élément Page vierge, consultez la page http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -26,9 +27,28 @@ namespace UWPService
         public MainPage()
         {
             this.InitializeComponent();
+            MyFrame.Navigate(typeof(Dashboard));
+
+
             YnovServiceClient Client = new YnovServiceClient();
-            MyGridView.ItemsSource = Client.GetCustomersAsync().Result;
+            //MyGridView.ItemsSource = Client.GetCustomersAsync().Result;
             Client.CloseAsync();
+        }
+
+        private void ListView_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            if (((StackPanel)e.ClickedItem).Name == "Ham")
+                MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
+            else if (((StackPanel)e.ClickedItem).Name == "Client")
+                MyFrame.Navigate(typeof(Client));
+            else if (((StackPanel)e.ClickedItem).Name == "Factures")
+                MyFrame.Navigate(typeof(Factures));
+            else if (((StackPanel)e.ClickedItem).Name == "Fournisseur")
+                MyFrame.Navigate(typeof(Fournisseur));
+            else if (((StackPanel)e.ClickedItem).Name == "Panier")
+                MyFrame.Navigate(typeof(Panier));
+            else if (((StackPanel)e.ClickedItem).Name == "Produits")
+                MyFrame.Navigate(typeof(Produits));
         }
     }
 }
