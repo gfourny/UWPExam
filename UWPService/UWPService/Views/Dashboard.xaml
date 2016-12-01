@@ -10,10 +10,8 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <RelativePanel x:Name="MyRelativePanel" Margin="10">
-            <StackPanel>
-                <charts:RichPieChart x:Name="NbVente" Radius="50" StrokeThickness="90"/>
-                <GridView x:Name="MyGridView"/>
-            </StackPanel>
+            <charts:RichPieChart x:Name="NbVente" Radius="50" StrokeThickness="90" Margin="0,0,100,0"/>
+            <charts:PieChart Radius="43" Percentage="78" StrokeThickness="7" RelativePanel.AlignRightWith="NbVente" RelativePanel.AlignVerticalCenterWith="NbVente"/>
         </RelativePanel>
     </Grid>
 </Page>
