@@ -37,5 +37,10 @@ namespace UWPService.Views
                 e.Handled = true;
             }
         }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
+        }
     }
 }
