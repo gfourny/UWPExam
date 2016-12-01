@@ -132,15 +132,27 @@ namespace UWPService.UWPService_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[3];
+            _typeNameTable = new string[9];
             _typeNameTable[0] = "UWPService.MainPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[3] = "UWPService.Views.Client";
+            _typeNameTable[4] = "UWPService.Views.Dashboard";
+            _typeNameTable[5] = "UWPService.Views.Factures";
+            _typeNameTable[6] = "UWPService.Views.Fournisseur";
+            _typeNameTable[7] = "UWPService.Views.Panier";
+            _typeNameTable[8] = "UWPService.Views.Produits";
 
-            _typeTable = new global::System.Type[3];
+            _typeTable = new global::System.Type[9];
             _typeTable[0] = typeof(global::UWPService.MainPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[3] = typeof(global::UWPService.Views.Client);
+            _typeTable[4] = typeof(global::UWPService.Views.Dashboard);
+            _typeTable[5] = typeof(global::UWPService.Views.Factures);
+            _typeTable[6] = typeof(global::UWPService.Views.Fournisseur);
+            _typeTable[7] = typeof(global::UWPService.Views.Panier);
+            _typeTable[8] = typeof(global::UWPService.Views.Produits);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -176,6 +188,12 @@ namespace UWPService.UWPService_XamlTypeInfo
         }
 
         private object Activate_0_MainPage() { return new global::UWPService.MainPage(); }
+        private object Activate_3_Client() { return new global::UWPService.Views.Client(); }
+        private object Activate_4_Dashboard() { return new global::UWPService.Views.Dashboard(); }
+        private object Activate_5_Factures() { return new global::UWPService.Views.Factures(); }
+        private object Activate_6_Fournisseur() { return new global::UWPService.Views.Fournisseur(); }
+        private object Activate_7_Panier() { return new global::UWPService.Views.Panier(); }
+        private object Activate_8_Produits() { return new global::UWPService.Views.Produits(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -200,6 +218,48 @@ namespace UWPService.UWPService_XamlTypeInfo
 
             case 2:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::UWPService.UWPService_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 3:   //  UWPService.Views.Client
+                userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_3_Client;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 4:   //  UWPService.Views.Dashboard
+                userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_4_Dashboard;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 5:   //  UWPService.Views.Factures
+                userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_5_Factures;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 6:   //  UWPService.Views.Fournisseur
+                userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_6_Fournisseur;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 7:   //  UWPService.Views.Panier
+                userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_7_Panier;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 8:   //  UWPService.Views.Produits
+                userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_8_Produits;
+                userType.SetIsLocalType();
+                xamlType = userType;
                 break;
             }
             return xamlType;

@@ -10,6 +10,7 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <RelativePanel x:Name="MyRelativePanel" Margin="10">
+            <charts:RichPieChart x:Name="NbVente"></charts:RichPieChart>
         </RelativePanel>
     </Grid>
 </Page>
