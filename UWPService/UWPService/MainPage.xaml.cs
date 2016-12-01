@@ -39,12 +39,10 @@ namespace UWPService
         {
             if (((StackPanel)e.ClickedItem).Name == "Ham")
                 MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
-            else if (((StackPanel)e.ClickedItem).Name == "Client")
-                MyFrame.Navigate(typeof(Client));
+            else if (((StackPanel)e.ClickedItem).Name == "Client_Fournisseur")
+                MyFrame.Navigate(typeof(Client_Fournisseur));
             else if (((StackPanel)e.ClickedItem).Name == "Factures")
                 MyFrame.Navigate(typeof(Factures));
-            else if (((StackPanel)e.ClickedItem).Name == "Fournisseur")
-                MyFrame.Navigate(typeof(Fournisseur));
             else if (((StackPanel)e.ClickedItem).Name == "Panier")
                 MyFrame.Navigate(typeof(Panier));
             else if (((StackPanel)e.ClickedItem).Name == "Produits")

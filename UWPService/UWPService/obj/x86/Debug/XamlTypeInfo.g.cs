@@ -132,27 +132,37 @@ namespace UWPService.UWPService_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[9];
+            _typeNameTable = new string[14];
             _typeNameTable[0] = "UWPService.MainPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "UWPService.Views.Client";
-            _typeNameTable[4] = "UWPService.Views.Dashboard";
-            _typeNameTable[5] = "UWPService.Views.Factures";
-            _typeNameTable[6] = "UWPService.Views.Fournisseur";
-            _typeNameTable[7] = "UWPService.Views.Panier";
-            _typeNameTable[8] = "UWPService.Views.Produits";
+            _typeNameTable[3] = "UWPService.Views.Client_Fournisseur";
+            _typeNameTable[4] = "CrossPieCharts.UWP.PieCharts.RichPieChart";
+            _typeNameTable[5] = "Int32";
+            _typeNameTable[6] = "System.Collections.Generic.List`1<CrossPieCharts.UWP.PieCharts.PieChartArgs>";
+            _typeNameTable[7] = "Object";
+            _typeNameTable[8] = "CrossPieCharts.UWP.PieCharts.PieChartArgs";
+            _typeNameTable[9] = "Windows.UI.Xaml.Media.SolidColorBrush";
+            _typeNameTable[10] = "UWPService.Views.Dashboard";
+            _typeNameTable[11] = "UWPService.Views.Factures";
+            _typeNameTable[12] = "UWPService.Views.Panier";
+            _typeNameTable[13] = "UWPService.Views.Produits";
 
-            _typeTable = new global::System.Type[9];
+            _typeTable = new global::System.Type[14];
             _typeTable[0] = typeof(global::UWPService.MainPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::UWPService.Views.Client);
-            _typeTable[4] = typeof(global::UWPService.Views.Dashboard);
-            _typeTable[5] = typeof(global::UWPService.Views.Factures);
-            _typeTable[6] = typeof(global::UWPService.Views.Fournisseur);
-            _typeTable[7] = typeof(global::UWPService.Views.Panier);
-            _typeTable[8] = typeof(global::UWPService.Views.Produits);
+            _typeTable[3] = typeof(global::UWPService.Views.Client_Fournisseur);
+            _typeTable[4] = typeof(global::CrossPieCharts.UWP.PieCharts.RichPieChart);
+            _typeTable[5] = typeof(global::System.Int32);
+            _typeTable[6] = typeof(global::System.Collections.Generic.List<global::CrossPieCharts.UWP.PieCharts.PieChartArgs>);
+            _typeTable[7] = typeof(global::System.Object);
+            _typeTable[8] = typeof(global::CrossPieCharts.UWP.PieCharts.PieChartArgs);
+            _typeTable[9] = typeof(global::Windows.UI.Xaml.Media.SolidColorBrush);
+            _typeTable[10] = typeof(global::UWPService.Views.Dashboard);
+            _typeTable[11] = typeof(global::UWPService.Views.Factures);
+            _typeTable[12] = typeof(global::UWPService.Views.Panier);
+            _typeTable[13] = typeof(global::UWPService.Views.Produits);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -188,12 +198,20 @@ namespace UWPService.UWPService_XamlTypeInfo
         }
 
         private object Activate_0_MainPage() { return new global::UWPService.MainPage(); }
-        private object Activate_3_Client() { return new global::UWPService.Views.Client(); }
-        private object Activate_4_Dashboard() { return new global::UWPService.Views.Dashboard(); }
-        private object Activate_5_Factures() { return new global::UWPService.Views.Factures(); }
-        private object Activate_6_Fournisseur() { return new global::UWPService.Views.Fournisseur(); }
-        private object Activate_7_Panier() { return new global::UWPService.Views.Panier(); }
-        private object Activate_8_Produits() { return new global::UWPService.Views.Produits(); }
+        private object Activate_3_Client_Fournisseur() { return new global::UWPService.Views.Client_Fournisseur(); }
+        private object Activate_4_RichPieChart() { return new global::CrossPieCharts.UWP.PieCharts.RichPieChart(); }
+        private object Activate_6_List() { return new global::System.Collections.Generic.List<global::CrossPieCharts.UWP.PieCharts.PieChartArgs>(); }
+        private object Activate_8_PieChartArgs() { return new global::CrossPieCharts.UWP.PieCharts.PieChartArgs(); }
+        private object Activate_10_Dashboard() { return new global::UWPService.Views.Dashboard(); }
+        private object Activate_11_Factures() { return new global::UWPService.Views.Factures(); }
+        private object Activate_12_Panier() { return new global::UWPService.Views.Panier(); }
+        private object Activate_13_Produits() { return new global::UWPService.Views.Produits(); }
+        private void VectorAdd_6_List(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::CrossPieCharts.UWP.PieCharts.PieChartArgs>)instance;
+            var newItem = (global::CrossPieCharts.UWP.PieCharts.PieChartArgs)item;
+            collection.Add(newItem);
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -220,44 +238,73 @@ namespace UWPService.UWPService_XamlTypeInfo
                 xamlType = new global::UWPService.UWPService_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  UWPService.Views.Client
+            case 3:   //  UWPService.Views.Client_Fournisseur
                 userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_Client;
+                userType.Activator = Activate_3_Client_Fournisseur;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 4:   //  UWPService.Views.Dashboard
+            case 4:   //  CrossPieCharts.UWP.PieCharts.RichPieChart
+                userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_4_RichPieChart;
+                userType.AddMemberName("Radius");
+                userType.AddMemberName("StrokeThickness");
+                userType.AddMemberName("PieChartArgsCollection");
+                xamlType = userType;
+                break;
+
+            case 5:   //  Int32
+                xamlType = new global::UWPService.UWPService_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 6:   //  System.Collections.Generic.List`1<CrossPieCharts.UWP.PieCharts.PieChartArgs>
+                userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.CollectionAdd = VectorAdd_6_List;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 7:   //  Object
+                xamlType = new global::UWPService.UWPService_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 8:   //  CrossPieCharts.UWP.PieCharts.PieChartArgs
+                userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_8_PieChartArgs;
+                userType.AddMemberName("Percentage");
+                userType.AddMemberName("ColorBrush");
+                xamlType = userType;
+                break;
+
+            case 9:   //  Windows.UI.Xaml.Media.SolidColorBrush
+                xamlType = new global::UWPService.UWPService_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 10:   //  UWPService.Views.Dashboard
                 userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_4_Dashboard;
+                userType.Activator = Activate_10_Dashboard;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 5:   //  UWPService.Views.Factures
+            case 11:   //  UWPService.Views.Factures
                 userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_5_Factures;
+                userType.Activator = Activate_11_Factures;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 6:   //  UWPService.Views.Fournisseur
+            case 12:   //  UWPService.Views.Panier
                 userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_6_Fournisseur;
+                userType.Activator = Activate_12_Panier;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 7:   //  UWPService.Views.Panier
+            case 13:   //  UWPService.Views.Produits
                 userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_7_Panier;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 8:   //  UWPService.Views.Produits
-                userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_8_Produits;
+                userType.Activator = Activate_13_Produits;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -266,11 +313,98 @@ namespace UWPService.UWPService_XamlTypeInfo
         }
 
 
+        private object get_0_RichPieChart_Radius(object instance)
+        {
+            var that = (global::CrossPieCharts.UWP.PieCharts.RichPieChart)instance;
+            return that.Radius;
+        }
+        private void set_0_RichPieChart_Radius(object instance, object Value)
+        {
+            var that = (global::CrossPieCharts.UWP.PieCharts.RichPieChart)instance;
+            that.Radius = (global::System.Int32)Value;
+        }
+        private object get_1_RichPieChart_StrokeThickness(object instance)
+        {
+            var that = (global::CrossPieCharts.UWP.PieCharts.RichPieChart)instance;
+            return that.StrokeThickness;
+        }
+        private void set_1_RichPieChart_StrokeThickness(object instance, object Value)
+        {
+            var that = (global::CrossPieCharts.UWP.PieCharts.RichPieChart)instance;
+            that.StrokeThickness = (global::System.Int32)Value;
+        }
+        private object get_2_RichPieChart_PieChartArgsCollection(object instance)
+        {
+            var that = (global::CrossPieCharts.UWP.PieCharts.RichPieChart)instance;
+            return that.PieChartArgsCollection;
+        }
+        private void set_2_RichPieChart_PieChartArgsCollection(object instance, object Value)
+        {
+            var that = (global::CrossPieCharts.UWP.PieCharts.RichPieChart)instance;
+            that.PieChartArgsCollection = (global::System.Collections.Generic.List<global::CrossPieCharts.UWP.PieCharts.PieChartArgs>)Value;
+        }
+        private object get_3_PieChartArgs_Percentage(object instance)
+        {
+            var that = (global::CrossPieCharts.UWP.PieCharts.PieChartArgs)instance;
+            return that.Percentage;
+        }
+        private void set_3_PieChartArgs_Percentage(object instance, object Value)
+        {
+            var that = (global::CrossPieCharts.UWP.PieCharts.PieChartArgs)instance;
+            that.Percentage = (global::System.Int32)Value;
+        }
+        private object get_4_PieChartArgs_ColorBrush(object instance)
+        {
+            var that = (global::CrossPieCharts.UWP.PieCharts.PieChartArgs)instance;
+            return that.ColorBrush;
+        }
+        private void set_4_PieChartArgs_ColorBrush(object instance, object Value)
+        {
+            var that = (global::CrossPieCharts.UWP.PieCharts.PieChartArgs)instance;
+            that.ColorBrush = (global::Windows.UI.Xaml.Media.SolidColorBrush)Value;
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
             global::UWPService.UWPService_XamlTypeInfo.XamlMember xamlMember = null;
-            // No Local Properties
+            global::UWPService.UWPService_XamlTypeInfo.XamlUserType userType;
+
+            switch (longMemberName)
+            {
+            case "CrossPieCharts.UWP.PieCharts.RichPieChart.Radius":
+                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CrossPieCharts.UWP.PieCharts.RichPieChart");
+                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "Radius", "Int32");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_0_RichPieChart_Radius;
+                xamlMember.Setter = set_0_RichPieChart_Radius;
+                break;
+            case "CrossPieCharts.UWP.PieCharts.RichPieChart.StrokeThickness":
+                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CrossPieCharts.UWP.PieCharts.RichPieChart");
+                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "StrokeThickness", "Int32");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_1_RichPieChart_StrokeThickness;
+                xamlMember.Setter = set_1_RichPieChart_StrokeThickness;
+                break;
+            case "CrossPieCharts.UWP.PieCharts.RichPieChart.PieChartArgsCollection":
+                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CrossPieCharts.UWP.PieCharts.RichPieChart");
+                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "PieChartArgsCollection", "System.Collections.Generic.List`1<CrossPieCharts.UWP.PieCharts.PieChartArgs>");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_2_RichPieChart_PieChartArgsCollection;
+                xamlMember.Setter = set_2_RichPieChart_PieChartArgsCollection;
+                break;
+            case "CrossPieCharts.UWP.PieCharts.PieChartArgs.Percentage":
+                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CrossPieCharts.UWP.PieCharts.PieChartArgs");
+                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "Percentage", "Int32");
+                xamlMember.Getter = get_3_PieChartArgs_Percentage;
+                xamlMember.Setter = set_3_PieChartArgs_Percentage;
+                break;
+            case "CrossPieCharts.UWP.PieCharts.PieChartArgs.ColorBrush":
+                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CrossPieCharts.UWP.PieCharts.PieChartArgs");
+                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "ColorBrush", "Windows.UI.Xaml.Media.SolidColorBrush");
+                xamlMember.Getter = get_4_PieChartArgs_ColorBrush;
+                xamlMember.Setter = set_4_PieChartArgs_ColorBrush;
+                break;
+            }
             return xamlMember;
         }
     }

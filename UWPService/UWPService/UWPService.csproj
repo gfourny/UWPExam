@@ -104,17 +104,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="Views\Client.xaml.cs">
-      <DependentUpon>Client.xaml</DependentUpon>
+    <Compile Include="Views\Client_Fournisseur.xaml.cs">
+      <DependentUpon>Client_Fournisseur.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Dashboard.xaml.cs">
       <DependentUpon>Dashboard.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Factures.xaml.cs">
       <DependentUpon>Factures.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Fournisseur.xaml.cs">
-      <DependentUpon>Fournisseur.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Panier.xaml.cs">
       <DependentUpon>Panier.xaml</DependentUpon>
@@ -169,19 +166,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Views\Client.xaml">
-      <Generator>MSBuild:Compile</Generator>
+    <Page Include="Views\Client_Fournisseur.xaml">
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Dashboard.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\Factures.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Views\Fournisseur.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

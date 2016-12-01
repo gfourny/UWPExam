@@ -44,13 +44,17 @@
       <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="UWPService.MainPage" />
-    <RootType FullName="UWPService.Views.Client" />
+    <RootType FullName="UWPService.Views.Client_Fournisseur" />
     <RootType FullName="Windows.UI.Xaml.Controls.RelativePanel">
       <RootProperty Name="Margin" />
+      <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="CrossPieCharts.UWP.PieCharts.RichPieChart">
+      <RootProperty Name="Radius" />
+      <RootProperty Name="StrokeThickness" />
     </RootType>
     <RootType FullName="UWPService.Views.Dashboard" />
     <RootType FullName="UWPService.Views.Factures" />
-    <RootType FullName="UWPService.Views.Fournisseur" />
     <RootType FullName="UWPService.Views.Panier" />
     <RootType FullName="UWPService.Views.Produits" />
   </Roots.RootTypes>

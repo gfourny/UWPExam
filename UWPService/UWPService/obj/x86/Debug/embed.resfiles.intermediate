@@ -1,8 +1,7 @@
 App.xbf
 MainPage.xbf
-Views\Client.xbf
+Views\Client_Fournisseur.xbf
 Views\Dashboard.xbf
 Views\Factures.xbf
-Views\Fournisseur.xbf
 Views\Panier.xbf
 Views\Produits.xbf
