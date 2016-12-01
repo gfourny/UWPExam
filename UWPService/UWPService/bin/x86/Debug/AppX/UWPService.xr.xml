@@ -22,6 +22,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="IsItemClickEnabled" />
       <RootProperty Name="Background" />
+      <RootProperty Name="Foreground" />
       <RootProperty Name="Items" />
       <RootEvent Name="ItemClick" />
     </RootType>
@@ -37,6 +38,7 @@
       <RootProperty Name="Text" />
       <RootProperty Name="FontFamily" />
       <RootProperty Name="FontSize" />
+      <RootProperty Name="Foreground" />
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
     </RootType>
@@ -53,7 +55,7 @@
       <RootProperty Name="Radius" />
       <RootProperty Name="StrokeThickness" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton" />
+    <RootType FullName="Windows.UI.Xaml.Controls.GridView" />
     <RootType FullName="UWPService.Views.Dashboard" />
     <RootType FullName="UWPService.Views.Factures" />
     <RootType FullName="UWPService.Views.Panier" />

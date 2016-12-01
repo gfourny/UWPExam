@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using UWPService.MyWebService;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Core;
@@ -26,6 +27,9 @@ namespace UWPService.Views
         public Dashboard()
         {
             this.InitializeComponent();
+            YnovServiceClient Client = new YnovServiceClient();
+            MyGridView.ItemsSource = Client.GetCustomersAsync().Result;
+            Client.CloseAsync();
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)

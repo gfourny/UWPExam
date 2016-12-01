@@ -9,11 +9,12 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <RelativePanel x:Name="MyRelativePanel" Margin="10">
+        <RelativePanel x:ConnectionId='1' x:Name="MyRelativePanel" Margin="10">
             <StackPanel>
-                <charts:RichPieChart x:Name="NbVente" Radius="50" StrokeThickness="90"/>
-                <GridView x:Name="MyGridView"/>
+                <charts:RichPieChart x:ConnectionId='2' x:Name="NbVente" Radius="50" StrokeThickness="90"/>
+                <GridView x:ConnectionId='3' x:Name="MyGridView"/>
             </StackPanel>
         </RelativePanel>
     </Grid>
 </Page>
+

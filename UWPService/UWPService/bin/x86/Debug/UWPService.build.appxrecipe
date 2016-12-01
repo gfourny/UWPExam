@@ -373,6 +373,9 @@
     <AppxPackagedFile Include="C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\VoiceCommandDefinition.xml">
+      <PackagePath>VoiceCommandDefinition.xml</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
