@@ -3,6 +3,15 @@
   "version": 2,
   "targets": {
     "UAP,Version=v10.0": {
+      "CrossPieCharts.UWP/1.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/uap/CrossPieCharts.ClassLibrary.dll": {}
+        },
+        "runtime": {
+          "lib/uap/CrossPieCharts.ClassLibrary.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -2143,6 +2152,15 @@
       }
     },
     "UAP,Version=v10.0/win10-arm": {
+      "CrossPieCharts.UWP/1.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/uap/CrossPieCharts.ClassLibrary.dll": {}
+        },
+        "runtime": {
+          "lib/uap/CrossPieCharts.ClassLibrary.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -4391,6 +4409,15 @@
       }
     },
     "UAP,Version=v10.0/win10-arm-aot": {
+      "CrossPieCharts.UWP/1.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/uap/CrossPieCharts.ClassLibrary.dll": {}
+        },
+        "runtime": {
+          "lib/uap/CrossPieCharts.ClassLibrary.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -6678,6 +6705,15 @@
       }
     },
     "UAP,Version=v10.0/win10-x64": {
+      "CrossPieCharts.UWP/1.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/uap/CrossPieCharts.ClassLibrary.dll": {}
+        },
+        "runtime": {
+          "lib/uap/CrossPieCharts.ClassLibrary.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -8935,6 +8971,15 @@
       }
     },
     "UAP,Version=v10.0/win10-x64-aot": {
+      "CrossPieCharts.UWP/1.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/uap/CrossPieCharts.ClassLibrary.dll": {}
+        },
+        "runtime": {
+          "lib/uap/CrossPieCharts.ClassLibrary.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -11231,6 +11276,15 @@
       }
     },
     "UAP,Version=v10.0/win10-x86": {
+      "CrossPieCharts.UWP/1.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/uap/CrossPieCharts.ClassLibrary.dll": {}
+        },
+        "runtime": {
+          "lib/uap/CrossPieCharts.ClassLibrary.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -13488,6 +13542,15 @@
       }
     },
     "UAP,Version=v10.0/win10-x86-aot": {
+      "CrossPieCharts.UWP/1.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/uap/CrossPieCharts.ClassLibrary.dll": {}
+        },
+        "runtime": {
+          "lib/uap/CrossPieCharts.ClassLibrary.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -15785,6 +15848,16 @@
     }
   },
   "libraries": {
+    "CrossPieCharts.UWP/1.0.2": {
+      "sha512": "i1wk9HbklmCpmszwXL27UuZ5MYD5rwgXvl+IBPI2E/+g4LE7IHIEbTH2Tb/ZTzgaxc+BTPVv4M7pSybpSq1K+A==",
+      "type": "package",
+      "path": "CrossPieCharts.UWP/1.0.2",
+      "files": [
+        "CrossPieCharts.UWP.1.0.2.nupkg.sha512",
+        "CrossPieCharts.UWP.nuspec",
+        "lib/uap/CrossPieCharts.ClassLibrary.dll"
+      ]
+    },
     "Microsoft.CSharp/4.0.1": {
       "sha512": "17h8b5mXa87XYKrrVqdgZ38JefSUqLChUQpXgSnpzsM0nDOhE40FTeNWOJ/YmySGV6tG6T8+hjz6vxbknHJr6A==",
       "type": "package",
@@ -21954,6 +22027,7 @@
   },
   "projectFileDependencyGroups": {
     "": [
+      "CrossPieCharts.UWP >= 1.0.2",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.2.2"
     ],
     "UAP,Version=v10.0": []
