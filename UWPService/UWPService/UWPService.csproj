@@ -95,6 +95,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Items\Constant.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -193,14 +194,6 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\MyWebService\" />
-  </ItemGroup>
-  <ItemGroup>
-    <SDKReference Include="DevExpress.Core, version=16.1">
-      <Name>DevExpress.Core</Name>
-    </SDKReference>
-    <SDKReference Include="DevExpress.Visualization, Version=16.1">
-      <Name>DevExpress.Visualization</Name>
-    </SDKReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

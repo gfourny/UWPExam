@@ -1,13 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.2">
   <CommandSet xml:lang="fr-FR" Name="UniversalAppCommandSet_fr-FR">
-    <CommandPrefix> Exam UWP </CommandPrefix>
+    <CommandPrefix>Examen</CommandPrefix>
     <Example> Dites à Cortana quelle page vous souhaitez </Example>
-    <Command Name="showConversation">
-      <Example>  Montre moi les factures</Example>
-      <ListenFor > [Montre] [moi] [les] factures </ListenFor>
+    <Command Name="showOrder">
+      <Example>Facture</Example>
+      <ListenFor>Facture</ListenFor>
       <Feedback> Voici les factures </Feedback>
-      <Navigate Target="Factures.xaml"/>
+      <Navigate Target="MainPage.xaml"/>
+    </Command>
+    <Command Name="showProducts">
+      <Example>Produit</Example>
+      <ListenFor>Produit</ListenFor>
+      <Feedback> Voici les produits </Feedback>
+      <Navigate Target="MainPage.xaml"/>
+    </Command>
+    <Command Name="showPanier">
+      <Example>Panier</Example>
+      <ListenFor>Panier</ListenFor>
+      <Feedback> Voici les paniers </Feedback>
+      <Navigate Target="MainPage.xaml"/>
+    </Command>
+    <Command Name="showCF">
+      <Example>Client fournisseur</Example>
+      <ListenFor>Client fournisseur</ListenFor>
+      <Feedback> Voici les clients et les fournisseurs</Feedback>
+      <Navigate Target="MainPage.xaml"/>
     </Command>
   </CommandSet>
 </VoiceCommands>

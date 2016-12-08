@@ -8,6 +8,6 @@ namespace UWPService.Items
 {
     public static class Constant
     {
-        public string command { get; set; }
+        public static string command { get; set; }
     }
 }

@@ -1,9 +1,2 @@
-C:\Program Files (x86)\DevExpress 16.1\Components\System\UAP\SDK\16.1.8\DevExpress.Core\16.1\Redist\CommonConfiguration\neutral\DevExpress.Core.v16.1.pri
-C:\Program Files (x86)\DevExpress 16.1\Components\System\UAP\SDK\16.1.8\DevExpress.Core\16.1\Redist\CommonConfiguration\neutral\DevExpress.Drawing.v16.1.pri
-C:\Program Files (x86)\DevExpress 16.1\Components\System\UAP\SDK\16.1.8\DevExpress.Core\16.1\Redist\CommonConfiguration\neutral\DevExpress.Mvvm.v16.1.pri
-C:\Program Files (x86)\DevExpress 16.1\Components\System\UAP\SDK\16.1.8\DevExpress.Core\16.1\Redist\CommonConfiguration\neutral\DevExpress.UI.Xaml.v16.1.pri
-C:\Program Files (x86)\DevExpress 16.1\Components\System\UAP\SDK\16.1.8\DevExpress.Visualization\16.1\Redist\CommonConfiguration\neutral\DevExpress.UI.Xaml.Charts.v16.1.pri
-C:\Program Files (x86)\DevExpress 16.1\Components\System\UAP\SDK\16.1.8\DevExpress.Visualization\16.1\Redist\CommonConfiguration\neutral\DevExpress.UI.Xaml.Gauges.v16.1.pri
-C:\Program Files (x86)\DevExpress 16.1\Components\System\UAP\SDK\16.1.8\DevExpress.Visualization\16.1\Redist\CommonConfiguration\neutral\DevExpress.UI.Xaml.Map.v16.1.pri
-C:\Users\belli\.nuget\packages\WinRTXamlToolkit.Controls.DataVisualization\2.0.0\lib\uap10.0\WinRTXamlToolkit.Controls.DataVisualization.pri
-C:\Users\belli\.nuget\packages\WinRTXamlToolkit.UWP\2.0.0\lib\uap10.0\WinRTXamlToolkit.pri
+C:\Users\tbadi\.nuget\packages\WinRTXamlToolkit.Controls.DataVisualization\2.0.0\lib\uap10.0\WinRTXamlToolkit.Controls.DataVisualization.pri
+C:\Users\tbadi\.nuget\packages\WinRTXamlToolkit.UWP\2.0.0\lib\uap10.0\WinRTXamlToolkit.pri
