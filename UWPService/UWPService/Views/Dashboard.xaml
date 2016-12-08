@@ -17,8 +17,9 @@
             <charts:RichPieChart x:Name="NbVente" Radius="50" StrokeThickness="90" Margin="0,0,100,0"/>
             <charts:PieChart x:Name="Achat" Radius="43" Percentage="78" StrokeThickness="7" RelativePanel.AlignRightWith="NbVente" RelativePanel.AlignVerticalCenterWith="NbVente"/>
             <Charting:Chart x:Name="AreaChart" RelativePanel.RightOf="Achat" RelativePanel.AlignVerticalCenterWith="Achat">
-                <Charting:AreaSeries Title="Vente" IndependentValueBinding="{Binding Vente}" DependentValueBinding="{Binding Vente}" IsSelectionEnabled="True"/>
+                <Charting:AreaSeries Title="Vente" IndependentValueBinding="{Binding Vente}" DependentValueBinding="{Binding FirstName}" IsSelectionEnabled="True"/>
             </Charting:Chart>
+            <GridView x:Name="MyGridView" RelativePanel.Below="NbVente"/>
         </RelativePanel>
     </Grid>
 </Page>

@@ -2,6 +2,7 @@
 <Roots >
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="Vente" />
+    <RootPropertyPathName Name="FirstName" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
@@ -59,6 +60,8 @@
       <RootMethod Name="SetAlignVerticalCenterWith" />
       <RootMethod Name="GetRightOf" />
       <RootMethod Name="SetRightOf" />
+      <RootMethod Name="GetBelow" />
+      <RootMethod Name="SetBelow" />
     </RootType>
     <RootType FullName="CrossPieCharts.UWP.PieCharts.RichPieChart">
       <RootProperty Name="Radius" />
@@ -73,6 +76,7 @@
     <RootType FullName="WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart">
       <RootProperty Name="Series" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.GridView" />
     <RootType FullName="WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaSeries">
       <RootProperty Name="Title" />
       <RootProperty Name="IndependentValueBinding" />

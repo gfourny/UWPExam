@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-08T16:54:44.739</Modified>
+      <Modified>2016-12-08T17:30:43.644</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\UWPService.exe">
       <PackagePath>entrypoint\UWPService.exe</PackagePath>
-      <Modified>2016-12-08T16:54:42.604</Modified>
+      <Modified>2016-12-08T17:30:43.278</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\DevExpress 16.1\Components\System\UAP\SDK\16.1.8\DevExpress.Core\16.1\References\CommonConfiguration\neutral\DevExpress.Core.v16.1.dll">
       <PackagePath>DevExpress.Core.v16.1.dll</PackagePath>
@@ -576,7 +576,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\UWPService.xr.xml">
       <PackagePath>UWPService.xr.xml</PackagePath>
-      <Modified>2016-12-08T16:54:42.156</Modified>
+      <Modified>2016-12-08T17:26:58.005</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -601,11 +601,11 @@
     <AppxPackagedFile Include="C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-08T16:54:44.264</Modified>
+      <Modified>2016-12-08T17:26:58.742</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\Core\UWPService.exe">
       <PackagePath>UWPService.exe</PackagePath>
-      <Modified>2016-12-08T16:54:44.729</Modified>
+      <Modified>2016-12-08T17:30:43.641</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

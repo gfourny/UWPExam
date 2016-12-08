@@ -29,7 +29,7 @@ namespace UWPService.Views
         {
             this.InitializeComponent();
             YnovServiceClient Client = new YnovServiceClient();
-            //MyGridView.ItemsSource = Client.GetCustomersAsync().Result;
+            MyGridView.ItemsSource = Client.GetCustomersAsync().Result;
             Client.CloseAsync();
         }
 
@@ -45,6 +45,7 @@ namespace UWPService.Views
 
             Random rand = new Random();
             List<Customer> CustomersList = Client.GetCustomersAsync().Result.ToList();
+            CustomersList.Add(new Customer() { FirstName = Client.GetCustomersAsync().Result.ToString() });
             (AreaChart.Series[0] as AreaSeries).ItemsSource = CustomersList;
         }
     }
