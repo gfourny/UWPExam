@@ -2,6 +2,7 @@
   "dependencies": {
     "CrossPieCharts.UWP": "1.0.2",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+    "System.Collections.NonGeneric": "4.3.0",
     "WinRTXamlToolkit.Controls.DataVisualization": "2.0.0",
     "WinRTXamlToolkit.UWP": "2.0.0"
   },

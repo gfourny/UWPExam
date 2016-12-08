@@ -239,3 +239,15 @@ C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\Views\Cl
 C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\Views\Client_Fournisseur.g.cs
 C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\Views\Client_Fournisseur.xaml
 C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\Views\Client_Fournisseur.xbf
+C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\DevExpress.Core.v16.1.dll
+C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\DevExpress.Drawing.v16.1.dll
+C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\DevExpress.Mvvm.v16.1.dll
+C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\DevExpress.UI.Xaml.Charts.v16.1.dll
+C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\DevExpress.UI.Xaml.Gauges.v16.1.dll
+C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\DevExpress.UI.Xaml.Map.v16.1.dll
+C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\DevExpress.UI.Xaml.v16.1.dll
+C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\WinRTXamlToolkit.dll
+C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\WinRTXamlToolkit.Controls.DataVisualization.dll
+C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\WinRTXamlToolkit.Controls.DataVisualization\en-US\WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources.resw
+C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\WinRTXamlToolkit.pri.xml
+C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\WinRTXamlToolkit.Controls.DataVisualization.pri.xml

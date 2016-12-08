@@ -16,7 +16,7 @@
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
-    <RegisteredManifestChecksum>642AD932FF585153986E17E711EE96FD77E63943514FC8D31B71347306F8CC11</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>6CB3794F8D49D6BAC574B9F5FC8F797FCF95E55C44D8AC1025B6F818D758C511</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>231b0863-5ccb-48b9-aba6-433dc7bed47b_1.0.0.0_x86__cwza77eb1ysjm</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>231b0863-5ccb-48b9-aba6-433dc7bed47b_cwza77eb1ysjm!App</RegisteredUserModeAppID>
     <RegisteredPackageID>231b0863-5ccb-48b9-aba6-433dc7bed47b</RegisteredPackageID>
@@ -28,13 +28,41 @@
     <AppXManifest Include="C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-01T18:41:09.892</Modified>
+      <Modified>2016-12-08T16:54:44.739</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\UWPService.exe">
       <PackagePath>entrypoint\UWPService.exe</PackagePath>
-      <Modified>2016-12-01T18:41:09.306</Modified>
+      <Modified>2016-12-08T16:54:42.604</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\DevExpress 16.1\Components\System\UAP\SDK\16.1.8\DevExpress.Core\16.1\References\CommonConfiguration\neutral\DevExpress.Core.v16.1.dll">
+      <PackagePath>DevExpress.Core.v16.1.dll</PackagePath>
+      <Modified>2016-12-01T15:33:30.330</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\DevExpress 16.1\Components\System\UAP\SDK\16.1.8\DevExpress.Core\16.1\References\CommonConfiguration\neutral\DevExpress.Drawing.v16.1.dll">
+      <PackagePath>DevExpress.Drawing.v16.1.dll</PackagePath>
+      <Modified>2016-12-01T15:33:30.370</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\DevExpress 16.1\Components\System\UAP\SDK\16.1.8\DevExpress.Core\16.1\References\CommonConfiguration\neutral\DevExpress.Mvvm.v16.1.dll">
+      <PackagePath>DevExpress.Mvvm.v16.1.dll</PackagePath>
+      <Modified>2016-12-01T15:33:30.416</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\DevExpress 16.1\Components\System\UAP\SDK\16.1.8\DevExpress.Visualization\16.1\References\CommonConfiguration\neutral\DevExpress.UI.Xaml.Charts.v16.1.dll">
+      <PackagePath>DevExpress.UI.Xaml.Charts.v16.1.dll</PackagePath>
+      <Modified>2016-12-01T15:33:30.781</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\DevExpress 16.1\Components\System\UAP\SDK\16.1.8\DevExpress.Visualization\16.1\References\CommonConfiguration\neutral\DevExpress.UI.Xaml.Gauges.v16.1.dll">
+      <PackagePath>DevExpress.UI.Xaml.Gauges.v16.1.dll</PackagePath>
+      <Modified>2016-12-01T15:33:30.823</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\DevExpress 16.1\Components\System\UAP\SDK\16.1.8\DevExpress.Visualization\16.1\References\CommonConfiguration\neutral\DevExpress.UI.Xaml.Map.v16.1.dll">
+      <PackagePath>DevExpress.UI.Xaml.Map.v16.1.dll</PackagePath>
+      <Modified>2016-12-01T15:33:30.884</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\DevExpress 16.1\Components\System\UAP\SDK\16.1.8\DevExpress.Core\16.1\References\CommonConfiguration\neutral\DevExpress.UI.Xaml.v16.1.dll">
+      <PackagePath>DevExpress.UI.Xaml.v16.1.dll</PackagePath>
+      <Modified>2016-12-01T15:33:30.468</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\CrossPieCharts.UWP\1.0.2\lib\uap\CrossPieCharts.ClassLibrary.dll">
       <PackagePath>CrossPieCharts.ClassLibrary.dll</PackagePath>
@@ -96,117 +124,117 @@
       <PackagePath>Microsoft.VisualBasic.dll</PackagePath>
       <Modified>2016-06-11T21:13:10.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.any.System.Collections\4.0.11\lib\netcore50\System.Collections.dll">
+    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.any.System.Collections\4.3.0\lib\netcore50\System.Collections.dll">
       <PackagePath>System.Collections.dll</PackagePath>
-      <Modified>2016-06-11T21:13:24.000</Modified>
+      <Modified>2016-11-05T03:55:36.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.any.System.Diagnostics.Tools\4.0.1\lib\netcore50\System.Diagnostics.Tools.dll">
+    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.any.System.Diagnostics.Tools\4.3.0\lib\netcore50\System.Diagnostics.Tools.dll">
       <PackagePath>System.Diagnostics.Tools.dll</PackagePath>
-      <Modified>2016-06-11T21:13:32.000</Modified>
+      <Modified>2016-11-05T03:55:54.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.any.System.Diagnostics.Tracing\4.1.0\lib\netcore50\System.Diagnostics.Tracing.dll">
+    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.any.System.Diagnostics.Tracing\4.3.0\lib\netcore50\System.Diagnostics.Tracing.dll">
       <PackagePath>System.Diagnostics.Tracing.dll</PackagePath>
-      <Modified>2016-06-11T21:13:38.000</Modified>
+      <Modified>2016-11-05T03:55:56.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.any.System.Globalization\4.0.11\lib\netcore50\System.Globalization.dll">
+    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.any.System.Globalization\4.3.0\lib\netcore50\System.Globalization.dll">
       <PackagePath>System.Globalization.dll</PackagePath>
-      <Modified>2016-06-11T21:13:38.000</Modified>
+      <Modified>2016-11-05T03:56:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.any.System.Globalization.Calendars\4.0.1\lib\netcore50\System.Globalization.Calendars.dll">
+    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.any.System.Globalization.Calendars\4.3.0\lib\netcore50\System.Globalization.Calendars.dll">
       <PackagePath>System.Globalization.Calendars.dll</PackagePath>
-      <Modified>2016-06-11T21:13:38.000</Modified>
+      <Modified>2016-11-05T03:55:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.any.System.IO\4.1.0\lib\netcore50\System.IO.dll">
+    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.any.System.IO\4.3.0\lib\netcore50\System.IO.dll">
       <PackagePath>System.IO.dll</PackagePath>
-      <Modified>2016-06-11T21:13:50.000</Modified>
+      <Modified>2016-11-05T03:56:14.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.any.System.Reflection\4.1.0\lib\netcore50\System.Reflection.dll">
+    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.any.System.Reflection\4.3.0\lib\netcore50\System.Reflection.dll">
       <PackagePath>System.Reflection.dll</PackagePath>
-      <Modified>2016-06-11T21:14:16.000</Modified>
+      <Modified>2016-11-05T03:56:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.any.System.Reflection.Extensions\4.0.1\lib\netcore50\System.Reflection.Extensions.dll">
+    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.any.System.Reflection.Extensions\4.3.0\lib\netcore50\System.Reflection.Extensions.dll">
       <PackagePath>System.Reflection.Extensions.dll</PackagePath>
-      <Modified>2016-06-11T21:14:14.000</Modified>
+      <Modified>2016-11-05T03:56:40.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.any.System.Reflection.Primitives\4.0.1\lib\netcore50\System.Reflection.Primitives.dll">
+    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.any.System.Reflection.Primitives\4.3.0\lib\netcore50\System.Reflection.Primitives.dll">
       <PackagePath>System.Reflection.Primitives.dll</PackagePath>
-      <Modified>2016-06-11T21:14:18.000</Modified>
+      <Modified>2016-11-05T03:56:44.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.any.System.Resources.ResourceManager\4.0.1\lib\netcore50\System.Resources.ResourceManager.dll">
+    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.any.System.Resources.ResourceManager\4.3.0\lib\netcore50\System.Resources.ResourceManager.dll">
       <PackagePath>System.Resources.ResourceManager.dll</PackagePath>
-      <Modified>2016-06-11T21:14:20.000</Modified>
+      <Modified>2016-11-05T03:56:50.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.any.System.Runtime\4.1.0\lib\netcore50\System.Runtime.dll">
+    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.any.System.Runtime\4.3.0\lib\netcore50\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
-      <Modified>2016-06-11T21:14:32.000</Modified>
+      <Modified>2016-11-05T03:57:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.any.System.Runtime.Handles\4.0.1\lib\netstandard1.3\System.Runtime.Handles.dll">
+    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.any.System.Runtime.Handles\4.3.0\lib\netstandard1.3\System.Runtime.Handles.dll">
       <PackagePath>System.Runtime.Handles.dll</PackagePath>
-      <Modified>2016-06-11T21:14:24.000</Modified>
+      <Modified>2016-11-05T03:56:52.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.any.System.Runtime.InteropServices\4.1.0\lib\netcore50\System.Runtime.InteropServices.dll">
+    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.any.System.Runtime.InteropServices\4.3.0\lib\netcore50\System.Runtime.InteropServices.dll">
       <PackagePath>System.Runtime.InteropServices.dll</PackagePath>
-      <Modified>2016-06-11T21:14:22.000</Modified>
+      <Modified>2016-11-05T03:56:52.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.any.System.Text.Encoding\4.0.11\lib\netcore50\System.Text.Encoding.dll">
+    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.any.System.Text.Encoding\4.3.0\lib\netcore50\System.Text.Encoding.dll">
       <PackagePath>System.Text.Encoding.dll</PackagePath>
-      <Modified>2016-06-11T21:14:48.000</Modified>
+      <Modified>2016-11-05T03:57:22.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.any.System.Text.Encoding.Extensions\4.0.11\lib\netcore50\System.Text.Encoding.Extensions.dll">
+    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.any.System.Text.Encoding.Extensions\4.3.0\lib\netcore50\System.Text.Encoding.Extensions.dll">
       <PackagePath>System.Text.Encoding.Extensions.dll</PackagePath>
-      <Modified>2016-06-11T21:14:50.000</Modified>
+      <Modified>2016-11-05T03:57:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.any.System.Threading.Tasks\4.0.11\lib\netcore50\System.Threading.Tasks.dll">
+    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.any.System.Threading.Tasks\4.3.0\lib\netcore50\System.Threading.Tasks.dll">
       <PackagePath>System.Threading.Tasks.dll</PackagePath>
-      <Modified>2016-06-11T21:14:54.000</Modified>
+      <Modified>2016-11-05T03:57:24.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.any.System.Threading.Timer\4.0.1\lib\netcore50\System.Threading.Timer.dll">
+    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.any.System.Threading.Timer\4.3.0\lib\netcore50\System.Threading.Timer.dll">
       <PackagePath>System.Threading.Timer.dll</PackagePath>
-      <Modified>2016-06-11T21:14:58.000</Modified>
+      <Modified>2016-11-05T03:57:30.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.win.Microsoft.Win32.Primitives\4.0.1\runtimes\win\lib\netstandard1.3\Microsoft.Win32.Primitives.dll">
+    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.win.Microsoft.Win32.Primitives\4.3.0\runtimes\win\lib\netstandard1.3\Microsoft.Win32.Primitives.dll">
       <PackagePath>Microsoft.Win32.Primitives.dll</PackagePath>
-      <Modified>2016-06-11T21:13:14.000</Modified>
+      <Modified>2016-11-05T03:55:32.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.win.System.Diagnostics.Debug\4.0.11\runtimes\win\lib\netcore50\System.Diagnostics.Debug.dll">
+    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.win.System.Diagnostics.Debug\4.3.0\runtimes\win\lib\netcore50\System.Diagnostics.Debug.dll">
       <PackagePath>System.Diagnostics.Debug.dll</PackagePath>
-      <Modified>2016-06-11T21:13:26.000</Modified>
+      <Modified>2016-11-05T03:55:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.win.System.IO.FileSystem\4.0.1\runtimes\win\lib\netcore50\System.IO.FileSystem.dll">
+    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.win.System.IO.FileSystem\4.3.0\runtimes\win\lib\netcore50\System.IO.FileSystem.dll">
       <PackagePath>System.IO.FileSystem.dll</PackagePath>
-      <Modified>2016-06-11T21:13:44.000</Modified>
+      <Modified>2016-11-05T03:56:06.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.win.System.Net.Primitives\4.0.11\runtimes\win\lib\netcore50\System.Net.Primitives.dll">
+    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.win.System.Net.Primitives\4.3.0\runtimes\win\lib\netcore50\System.Net.Primitives.dll">
       <PackagePath>System.Net.Primitives.dll</PackagePath>
-      <Modified>2016-06-11T21:14:00.000</Modified>
+      <Modified>2016-11-05T03:56:24.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.win.System.Net.Sockets\4.1.0\runtimes\win\lib\netcore50\System.Net.Sockets.dll">
+    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.win.System.Net.Sockets\4.3.0\runtimes\win\lib\netcore50\System.Net.Sockets.dll">
       <PackagePath>System.Net.Sockets.dll</PackagePath>
-      <Modified>2016-06-11T21:14:04.000</Modified>
+      <Modified>2016-11-05T03:56:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.win.System.Runtime.Extensions\4.1.0\runtimes\win\lib\netcore50\System.Runtime.Extensions.dll">
+    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.win.System.Runtime.Extensions\4.3.0\runtimes\win\lib\netcore50\System.Runtime.Extensions.dll">
       <PackagePath>System.Runtime.Extensions.dll</PackagePath>
-      <Modified>2016-06-11T21:14:20.000</Modified>
+      <Modified>2016-11-05T03:56:48.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.win7-x86.Microsoft.NETCore.Jit\1.0.3\runtimes\win7-x86\native\clrjit.dll">
       <PackagePath>clrjit.dll</PackagePath>
       <Modified>2016-06-13T16:27:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.win7-x86.runtime.native.System.IO.Compression\4.0.1\runtimes\win7-x86\native\clrcompression.dll">
+    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.win7-x86.runtime.native.System.IO.Compression\4.3.0\runtimes\win7-x86\native\clrcompression.dll">
       <PackagePath>clrcompression.dll</PackagePath>
-      <Modified>2016-06-13T19:51:30.000</Modified>
+      <Modified>2016-11-05T03:34:10.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.win7.System.Private.Uri\4.0.2\runtimes\win\lib\netcore50\System.Private.Uri.dll">
+    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\runtime.win7.System.Private.Uri\4.3.0\runtimes\win\lib\netcore50\System.Private.Uri.dll">
       <PackagePath>System.Private.Uri.dll</PackagePath>
-      <Modified>2016-07-01T13:48:12.000</Modified>
+      <Modified>2016-11-05T03:56:36.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\System.AppContext\4.1.0\lib\netcore50\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>
       <Modified>2016-06-11T21:13:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\System.Buffers\4.0.0\lib\netstandard1.1\System.Buffers.dll">
+    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\System.Buffers\4.3.0\lib\netstandard1.1\System.Buffers.dll">
       <PackagePath>System.Buffers.dll</PackagePath>
-      <Modified>2016-06-11T21:13:14.000</Modified>
+      <Modified>2016-11-05T03:55:30.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\System.Collections.Concurrent\4.0.12\lib\netcore50\System.Collections.Concurrent.dll">
       <PackagePath>System.Collections.Concurrent.dll</PackagePath>
@@ -216,9 +244,9 @@
       <PackagePath>System.Collections.Immutable.dll</PackagePath>
       <Modified>2016-06-11T21:13:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\System.Collections.NonGeneric\4.0.1\lib\netstandard1.3\System.Collections.NonGeneric.dll">
+    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\System.Collections.NonGeneric\4.3.0\lib\netstandard1.3\System.Collections.NonGeneric.dll">
       <PackagePath>System.Collections.NonGeneric.dll</PackagePath>
-      <Modified>2016-06-11T21:13:22.000</Modified>
+      <Modified>2016-11-05T03:55:36.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\System.Collections.Specialized\4.0.1\lib\netstandard1.3\System.Collections.Specialized.dll">
       <PackagePath>System.Collections.Specialized.dll</PackagePath>
@@ -268,9 +296,9 @@
       <PackagePath>System.IO.Compression.ZipFile.dll</PackagePath>
       <Modified>2016-06-11T21:13:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\System.IO.FileSystem.Primitives\4.0.1\lib\netstandard1.3\System.IO.FileSystem.Primitives.dll">
+    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\System.IO.FileSystem.Primitives\4.3.0\lib\netstandard1.3\System.IO.FileSystem.Primitives.dll">
       <PackagePath>System.IO.FileSystem.Primitives.dll</PackagePath>
-      <Modified>2016-06-11T21:13:46.000</Modified>
+      <Modified>2016-11-05T03:56:08.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\System.IO.IsolatedStorage\4.0.1\lib\netcore50\System.IO.IsolatedStorage.dll">
       <PackagePath>System.IO.IsolatedStorage.dll</PackagePath>
@@ -460,13 +488,13 @@
       <PackagePath>System.Text.RegularExpressions.dll</PackagePath>
       <Modified>2016-06-11T21:14:52.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\System.Threading\4.0.11\lib\netcore50\System.Threading.dll">
+    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\System.Threading\4.3.0\lib\netcore50\System.Threading.dll">
       <PackagePath>System.Threading.dll</PackagePath>
-      <Modified>2016-06-11T21:15:00.000</Modified>
+      <Modified>2016-11-05T03:57:30.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\System.Threading.Overlapped\4.0.1\runtimes\win\lib\netcore50\System.Threading.Overlapped.dll">
+    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\System.Threading.Overlapped\4.3.0\runtimes\win\lib\netcore50\System.Threading.Overlapped.dll">
       <PackagePath>System.Threading.Overlapped.dll</PackagePath>
-      <Modified>2016-06-11T21:14:54.000</Modified>
+      <Modified>2016-11-05T03:57:26.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\System.Threading.Tasks.Dataflow\4.6.0\lib\netstandard1.1\System.Threading.Tasks.Dataflow.dll">
       <PackagePath>System.Threading.Tasks.Dataflow.dll</PackagePath>
@@ -496,13 +524,21 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2016-06-11T21:15:04.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\WinRTXamlToolkit\2.0.0\lib\uap10.0\WinRTXamlToolkit.dll">
+      <PackagePath>WinRTXamlToolkit.dll</PackagePath>
+      <Modified>2016-03-04T01:06:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\WinRTXamlToolkit.Controls.DataVisualization\2.0.0\lib\uap10.0\WinRTXamlToolkit.Controls.DataVisualization.dll">
+      <PackagePath>WinRTXamlToolkit.Controls.DataVisualization.dll</PackagePath>
+      <Modified>2016-03-04T01:06:24.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2016-11-29T13:08:54.678</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\VoiceCommandDefinition.xml">
       <PackagePath>VoiceCommandDefinition.xml</PackagePath>
-      <Modified>2016-12-01T18:26:41.605</Modified>
+      <Modified>2016-12-05T20:41:19.389</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -540,20 +576,36 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\UWPService.xr.xml">
       <PackagePath>UWPService.xr.xml</PackagePath>
-      <Modified>2016-12-01T18:41:09.131</Modified>
+      <Modified>2016-12-08T16:54:42.156</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
-      <Modified>2016-11-15T13:48:13.809</Modified>
+      <Modified>2016-12-05T21:02:36.436</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\WinRTXamlToolkit.UWP\2.0.0\lib\uap10.0\WinRTXamlToolkit\WinRTXamlToolkit.xr.xml">
+      <PackagePath>WinRTXamlToolkit\WinRTXamlToolkit.xr.xml</PackagePath>
+      <Modified>2016-03-04T00:52:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\WinRTXamlToolkit.UWP\2.0.0\lib\uap10.0\WinRTXamlToolkit\Properties\WinRTXamlToolkit.UWP.rd.xml">
+      <PackagePath>WinRTXamlToolkit\Properties\WinRTXamlToolkit.UWP.rd.xml</PackagePath>
+      <Modified>2016-03-04T00:52:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\WinRTXamlToolkit.Controls.DataVisualization\2.0.0\lib\uap10.0\WinRTXamlToolkit.Controls.DataVisualization\WinRTXamlToolkit.Controls.DataVisualization.xr.xml">
+      <PackagePath>WinRTXamlToolkit.Controls.DataVisualization\WinRTXamlToolkit.Controls.DataVisualization.xr.xml</PackagePath>
+      <Modified>2016-03-04T01:06:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\WinRTXamlToolkit.Controls.DataVisualization\2.0.0\lib\uap10.0\WinRTXamlToolkit.Controls.DataVisualization\Properties\WinRTXamlToolkit.Controls.DataVisualization.UWP.rd.xml">
+      <PackagePath>WinRTXamlToolkit.Controls.DataVisualization\Properties\WinRTXamlToolkit.Controls.DataVisualization.UWP.rd.xml</PackagePath>
+      <Modified>2016-03-04T01:06:24.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-01T18:41:09.727</Modified>
+      <Modified>2016-12-08T16:54:44.264</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\Core\UWPService.exe">
       <PackagePath>UWPService.exe</PackagePath>
-      <Modified>2016-12-01T18:41:09.889</Modified>
+      <Modified>2016-12-08T16:54:44.729</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

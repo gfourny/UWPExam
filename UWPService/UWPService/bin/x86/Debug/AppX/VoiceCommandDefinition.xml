@@ -1,17 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.2">
   <CommandSet xml:lang="fr-FR" Name="UniversalAppCommandSet_fr-FR">
-    <CommandPrefix> Universal Messenger, </CommandPrefix>
-    <Example> Text Sam "Hello World" </Example>
+    <CommandPrefix> Exam UWP </CommandPrefix>
+    <Example> Dites à Cortana quelle page vous souhaitez </Example>
     <Command Name="showConversation">
-      <Example>  show my conversation with sam  </Example>
-      <ListenFor > show [my] conversation with {user} </ListenFor>
-      <Feedback> Showing conversation with {user} </Feedback>
-      <Navigate/>
+      <Example>  Montre moi les factures</Example>
+      <ListenFor > [Montre] [moi] [les] factures </ListenFor>
+      <Feedback> Voici les factures </Feedback>
+      <Navigate Target="Factures.xaml"/>
     </Command>
-    <PhraseList Label="user">
-      <Item>Sam</Item>
-      <Item>John</Item>
-    </PhraseList>
   </CommandSet>
 </VoiceCommands>
