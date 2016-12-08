@@ -27,12 +27,40 @@ namespace UWPService
         public MainPage()
         {
             this.InitializeComponent();
-            MyFrame.Navigate(typeof(Dashboard));
-
+            NavigationCortana();
 
             YnovServiceClient Client = new YnovServiceClient();
             //MyGridView.ItemsSource = Client.GetCustomersAsync().Result;
             Client.CloseAsync();
+        }
+
+        /// <summary>
+        /// Permet de réaliser la navigation avec Cortana
+        /// Gestion des différents onglets
+        /// </summary>
+        private void NavigationCortana()
+        {
+            MyFrame.Navigate(typeof(Dashboard));
+            switch (Items.Constant.command)
+            {
+                case "Panier":
+                    MyFrame.Navigate(typeof(Panier));
+                    break;
+                case "Client fournisseur":
+                    MyFrame.Navigate(typeof(Client_Fournisseur));
+                    break;
+                case "Facture":
+                    MyFrame.Navigate(typeof(Factures));
+                    break;
+                case "Produit":
+                    MyFrame.Navigate(typeof(Produits));
+                    break;
+                default:
+                    MyFrame.Navigate(typeof(Dashboard));
+                    break;
+            }
+
+            Items.Constant.command = string.Empty;
         }
 
         private void ListView_ItemClick(object sender, ItemClickEventArgs e)
