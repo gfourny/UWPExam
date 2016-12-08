@@ -194,7 +194,14 @@
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\MyWebService\" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <SDKReference Include="DevExpress.Core, version=16.1">
+      <Name>DevExpress.Core</Name>
+    </SDKReference>
+    <SDKReference Include="DevExpress.Visualization, Version=16.1">
+      <Name>DevExpress.Visualization</Name>
+    </SDKReference>
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

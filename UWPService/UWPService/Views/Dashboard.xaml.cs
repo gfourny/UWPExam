@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using WinRTXamlToolkit.Controls.DataVisualization.Charting;
 
 // Pour plus d'informations sur le modèle d'élément Page vierge, voir la page http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -28,7 +29,7 @@ namespace UWPService.Views
         {
             this.InitializeComponent();
             YnovServiceClient Client = new YnovServiceClient();
-            MyGridView.ItemsSource = Client.GetCustomersAsync().Result;
+            //MyGridView.ItemsSource = Client.GetCustomersAsync().Result;
             Client.CloseAsync();
         }
 
@@ -36,6 +37,15 @@ namespace UWPService.Views
         {
             if (!Frame.CanGoBack)
                 SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Collapsed;
+        }
+
+        private void LoadChartContent()
+        {
+            YnovServiceClient Client = new YnovServiceClient();
+
+            Random rand = new Random();
+            List<Customer> CustomersList = Client.GetCustomersAsync().Result.ToList();
+            (AreaChart.Series[0] as AreaSeries).ItemsSource = CustomersList;
         }
     }
 }

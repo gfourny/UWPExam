@@ -1,1 +1,0 @@
-C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\UWPService.csproj;x86
