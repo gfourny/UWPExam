@@ -69,7 +69,6 @@ namespace UWPService.Views
             YnovServiceClient nbVente = new YnovServiceClient();
             ObservableCollection<MyWebService.Vente> IVente = await nbVente.VentesAsync();
             (AreaChart.Series[0] as AreaSeries).ItemsSource = IVente.Skip(Plus).Take(7);
-            Suivant.FontSize = 15;
         }
 
         private async void Precedent_PointerPressed(object sender, PointerRoutedEventArgs e)
@@ -78,7 +77,6 @@ namespace UWPService.Views
             YnovServiceClient nbVente = new YnovServiceClient();
             ObservableCollection<MyWebService.Vente> IVente = await nbVente.VentesAsync();
             (AreaChart.Series[0] as AreaSeries).ItemsSource = IVente.Skip(Plus).Take(7);
-            Precedent.FontSize = 15;
         }
 
         private void Suivant_PointerEntered(object sender, PointerRoutedEventArgs e)

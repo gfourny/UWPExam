@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>231b0863-5ccb-48b9-aba6-433dc7bed47b</PackageIdentityName>
     <PackageIdentityPublisher>CN=belli</PackageIdentityPublisher>
-    <IntermediateOutputPath>D:\belli\Bureau\UWPService\UWPService\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -25,14 +25,14 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="D:\belli\Bureau\UWPService\UWPService\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-11T18:50:10.480</Modified>
+      <Modified>2016-12-11T18:54:27.920</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="D:\belli\Bureau\UWPService\UWPService\bin\x86\Debug\UWPService.exe">
+    <AppxPackagedFile Include="C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\UWPService.exe">
       <PackagePath>entrypoint\UWPService.exe</PackagePath>
       <Modified>2016-12-11T18:38:47.658</Modified>
     </AppxPackagedFile>
@@ -504,49 +504,49 @@
       <PackagePath>WinRTXamlToolkit.Controls.DataVisualization.dll</PackagePath>
       <Modified>2016-03-04T01:06:24.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\belli\Bureau\UWPService\UWPService\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2016-11-29T13:08:54.678</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\belli\Bureau\UWPService\UWPService\VoiceCommandDefinition.xml">
+    <AppxPackagedFile Include="C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\VoiceCommandDefinition.xml">
       <PackagePath>VoiceCommandDefinition.xml</PackagePath>
       <Modified>2016-12-08T20:37:01.100</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\belli\Bureau\UWPService\UWPService\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2015-09-20T16:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\belli\Bureau\UWPService\UWPService\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T16:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\belli\Bureau\UWPService\UWPService\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T16:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\belli\Bureau\UWPService\UWPService\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T16:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\belli\Bureau\UWPService\UWPService\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T16:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\belli\Bureau\UWPService\UWPService\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T16:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\belli\Bureau\UWPService\UWPService\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T16:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\belli\Bureau\UWPService\UWPService\bin\x86\Debug\UWPService.xr.xml">
+    <AppxPackagedFile Include="C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\UWPService.xr.xml">
       <PackagePath>UWPService.xr.xml</PackagePath>
       <Modified>2016-12-11T18:38:47.338</Modified>
     </AppxPackagedFile>
@@ -570,14 +570,14 @@
       <PackagePath>WinRTXamlToolkit.Controls.DataVisualization\Properties\WinRTXamlToolkit.Controls.DataVisualization.UWP.rd.xml</PackagePath>
       <Modified>2016-03-04T01:06:24.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\belli\Bureau\UWPService\UWPService\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-11T18:50:10.003</Modified>
+      <Modified>2016-12-11T18:54:27.607</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\belli\Bureau\UWPService\UWPService\bin\x86\Debug\Core\UWPService.exe">
+    <AppxPackagedFile Include="C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\Core\UWPService.exe">
       <PackagePath>UWPService.exe</PackagePath>
-      <Modified>2016-12-11T18:50:10.475</Modified>
+      <Modified>2016-12-11T18:54:27.915</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

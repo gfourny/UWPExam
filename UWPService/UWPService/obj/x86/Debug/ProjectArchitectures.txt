@@ -1,1 +1,1 @@
-D:\belli\Bureau\UWPService\UWPService\UWPService.csproj;x86
+C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\UWPService.csproj;x86
