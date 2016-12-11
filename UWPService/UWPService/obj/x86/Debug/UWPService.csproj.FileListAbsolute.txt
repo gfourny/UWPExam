@@ -246,3 +246,4 @@ C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\WinRTXam
 C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\RessourceDictionary.xbf
 C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\RessourceDictionary.xaml
 C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\RessourceDictionary.xbf
+C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\UWPService.csprojResolveAssemblyReference.cache
