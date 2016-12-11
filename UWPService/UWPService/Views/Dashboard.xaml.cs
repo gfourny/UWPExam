@@ -26,7 +26,7 @@ namespace UWPService.Views
     /// </summary>
     public sealed partial class Dashboard : Page
     {
-        int Plus = 5;
+        int Plus = 0;
         public Dashboard()
         {
             this.InitializeComponent();
@@ -49,33 +49,38 @@ namespace UWPService.Views
 
         private async void LoadChartContents()
         {
-            YnovServiceClient nbVente = new YnovServiceClient();
+            YnovServiceClient MyService = new YnovServiceClient();
 
-            ObservableCollection<MyWebService.Vente> IVente = await nbVente.VentesAsync();
+            ObservableCollection<MyWebService.Vente> IVente = await MyService.VentesAsync();
             (AreaChart.Series[0] as AreaSeries).ItemsSource = IVente.Skip(0).Take(7);
 
-            //Random rand = new Random();
-            //List<Dashboard> financialStuffList = new List<Dashboard>();
-            //financialStuffList.Add(new Dashboard() { Name = "MSFT", Amount = rand.Next(0, 200) });
-            //financialStuffList.Add(new Dashboard() { Name = "AAPL", Amount = rand.Next(0, 200) });
-            //financialStuffList.Add(new Dashboard() { Name = "GOOG", Amount = rand.Next(0, 200) });
-            //financialStuffList.Add(new Dashboard() { Name = "BBRY", Amount = rand.Next(0, 200) });
-
-            //(AreaChart.Series[0] as AreaSeries).ItemsSource = financialStuffList;
+            ObservableCollection<MyWebService.Resultat> IResultat = await MyService.ResultatsAsync();
+            (PieChart.Series[0] as PieSeries).ItemsSource = IResultat.Skip(0).Take(3);
         }
+
         private async void Suivant_PointerPressed(object sender, PointerRoutedEventArgs e)
         {
-            Plus += 7;
-            YnovServiceClient nbVente = new YnovServiceClient();
-            ObservableCollection<MyWebService.Vente> IVente = await nbVente.VentesAsync();
+            YnovServiceClient MyService = new YnovServiceClient();
+            ObservableCollection<MyWebService.Vente> IVente = await MyService.VentesAsync();
+
+            if (Plus > IVente.Count-14)
+            {
+                Plus = 0;
+            }
+            else
+            {
+                Plus += 7;
+            }
             (AreaChart.Series[0] as AreaSeries).ItemsSource = IVente.Skip(Plus).Take(7);
         }
 
         private async void Precedent_PointerPressed(object sender, PointerRoutedEventArgs e)
         {
+            if (Plus < 0)
+                Plus = 0;
             Plus -= 7;
-            YnovServiceClient nbVente = new YnovServiceClient();
-            ObservableCollection<MyWebService.Vente> IVente = await nbVente.VentesAsync();
+            YnovServiceClient MyService = new YnovServiceClient();
+            ObservableCollection<MyWebService.Vente> IVente = await MyService.VentesAsync();
             (AreaChart.Series[0] as AreaSeries).ItemsSource = IVente.Skip(Plus).Take(7);
         }
 

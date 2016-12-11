@@ -12,12 +12,19 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <RelativePanel x:Name="MyRelativePanel" Margin="10">
-            <Charting:Chart x:Name="AreaChart" Width="1000" Height="500" >
-                <Charting:AreaSeries Title="Vente" IndependentValuePath="ProductName" DependentValuePath="Count" IsSelectionEnabled="True"/>
-            </Charting:Chart>
-            <TextBlock x:Name="Suivant" RelativePanel.Below="AreaChart" RelativePanel.AlignHorizontalCenterWithPanel="True" FontFamily="Segoe MDL2 Assets" Text="&#xE893;" PointerPressed="Suivant_PointerPressed" FontSize="22" Margin="10,0,0,0" PointerEntered="Suivant_PointerEntered" PointerExited="Suivant_PointerExited"/>
-            <TextBlock x:Name="Precedent" RelativePanel.Below="AreaChart" RelativePanel.LeftOf="Suivant" FontFamily="Segoe MDL2 Assets" Text="&#xE892;" PointerPressed="Precedent_PointerPressed" FontSize="22" PointerEntered="Precedent_PointerEntered" PointerExited="Precedent_PointerExited" />
-        </RelativePanel>
+        <FlipView BorderBrush="#FF122940" BorderThickness="1">
+            <RelativePanel x:Name="MyRelativePanel" Margin="10">
+                <Charting:Chart x:Name="AreaChart" Width="1000" Height="500" RelativePanel.AlignHorizontalCenterWithPanel="True" >
+                    <Charting:AreaSeries Title="Vente" IndependentValuePath="ProductName" DependentValuePath="Count" IsSelectionEnabled="True"/>
+                </Charting:Chart>
+                <TextBlock x:Name="Suivant" RelativePanel.Below="AreaChart" RelativePanel.AlignHorizontalCenterWithPanel="True" FontFamily="Segoe MDL2 Assets" Text="&#xE893;" PointerPressed="Suivant_PointerPressed" FontSize="22" Margin="10,0,0,0" PointerEntered="Suivant_PointerEntered" PointerExited="Suivant_PointerExited"/>
+                <TextBlock x:Name="Precedent" RelativePanel.Below="AreaChart" RelativePanel.LeftOf="Suivant" FontFamily="Segoe MDL2 Assets" Text="&#xE892;" PointerPressed="Precedent_PointerPressed" FontSize="22" PointerEntered="Precedent_PointerEntered" PointerExited="Precedent_PointerExited" />
+            </RelativePanel>
+            <RelativePanel>
+                <Charting:Chart x:Name="PieChart" RelativePanel.AlignHorizontalCenterWithPanel="True" Width="600" Height="600">
+                    <Charting:PieSeries Title="Résultat" IndependentValuePath="Year" DependentValuePath="Amount" IsSelectionEnabled="True"/>
+                </Charting:Chart>
+            </RelativePanel>
+        </FlipView>
     </Grid>
 </Page>
