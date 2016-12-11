@@ -16,7 +16,7 @@
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
-    <RegisteredManifestChecksum>6CB3794F8D49D6BAC574B9F5FC8F797FCF95E55C44D8AC1025B6F818D758C511</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>642AD932FF585153986E17E711EE96FD77E63943514FC8D31B71347306F8CC11</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>231b0863-5ccb-48b9-aba6-433dc7bed47b_1.0.0.0_x86__cwza77eb1ysjm</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>231b0863-5ccb-48b9-aba6-433dc7bed47b_cwza77eb1ysjm!App</RegisteredUserModeAppID>
     <RegisteredPackageID>231b0863-5ccb-48b9-aba6-433dc7bed47b</RegisteredPackageID>
@@ -28,41 +28,13 @@
     <AppXManifest Include="C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-08T17:30:43.644</Modified>
+      <Modified>2016-12-11T18:16:42.811</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\UWPService.exe">
       <PackagePath>entrypoint\UWPService.exe</PackagePath>
-      <Modified>2016-12-08T17:30:43.278</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\DevExpress 16.1\Components\System\UAP\SDK\16.1.8\DevExpress.Core\16.1\References\CommonConfiguration\neutral\DevExpress.Core.v16.1.dll">
-      <PackagePath>DevExpress.Core.v16.1.dll</PackagePath>
-      <Modified>2016-12-01T15:33:30.330</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\DevExpress 16.1\Components\System\UAP\SDK\16.1.8\DevExpress.Core\16.1\References\CommonConfiguration\neutral\DevExpress.Drawing.v16.1.dll">
-      <PackagePath>DevExpress.Drawing.v16.1.dll</PackagePath>
-      <Modified>2016-12-01T15:33:30.370</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\DevExpress 16.1\Components\System\UAP\SDK\16.1.8\DevExpress.Core\16.1\References\CommonConfiguration\neutral\DevExpress.Mvvm.v16.1.dll">
-      <PackagePath>DevExpress.Mvvm.v16.1.dll</PackagePath>
-      <Modified>2016-12-01T15:33:30.416</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\DevExpress 16.1\Components\System\UAP\SDK\16.1.8\DevExpress.Visualization\16.1\References\CommonConfiguration\neutral\DevExpress.UI.Xaml.Charts.v16.1.dll">
-      <PackagePath>DevExpress.UI.Xaml.Charts.v16.1.dll</PackagePath>
-      <Modified>2016-12-01T15:33:30.781</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\DevExpress 16.1\Components\System\UAP\SDK\16.1.8\DevExpress.Visualization\16.1\References\CommonConfiguration\neutral\DevExpress.UI.Xaml.Gauges.v16.1.dll">
-      <PackagePath>DevExpress.UI.Xaml.Gauges.v16.1.dll</PackagePath>
-      <Modified>2016-12-01T15:33:30.823</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\DevExpress 16.1\Components\System\UAP\SDK\16.1.8\DevExpress.Visualization\16.1\References\CommonConfiguration\neutral\DevExpress.UI.Xaml.Map.v16.1.dll">
-      <PackagePath>DevExpress.UI.Xaml.Map.v16.1.dll</PackagePath>
-      <Modified>2016-12-01T15:33:30.884</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\DevExpress 16.1\Components\System\UAP\SDK\16.1.8\DevExpress.Core\16.1\References\CommonConfiguration\neutral\DevExpress.UI.Xaml.v16.1.dll">
-      <PackagePath>DevExpress.UI.Xaml.v16.1.dll</PackagePath>
-      <Modified>2016-12-01T15:33:30.468</Modified>
+      <Modified>2016-12-11T18:16:41.977</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\CrossPieCharts.UWP\1.0.2\lib\uap\CrossPieCharts.ClassLibrary.dll">
       <PackagePath>CrossPieCharts.ClassLibrary.dll</PackagePath>
@@ -538,7 +510,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\VoiceCommandDefinition.xml">
       <PackagePath>VoiceCommandDefinition.xml</PackagePath>
-      <Modified>2016-12-05T20:41:19.389</Modified>
+      <Modified>2016-12-08T20:37:01.100</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -576,7 +548,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\UWPService.xr.xml">
       <PackagePath>UWPService.xr.xml</PackagePath>
-      <Modified>2016-12-08T17:26:58.005</Modified>
+      <Modified>2016-12-11T18:14:41.283</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -601,11 +573,11 @@
     <AppxPackagedFile Include="C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-08T17:26:58.742</Modified>
+      <Modified>2016-12-11T18:16:42.548</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\Core\UWPService.exe">
       <PackagePath>UWPService.exe</PackagePath>
-      <Modified>2016-12-08T17:30:43.641</Modified>
+      <Modified>2016-12-11T18:16:42.806</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -1,5 +1,6 @@
 App.xbf
 MainPage.xbf
+RessourceDictionary.xbf
 Views\Client_Fournisseur.xbf
 Views\Dashboard.xbf
 Views\Factures.xbf

@@ -13,16 +13,73 @@
   <wsdl:message name="IYnovService_GetCustomers_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetCustomersResponse" />
   </wsdl:message>
+  <wsdl:message name="IYnovService_Ventes_InputMessage">
+    <wsdl:part name="parameters" element="tns:Ventes" />
+  </wsdl:message>
+  <wsdl:message name="IYnovService_Ventes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VentesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IYnovService_Clients_InputMessage">
+    <wsdl:part name="parameters" element="tns:Clients" />
+  </wsdl:message>
+  <wsdl:message name="IYnovService_Clients_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClientsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IYnovService_Resultats_InputMessage">
+    <wsdl:part name="parameters" element="tns:Resultats" />
+  </wsdl:message>
+  <wsdl:message name="IYnovService_Resultats_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ResultatsResponse" />
+  </wsdl:message>
   <wsdl:portType name="IYnovService">
     <wsdl:operation name="GetCustomers">
       <wsdl:input wsaw:Action="http://tempuri.org/IYnovService/GetCustomers" message="tns:IYnovService_GetCustomers_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IYnovService/GetCustomersResponse" message="tns:IYnovService_GetCustomers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Ventes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IYnovService/Ventes" message="tns:IYnovService_Ventes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IYnovService/VentesResponse" message="tns:IYnovService_Ventes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Clients">
+      <wsdl:input wsaw:Action="http://tempuri.org/IYnovService/Clients" message="tns:IYnovService_Clients_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IYnovService/ClientsResponse" message="tns:IYnovService_Clients_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Resultats">
+      <wsdl:input wsaw:Action="http://tempuri.org/IYnovService/Resultats" message="tns:IYnovService_Resultats_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IYnovService/ResultatsResponse" message="tns:IYnovService_Resultats_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IYnovService" type="tns:IYnovService">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="GetCustomers">
       <soap:operation soapAction="http://tempuri.org/IYnovService/GetCustomers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ventes">
+      <soap:operation soapAction="http://tempuri.org/IYnovService/Ventes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Clients">
+      <soap:operation soapAction="http://tempuri.org/IYnovService/Clients" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Resultats">
+      <soap:operation soapAction="http://tempuri.org/IYnovService/Resultats" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

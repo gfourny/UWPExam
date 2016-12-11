@@ -120,12 +120,186 @@ namespace UWPService.MyWebService {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Vente", Namespace="http://schemas.datacontract.org/2004/07/UWPExam")]
+    public partial class Vente : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private int CountField;
+        
+        private string ProductNameField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Count {
+            get {
+                return this.CountField;
+            }
+            set {
+                if ((this.CountField.Equals(value) != true)) {
+                    this.CountField = value;
+                    this.RaisePropertyChanged("Count");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ProductName {
+            get {
+                return this.ProductNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ProductNameField, value) != true)) {
+                    this.ProductNameField = value;
+                    this.RaisePropertyChanged("ProductName");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Client", Namespace="http://schemas.datacontract.org/2004/07/UWPExam")]
+    public partial class Client : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private float AmountField;
+        
+        private int CountField;
+        
+        private string FullNameField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public float Amount {
+            get {
+                return this.AmountField;
+            }
+            set {
+                if ((this.AmountField.Equals(value) != true)) {
+                    this.AmountField = value;
+                    this.RaisePropertyChanged("Amount");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Count {
+            get {
+                return this.CountField;
+            }
+            set {
+                if ((this.CountField.Equals(value) != true)) {
+                    this.CountField = value;
+                    this.RaisePropertyChanged("Count");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string FullName {
+            get {
+                return this.FullNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.FullNameField, value) != true)) {
+                    this.FullNameField = value;
+                    this.RaisePropertyChanged("FullName");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Resultat", Namespace="http://schemas.datacontract.org/2004/07/UWPExam")]
+    public partial class Resultat : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private float AmountField;
+        
+        private int MonthField;
+        
+        private int YearField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public float Amount {
+            get {
+                return this.AmountField;
+            }
+            set {
+                if ((this.AmountField.Equals(value) != true)) {
+                    this.AmountField = value;
+                    this.RaisePropertyChanged("Amount");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Month {
+            get {
+                return this.MonthField;
+            }
+            set {
+                if ((this.MonthField.Equals(value) != true)) {
+                    this.MonthField = value;
+                    this.RaisePropertyChanged("Month");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Year {
+            get {
+                return this.YearField;
+            }
+            set {
+                if ((this.YearField.Equals(value) != true)) {
+                    this.YearField = value;
+                    this.RaisePropertyChanged("Year");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="MyWebService.IYnovService")]
     public interface IYnovService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IYnovService/GetCustomers", ReplyAction="http://tempuri.org/IYnovService/GetCustomersResponse")]
         System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<UWPService.MyWebService.Customer>> GetCustomersAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IYnovService/Ventes", ReplyAction="http://tempuri.org/IYnovService/VentesResponse")]
+        System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<UWPService.MyWebService.Vente>> VentesAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IYnovService/Clients", ReplyAction="http://tempuri.org/IYnovService/ClientsResponse")]
+        System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<UWPService.MyWebService.Client>> ClientsAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IYnovService/Resultats", ReplyAction="http://tempuri.org/IYnovService/ResultatsResponse")]
+        System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<UWPService.MyWebService.Resultat>> ResultatsAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -173,6 +347,18 @@ namespace UWPService.MyWebService {
         
         public System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<UWPService.MyWebService.Customer>> GetCustomersAsync() {
             return base.Channel.GetCustomersAsync();
+        }
+        
+        public System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<UWPService.MyWebService.Vente>> VentesAsync() {
+            return base.Channel.VentesAsync();
+        }
+        
+        public System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<UWPService.MyWebService.Client>> ClientsAsync() {
+            return base.Channel.ClientsAsync();
+        }
+        
+        public System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<UWPService.MyWebService.Resultat>> ResultatsAsync() {
+            return base.Channel.ResultatsAsync();
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync() {

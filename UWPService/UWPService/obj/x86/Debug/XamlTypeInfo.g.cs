@@ -156,199 +156,103 @@ namespace UWPService.UWPService_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[95];
+            _typeNameTable = new string[47];
             _typeNameTable[0] = "UWPService.MainPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "UWPService.Views.Client_Fournisseur";
-            _typeNameTable[4] = "CrossPieCharts.UWP.PieCharts.RichPieChart";
-            _typeNameTable[5] = "Int32";
-            _typeNameTable[6] = "System.Collections.Generic.List`1<CrossPieCharts.UWP.PieCharts.PieChartArgs>";
-            _typeNameTable[7] = "Object";
-            _typeNameTable[8] = "CrossPieCharts.UWP.PieCharts.PieChartArgs";
-            _typeNameTable[9] = "Windows.UI.Xaml.Media.SolidColorBrush";
-            _typeNameTable[10] = "CrossPieCharts.UWP.PieCharts.PieChart";
-            _typeNameTable[11] = "Double";
-            _typeNameTable[12] = "Windows.UI.Xaml.Media.Brush";
-            _typeNameTable[13] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart";
-            _typeNameTable[14] = "Windows.UI.Xaml.Controls.Control";
-            _typeNameTable[15] = "System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries>";
-            _typeNameTable[16] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries";
-            _typeNameTable[17] = "System.Collections.ObjectModel.ObservableCollection`1<Object>";
-            _typeNameTable[18] = "System.Collections.ObjectModel.Collection`1<Object>";
-            _typeNameTable[19] = "System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>";
-            _typeNameTable[20] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis";
-            _typeNameTable[21] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.AxisOrientation";
-            _typeNameTable[22] = "System.Enum";
-            _typeNameTable[23] = "System.ValueType";
-            _typeNameTable[24] = "System.Collections.ObjectModel.ObservableCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>";
-            _typeNameTable[25] = "System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>";
-            _typeNameTable[26] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener";
-            _typeNameTable[27] = "System.Collections.ObjectModel.ObservableCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>";
-            _typeNameTable[28] = "System.Collections.ObjectModel.ReadOnlyCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>";
-            _typeNameTable[29] = "Windows.UI.Xaml.Style";
-            _typeNameTable[30] = "System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.ResourceDictionary>";
-            _typeNameTable[31] = "Windows.UI.Xaml.ResourceDictionary";
-            _typeNameTable[32] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaSeries";
-            _typeNameTable[33] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaDataPoint>";
-            _typeNameTable[34] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSingleSeriesWithAxes";
-            _typeNameTable[35] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeriesWithAxes";
-            _typeNameTable[36] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries";
-            _typeNameTable[37] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.Series";
-            _typeNameTable[38] = "Windows.UI.Xaml.Data.Binding";
-            _typeNameTable[39] = "Boolean";
-            _typeNameTable[40] = "Windows.UI.Xaml.Media.Geometry";
-            _typeNameTable[41] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis";
-            _typeNameTable[42] = "System.Nullable`1<Int32>";
-            _typeNameTable[43] = "String";
-            _typeNameTable[44] = "System.Collections.IEnumerable";
-            _typeNameTable[45] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.AnimationSequence";
-            _typeNameTable[46] = "Windows.UI.Xaml.Media.Animation.EasingFunctionBase";
-            _typeNameTable[47] = "TimeSpan";
-            _typeNameTable[48] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeriesHost";
-            _typeNameTable[49] = "UWPService.Views.Dashboard";
-            _typeNameTable[50] = "UWPService.Views.Factures";
-            _typeNameTable[51] = "UWPService.Views.Panier";
-            _typeNameTable[52] = "UWPService.Views.Produits";
-            _typeNameTable[53] = "DevExpress.UI.Xaml.GalleryGroupContainerGenerator";
-            _typeNameTable[54] = "DevExpress.UI.Xaml.GalleryItemContainerGeneratorBase";
-            _typeNameTable[55] = "Windows.UI.Xaml.DependencyObject";
-            _typeNameTable[56] = "Windows.UI.Xaml.DataTemplate";
-            _typeNameTable[57] = "Windows.UI.Xaml.Controls.DataTemplateSelector";
-            _typeNameTable[58] = "Windows.UI.Xaml.FrameworkElement";
-            _typeNameTable[59] = "DevExpress.UI.Xaml.GalleryItemContainerGenerator";
-            _typeNameTable[60] = "DevExpress.UI.Xaml.GalleryItemGroup";
-            _typeNameTable[61] = "DevExpress.UI.Xaml.GalleryItemCollection";
-            _typeNameTable[62] = "DevExpress.Core.Native.ObservableCollectionView`1<Object>";
-            _typeNameTable[63] = "DevExpress.Mvvm.BindableBase";
-            _typeNameTable[64] = "DevExpress.UI.Xaml.TitleSettings";
-            _typeNameTable[65] = "DevExpress.UI.Xaml.Internal.DXExpander";
-            _typeNameTable[66] = "Windows.UI.Xaml.Controls.Panel";
-            _typeNameTable[67] = "Windows.UI.Xaml.UIElement";
-            _typeNameTable[68] = "Windows.UI.Xaml.Media.Animation.Storyboard";
-            _typeNameTable[69] = "Windows.UI.Xaml.Controls.Primitives.EdgeTransitionLocation";
-            _typeNameTable[70] = "Windows.UI.Xaml.Controls.UIElementCollection";
-            _typeNameTable[71] = "DevExpress.UI.Xaml.Internal.SelectorControl";
-            _typeNameTable[72] = "DevExpress.UI.Xaml.Internal.SelectorControlBase";
-            _typeNameTable[73] = "DevExpress.UI.Xaml.Internal.ControlEx";
-            _typeNameTable[74] = "DevExpress.UI.Xaml.Internal.SelectionEmptyAction";
-            _typeNameTable[75] = "Windows.UI.Xaml.Controls.Orientation";
-            _typeNameTable[76] = "DevExpress.UI.Xaml.Internal.SelectableItemCollection";
-            _typeNameTable[77] = "DevExpress.UI.Xaml.Internal.ItemContainerCollectionWithOwner`2<DevExpress.UI.Xaml.Internal.SelectorItemBase, DevExpress.UI.Xaml.Internal.ISupportSelection>";
-            _typeNameTable[78] = "DevExpress.UI.Xaml.Internal.ItemContainerCollection`1<DevExpress.UI.Xaml.Internal.SelectorItemBase>";
-            _typeNameTable[79] = "DevExpress.UI.Xaml.Internal.TemplatedCollectionBase`1<DevExpress.UI.Xaml.Internal.SelectorItemBase>";
-            _typeNameTable[80] = "DevExpress.Core.Native.ObservableCollectionView`1<DevExpress.UI.Xaml.Internal.SelectorItemBase>";
-            _typeNameTable[81] = "DevExpress.UI.Xaml.Internal.SelectorItemBase";
-            _typeNameTable[82] = "DevExpress.UI.Xaml.Internal.PointerItemBase";
-            _typeNameTable[83] = "DevExpress.UI.Xaml.Internal.ContentControlEx";
-            _typeNameTable[84] = "Windows.UI.Xaml.Controls.ContentControl";
-            _typeNameTable[85] = "Windows.UI.Xaml.Controls.ClickMode";
-            _typeNameTable[86] = "Windows.Foundation.Size";
-            _typeNameTable[87] = "DevExpress.UI.Xaml.Internal.TreeNavigator";
-            _typeNameTable[88] = "DevExpress.UI.Xaml.Internal.TreeNavigatorNode";
-            _typeNameTable[89] = "Windows.UI.Xaml.Thickness";
-            _typeNameTable[90] = "System.Windows.Input.ICommand";
-            _typeNameTable[91] = "DevExpress.UI.Xaml.Internal.TreeNavigatorItem";
-            _typeNameTable[92] = "DevExpress.UI.Xaml.Internal.TreeNavigatorNodeCollection";
-            _typeNameTable[93] = "System.Collections.ObjectModel.ObservableCollection`1<DevExpress.UI.Xaml.Internal.TreeNavigatorNode>";
-            _typeNameTable[94] = "System.Collections.ObjectModel.Collection`1<DevExpress.UI.Xaml.Internal.TreeNavigatorNode>";
+            _typeNameTable[3] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart";
+            _typeNameTable[4] = "Windows.UI.Xaml.Controls.Control";
+            _typeNameTable[5] = "System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries>";
+            _typeNameTable[6] = "Object";
+            _typeNameTable[7] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries";
+            _typeNameTable[8] = "System.Collections.ObjectModel.ObservableCollection`1<Object>";
+            _typeNameTable[9] = "System.Collections.ObjectModel.Collection`1<Object>";
+            _typeNameTable[10] = "System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.ResourceDictionary>";
+            _typeNameTable[11] = "Windows.UI.Xaml.ResourceDictionary";
+            _typeNameTable[12] = "System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>";
+            _typeNameTable[13] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis";
+            _typeNameTable[14] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.AxisOrientation";
+            _typeNameTable[15] = "System.Enum";
+            _typeNameTable[16] = "System.ValueType";
+            _typeNameTable[17] = "System.Collections.ObjectModel.ObservableCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>";
+            _typeNameTable[18] = "System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>";
+            _typeNameTable[19] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener";
+            _typeNameTable[20] = "System.Collections.ObjectModel.ObservableCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>";
+            _typeNameTable[21] = "System.Collections.ObjectModel.ReadOnlyCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>";
+            _typeNameTable[22] = "Windows.UI.Xaml.Style";
+            _typeNameTable[23] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.ResourceDictionaryCollection";
+            _typeNameTable[24] = "Int32";
+            _typeNameTable[25] = "UWPService.Views.Client_Fournisseur";
+            _typeNameTable[26] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaSeries";
+            _typeNameTable[27] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaDataPoint>";
+            _typeNameTable[28] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSingleSeriesWithAxes";
+            _typeNameTable[29] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeriesWithAxes";
+            _typeNameTable[30] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries";
+            _typeNameTable[31] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.Series";
+            _typeNameTable[32] = "String";
+            _typeNameTable[33] = "Boolean";
+            _typeNameTable[34] = "Windows.UI.Xaml.Media.Geometry";
+            _typeNameTable[35] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis";
+            _typeNameTable[36] = "System.Nullable`1<Int32>";
+            _typeNameTable[37] = "Windows.UI.Xaml.Data.Binding";
+            _typeNameTable[38] = "System.Collections.IEnumerable";
+            _typeNameTable[39] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.AnimationSequence";
+            _typeNameTable[40] = "Windows.UI.Xaml.Media.Animation.EasingFunctionBase";
+            _typeNameTable[41] = "TimeSpan";
+            _typeNameTable[42] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeriesHost";
+            _typeNameTable[43] = "UWPService.Views.Dashboard";
+            _typeNameTable[44] = "UWPService.Views.Factures";
+            _typeNameTable[45] = "UWPService.Views.Panier";
+            _typeNameTable[46] = "UWPService.Views.Produits";
 
-            _typeTable = new global::System.Type[95];
+            _typeTable = new global::System.Type[47];
             _typeTable[0] = typeof(global::UWPService.MainPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::UWPService.Views.Client_Fournisseur);
-            _typeTable[4] = typeof(global::CrossPieCharts.UWP.PieCharts.RichPieChart);
-            _typeTable[5] = typeof(global::System.Int32);
-            _typeTable[6] = typeof(global::System.Collections.Generic.List<global::CrossPieCharts.UWP.PieCharts.PieChartArgs>);
-            _typeTable[7] = typeof(global::System.Object);
-            _typeTable[8] = typeof(global::CrossPieCharts.UWP.PieCharts.PieChartArgs);
-            _typeTable[9] = typeof(global::Windows.UI.Xaml.Media.SolidColorBrush);
-            _typeTable[10] = typeof(global::CrossPieCharts.UWP.PieCharts.PieChart);
-            _typeTable[11] = typeof(global::System.Double);
-            _typeTable[12] = typeof(global::Windows.UI.Xaml.Media.Brush);
-            _typeTable[13] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart);
-            _typeTable[14] = typeof(global::Windows.UI.Xaml.Controls.Control);
-            _typeTable[15] = typeof(global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries>);
-            _typeTable[16] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries);
-            _typeTable[17] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::System.Object>);
-            _typeTable[18] = typeof(global::System.Collections.ObjectModel.Collection<global::System.Object>);
-            _typeTable[19] = typeof(global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>);
-            _typeTable[20] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis);
-            _typeTable[21] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AxisOrientation);
-            _typeTable[22] = typeof(global::System.Enum);
-            _typeTable[23] = typeof(global::System.ValueType);
-            _typeTable[24] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>);
-            _typeTable[25] = typeof(global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>);
-            _typeTable[26] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener);
-            _typeTable[27] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>);
-            _typeTable[28] = typeof(global::System.Collections.ObjectModel.ReadOnlyCollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>);
-            _typeTable[29] = typeof(global::Windows.UI.Xaml.Style);
-            _typeTable[30] = typeof(global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.ResourceDictionary>);
-            _typeTable[31] = typeof(global::Windows.UI.Xaml.ResourceDictionary);
-            _typeTable[32] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaSeries);
-            _typeTable[33] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaDataPoint>);
-            _typeTable[34] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSingleSeriesWithAxes);
-            _typeTable[35] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeriesWithAxes);
-            _typeTable[36] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries);
-            _typeTable[37] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Series);
-            _typeTable[38] = typeof(global::Windows.UI.Xaml.Data.Binding);
-            _typeTable[39] = typeof(global::System.Boolean);
-            _typeTable[40] = typeof(global::Windows.UI.Xaml.Media.Geometry);
-            _typeTable[41] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis);
-            _typeTable[42] = typeof(global::System.Nullable<global::System.Int32>);
-            _typeTable[43] = typeof(global::System.String);
-            _typeTable[44] = typeof(global::System.Collections.IEnumerable);
-            _typeTable[45] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AnimationSequence);
-            _typeTable[46] = typeof(global::Windows.UI.Xaml.Media.Animation.EasingFunctionBase);
-            _typeTable[47] = typeof(global::System.TimeSpan);
-            _typeTable[48] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeriesHost);
-            _typeTable[49] = typeof(global::UWPService.Views.Dashboard);
-            _typeTable[50] = typeof(global::UWPService.Views.Factures);
-            _typeTable[51] = typeof(global::UWPService.Views.Panier);
-            _typeTable[52] = typeof(global::UWPService.Views.Produits);
-            _typeTable[53] = typeof(global::DevExpress.UI.Xaml.GalleryGroupContainerGenerator);
-            _typeTable[54] = typeof(global::DevExpress.UI.Xaml.GalleryItemContainerGeneratorBase);
-            _typeTable[55] = typeof(global::Windows.UI.Xaml.DependencyObject);
-            _typeTable[56] = typeof(global::Windows.UI.Xaml.DataTemplate);
-            _typeTable[57] = typeof(global::Windows.UI.Xaml.Controls.DataTemplateSelector);
-            _typeTable[58] = typeof(global::Windows.UI.Xaml.FrameworkElement);
-            _typeTable[59] = typeof(global::DevExpress.UI.Xaml.GalleryItemContainerGenerator);
-            _typeTable[60] = typeof(global::DevExpress.UI.Xaml.GalleryItemGroup);
-            _typeTable[61] = typeof(global::DevExpress.UI.Xaml.GalleryItemCollection);
-            _typeTable[62] = typeof(global::DevExpress.Core.Native.ObservableCollectionView<global::System.Object>);
-            _typeTable[63] = typeof(global::DevExpress.Mvvm.BindableBase);
-            _typeTable[64] = typeof(global::DevExpress.UI.Xaml.TitleSettings);
-            _typeTable[65] = typeof(global::DevExpress.UI.Xaml.Internal.DXExpander);
-            _typeTable[66] = typeof(global::Windows.UI.Xaml.Controls.Panel);
-            _typeTable[67] = typeof(global::Windows.UI.Xaml.UIElement);
-            _typeTable[68] = typeof(global::Windows.UI.Xaml.Media.Animation.Storyboard);
-            _typeTable[69] = typeof(global::Windows.UI.Xaml.Controls.Primitives.EdgeTransitionLocation);
-            _typeTable[70] = typeof(global::Windows.UI.Xaml.Controls.UIElementCollection);
-            _typeTable[71] = typeof(global::DevExpress.UI.Xaml.Internal.SelectorControl);
-            _typeTable[72] = typeof(global::DevExpress.UI.Xaml.Internal.SelectorControlBase);
-            _typeTable[73] = typeof(global::DevExpress.UI.Xaml.Internal.ControlEx);
-            _typeTable[74] = typeof(global::DevExpress.UI.Xaml.Internal.SelectionEmptyAction);
-            _typeTable[75] = typeof(global::Windows.UI.Xaml.Controls.Orientation);
-            _typeTable[76] = typeof(global::DevExpress.UI.Xaml.Internal.SelectableItemCollection);
-            _typeTable[77] = typeof(global::DevExpress.UI.Xaml.Internal.ItemContainerCollectionWithOwner<global::DevExpress.UI.Xaml.Internal.SelectorItemBase, global::DevExpress.UI.Xaml.Internal.ISupportSelection>);
-            _typeTable[78] = typeof(global::DevExpress.UI.Xaml.Internal.ItemContainerCollection<global::DevExpress.UI.Xaml.Internal.SelectorItemBase>);
-            _typeTable[79] = typeof(global::DevExpress.UI.Xaml.Internal.TemplatedCollectionBase<global::DevExpress.UI.Xaml.Internal.SelectorItemBase>);
-            _typeTable[80] = typeof(global::DevExpress.Core.Native.ObservableCollectionView<global::DevExpress.UI.Xaml.Internal.SelectorItemBase>);
-            _typeTable[81] = typeof(global::DevExpress.UI.Xaml.Internal.SelectorItemBase);
-            _typeTable[82] = typeof(global::DevExpress.UI.Xaml.Internal.PointerItemBase);
-            _typeTable[83] = typeof(global::DevExpress.UI.Xaml.Internal.ContentControlEx);
-            _typeTable[84] = typeof(global::Windows.UI.Xaml.Controls.ContentControl);
-            _typeTable[85] = typeof(global::Windows.UI.Xaml.Controls.ClickMode);
-            _typeTable[86] = typeof(global::Windows.Foundation.Size);
-            _typeTable[87] = typeof(global::DevExpress.UI.Xaml.Internal.TreeNavigator);
-            _typeTable[88] = typeof(global::DevExpress.UI.Xaml.Internal.TreeNavigatorNode);
-            _typeTable[89] = typeof(global::Windows.UI.Xaml.Thickness);
-            _typeTable[90] = typeof(global::System.Windows.Input.ICommand);
-            _typeTable[91] = typeof(global::DevExpress.UI.Xaml.Internal.TreeNavigatorItem);
-            _typeTable[92] = typeof(global::DevExpress.UI.Xaml.Internal.TreeNavigatorNodeCollection);
-            _typeTable[93] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::DevExpress.UI.Xaml.Internal.TreeNavigatorNode>);
-            _typeTable[94] = typeof(global::System.Collections.ObjectModel.Collection<global::DevExpress.UI.Xaml.Internal.TreeNavigatorNode>);
+            _typeTable[3] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart);
+            _typeTable[4] = typeof(global::Windows.UI.Xaml.Controls.Control);
+            _typeTable[5] = typeof(global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries>);
+            _typeTable[6] = typeof(global::System.Object);
+            _typeTable[7] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries);
+            _typeTable[8] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::System.Object>);
+            _typeTable[9] = typeof(global::System.Collections.ObjectModel.Collection<global::System.Object>);
+            _typeTable[10] = typeof(global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.ResourceDictionary>);
+            _typeTable[11] = typeof(global::Windows.UI.Xaml.ResourceDictionary);
+            _typeTable[12] = typeof(global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>);
+            _typeTable[13] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis);
+            _typeTable[14] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AxisOrientation);
+            _typeTable[15] = typeof(global::System.Enum);
+            _typeTable[16] = typeof(global::System.ValueType);
+            _typeTable[17] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>);
+            _typeTable[18] = typeof(global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>);
+            _typeTable[19] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener);
+            _typeTable[20] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>);
+            _typeTable[21] = typeof(global::System.Collections.ObjectModel.ReadOnlyCollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>);
+            _typeTable[22] = typeof(global::Windows.UI.Xaml.Style);
+            _typeTable[23] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ResourceDictionaryCollection);
+            _typeTable[24] = typeof(global::System.Int32);
+            _typeTable[25] = typeof(global::UWPService.Views.Client_Fournisseur);
+            _typeTable[26] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaSeries);
+            _typeTable[27] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaDataPoint>);
+            _typeTable[28] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSingleSeriesWithAxes);
+            _typeTable[29] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeriesWithAxes);
+            _typeTable[30] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries);
+            _typeTable[31] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Series);
+            _typeTable[32] = typeof(global::System.String);
+            _typeTable[33] = typeof(global::System.Boolean);
+            _typeTable[34] = typeof(global::Windows.UI.Xaml.Media.Geometry);
+            _typeTable[35] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis);
+            _typeTable[36] = typeof(global::System.Nullable<global::System.Int32>);
+            _typeTable[37] = typeof(global::Windows.UI.Xaml.Data.Binding);
+            _typeTable[38] = typeof(global::System.Collections.IEnumerable);
+            _typeTable[39] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AnimationSequence);
+            _typeTable[40] = typeof(global::Windows.UI.Xaml.Media.Animation.EasingFunctionBase);
+            _typeTable[41] = typeof(global::System.TimeSpan);
+            _typeTable[42] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeriesHost);
+            _typeTable[43] = typeof(global::UWPService.Views.Dashboard);
+            _typeTable[44] = typeof(global::UWPService.Views.Factures);
+            _typeTable[45] = typeof(global::UWPService.Views.Panier);
+            _typeTable[46] = typeof(global::UWPService.Views.Produits);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -384,156 +288,80 @@ namespace UWPService.UWPService_XamlTypeInfo
         }
 
         private object Activate_0_MainPage() { return new global::UWPService.MainPage(); }
-        private object Activate_3_Client_Fournisseur() { return new global::UWPService.Views.Client_Fournisseur(); }
-        private object Activate_4_RichPieChart() { return new global::CrossPieCharts.UWP.PieCharts.RichPieChart(); }
-        private object Activate_6_List() { return new global::System.Collections.Generic.List<global::CrossPieCharts.UWP.PieCharts.PieChartArgs>(); }
-        private object Activate_8_PieChartArgs() { return new global::CrossPieCharts.UWP.PieCharts.PieChartArgs(); }
-        private object Activate_10_PieChart() { return new global::CrossPieCharts.UWP.PieCharts.PieChart(); }
-        private object Activate_13_Chart() { return new global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart(); }
-        private object Activate_15_Collection() { return new global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries>(); }
-        private object Activate_17_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::System.Object>(); }
-        private object Activate_18_Collection() { return new global::System.Collections.ObjectModel.Collection<global::System.Object>(); }
-        private object Activate_19_Collection() { return new global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>(); }
-        private object Activate_24_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>(); }
-        private object Activate_25_Collection() { return new global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>(); }
-        private object Activate_27_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>(); }
-        private object Activate_30_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.ResourceDictionary>(); }
-        private object Activate_32_AreaSeries() { return new global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaSeries(); }
-        private object Activate_49_Dashboard() { return new global::UWPService.Views.Dashboard(); }
-        private object Activate_50_Factures() { return new global::UWPService.Views.Factures(); }
-        private object Activate_51_Panier() { return new global::UWPService.Views.Panier(); }
-        private object Activate_52_Produits() { return new global::UWPService.Views.Produits(); }
-        private object Activate_53_GalleryGroupContainerGenerator() { return new global::DevExpress.UI.Xaml.GalleryGroupContainerGenerator(); }
-        private object Activate_59_GalleryItemContainerGenerator() { return new global::DevExpress.UI.Xaml.GalleryItemContainerGenerator(); }
-        private object Activate_60_GalleryItemGroup() { return new global::DevExpress.UI.Xaml.GalleryItemGroup(); }
-        private object Activate_61_GalleryItemCollection() { return new global::DevExpress.UI.Xaml.GalleryItemCollection(); }
-        private object Activate_64_TitleSettings() { return new global::DevExpress.UI.Xaml.TitleSettings(); }
-        private object Activate_65_DXExpander() { return new global::DevExpress.UI.Xaml.Internal.DXExpander(); }
-        private object Activate_71_SelectorControl() { return new global::DevExpress.UI.Xaml.Internal.SelectorControl(); }
-        private object Activate_78_ItemContainerCollection() { return new global::DevExpress.UI.Xaml.Internal.ItemContainerCollection<global::DevExpress.UI.Xaml.Internal.SelectorItemBase>(); }
-        private object Activate_87_TreeNavigator() { return new global::DevExpress.UI.Xaml.Internal.TreeNavigator(); }
-        private object Activate_91_TreeNavigatorItem() { return new global::DevExpress.UI.Xaml.Internal.TreeNavigatorItem(); }
-        private object Activate_92_TreeNavigatorNodeCollection() { return new global::DevExpress.UI.Xaml.Internal.TreeNavigatorNodeCollection(); }
-        private object Activate_93_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::DevExpress.UI.Xaml.Internal.TreeNavigatorNode>(); }
-        private object Activate_94_Collection() { return new global::System.Collections.ObjectModel.Collection<global::DevExpress.UI.Xaml.Internal.TreeNavigatorNode>(); }
-        private void VectorAdd_6_List(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::CrossPieCharts.UWP.PieCharts.PieChartArgs>)instance;
-            var newItem = (global::CrossPieCharts.UWP.PieCharts.PieChartArgs)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_15_Collection(object instance, object item)
+        private object Activate_3_Chart() { return new global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart(); }
+        private object Activate_5_Collection() { return new global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries>(); }
+        private object Activate_8_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::System.Object>(); }
+        private object Activate_9_Collection() { return new global::System.Collections.ObjectModel.Collection<global::System.Object>(); }
+        private object Activate_10_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.ResourceDictionary>(); }
+        private object Activate_12_Collection() { return new global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>(); }
+        private object Activate_17_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>(); }
+        private object Activate_18_Collection() { return new global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>(); }
+        private object Activate_20_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>(); }
+        private object Activate_23_ResourceDictionaryCollection() { return new global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ResourceDictionaryCollection(); }
+        private object Activate_25_Client_Fournisseur() { return new global::UWPService.Views.Client_Fournisseur(); }
+        private object Activate_26_AreaSeries() { return new global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaSeries(); }
+        private object Activate_43_Dashboard() { return new global::UWPService.Views.Dashboard(); }
+        private object Activate_44_Factures() { return new global::UWPService.Views.Factures(); }
+        private object Activate_45_Panier() { return new global::UWPService.Views.Panier(); }
+        private object Activate_46_Produits() { return new global::UWPService.Views.Produits(); }
+        private void VectorAdd_5_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries>)instance;
             var newItem = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_17_ObservableCollection(object instance, object item)
+        private void VectorAdd_8_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::System.Object>)instance;
             var newItem = (global::System.Object)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_18_Collection(object instance, object item)
+        private void VectorAdd_9_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::System.Object>)instance;
             var newItem = (global::System.Object)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_19_Collection(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>)instance;
-            var newItem = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_24_ObservableCollection(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>)instance;
-            var newItem = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_25_Collection(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>)instance;
-            var newItem = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_27_ObservableCollection(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>)instance;
-            var newItem = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_28_ReadOnlyCollection(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>)instance;
-            var newItem = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_30_Collection(object instance, object item)
+        private void VectorAdd_10_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.ResourceDictionary>)instance;
             var newItem = (global::Windows.UI.Xaml.ResourceDictionary)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_61_GalleryItemCollection(object instance, object item)
+        private void VectorAdd_12_Collection(object instance, object item)
         {
-            var collection = (global::System.Collections.Generic.ICollection<global::System.Object>)instance;
-            var newItem = (global::System.Object)item;
+            var collection = (global::System.Collections.Generic.ICollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>)instance;
+            var newItem = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_62_ObservableCollectionView(object instance, object item)
+        private void VectorAdd_17_ObservableCollection(object instance, object item)
         {
-            var collection = (global::System.Collections.Generic.ICollection<global::System.Object>)instance;
-            var newItem = (global::System.Object)item;
+            var collection = (global::System.Collections.Generic.ICollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>)instance;
+            var newItem = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_76_SelectableItemCollection(object instance, object item)
+        private void VectorAdd_18_Collection(object instance, object item)
         {
-            var collection = (global::System.Collections.Generic.ICollection<global::DevExpress.UI.Xaml.Internal.SelectorItemBase>)instance;
-            var newItem = (global::DevExpress.UI.Xaml.Internal.SelectorItemBase)item;
+            var collection = (global::System.Collections.Generic.ICollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>)instance;
+            var newItem = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_77_ItemContainerCollectionWithOwner(object instance, object item)
+        private void VectorAdd_20_ObservableCollection(object instance, object item)
         {
-            var collection = (global::System.Collections.Generic.ICollection<global::DevExpress.UI.Xaml.Internal.SelectorItemBase>)instance;
-            var newItem = (global::DevExpress.UI.Xaml.Internal.SelectorItemBase)item;
+            var collection = (global::System.Collections.Generic.ICollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>)instance;
+            var newItem = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_78_ItemContainerCollection(object instance, object item)
+        private void VectorAdd_21_ReadOnlyCollection(object instance, object item)
         {
-            var collection = (global::System.Collections.Generic.ICollection<global::DevExpress.UI.Xaml.Internal.SelectorItemBase>)instance;
-            var newItem = (global::DevExpress.UI.Xaml.Internal.SelectorItemBase)item;
+            var collection = (global::System.Collections.Generic.ICollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>)instance;
+            var newItem = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_79_TemplatedCollectionBase(object instance, object item)
+        private void VectorAdd_23_ResourceDictionaryCollection(object instance, object item)
         {
-            var collection = (global::System.Collections.Generic.ICollection<global::DevExpress.UI.Xaml.Internal.SelectorItemBase>)instance;
-            var newItem = (global::DevExpress.UI.Xaml.Internal.SelectorItemBase)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_80_ObservableCollectionView(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::DevExpress.UI.Xaml.Internal.SelectorItemBase>)instance;
-            var newItem = (global::DevExpress.UI.Xaml.Internal.SelectorItemBase)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_92_TreeNavigatorNodeCollection(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::DevExpress.UI.Xaml.Internal.TreeNavigatorNode>)instance;
-            var newItem = (global::DevExpress.UI.Xaml.Internal.TreeNavigatorNode)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_93_ObservableCollection(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::DevExpress.UI.Xaml.Internal.TreeNavigatorNode>)instance;
-            var newItem = (global::DevExpress.UI.Xaml.Internal.TreeNavigatorNode)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_94_Collection(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::DevExpress.UI.Xaml.Internal.TreeNavigatorNode>)instance;
-            var newItem = (global::DevExpress.UI.Xaml.Internal.TreeNavigatorNode)item;
+            var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.ResourceDictionary>)instance;
+            var newItem = (global::Windows.UI.Xaml.ResourceDictionary)item;
             collection.Add(newItem);
         }
 
@@ -562,74 +390,12 @@ namespace UWPService.UWPService_XamlTypeInfo
                 xamlType = new global::UWPService.UWPService_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  UWPService.Views.Client_Fournisseur
-                userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_Client_Fournisseur;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 4:   //  CrossPieCharts.UWP.PieCharts.RichPieChart
-                userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_4_RichPieChart;
-                userType.AddMemberName("Radius");
-                userType.AddMemberName("StrokeThickness");
-                userType.AddMemberName("PieChartArgsCollection");
-                xamlType = userType;
-                break;
-
-            case 5:   //  Int32
-                xamlType = new global::UWPService.UWPService_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 6:   //  System.Collections.Generic.List`1<CrossPieCharts.UWP.PieCharts.PieChartArgs>
-                userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.CollectionAdd = VectorAdd_6_List;
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 7:   //  Object
-                xamlType = new global::UWPService.UWPService_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 8:   //  CrossPieCharts.UWP.PieCharts.PieChartArgs
-                userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_8_PieChartArgs;
-                userType.AddMemberName("Percentage");
-                userType.AddMemberName("ColorBrush");
-                xamlType = userType;
-                break;
-
-            case 9:   //  Windows.UI.Xaml.Media.SolidColorBrush
-                xamlType = new global::UWPService.UWPService_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 10:   //  CrossPieCharts.UWP.PieCharts.PieChart
-                userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_10_PieChart;
-                userType.AddMemberName("Radius");
-                userType.AddMemberName("Percentage");
-                userType.AddMemberName("StrokeThickness");
-                userType.AddMemberName("SegmentColor");
-                userType.AddMemberName("Segment360Color");
-                userType.AddMemberName("BackgroundColor");
-                xamlType = userType;
-                break;
-
-            case 11:   //  Double
-                xamlType = new global::UWPService.UWPService_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 12:   //  Windows.UI.Xaml.Media.Brush
-                xamlType = new global::UWPService.UWPService_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 13:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart
+            case 3:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart
                 userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Control"));
-                userType.Activator = Activate_13_Chart;
+                userType.Activator = Activate_3_Chart;
                 userType.SetContentPropertyName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.Series");
                 userType.AddMemberName("Series");
+                userType.AddMemberName("Palette");
                 userType.AddMemberName("Axes");
                 userType.AddMemberName("ActualAxes");
                 userType.AddMemberName("ChartAreaStyle");
@@ -637,51 +403,66 @@ namespace UWPService.UWPService_XamlTypeInfo
                 userType.AddMemberName("LegendStyle");
                 userType.AddMemberName("LegendTitle");
                 userType.AddMemberName("PlotAreaStyle");
-                userType.AddMemberName("Palette");
                 userType.AddMemberName("Title");
                 userType.AddMemberName("TitleStyle");
                 xamlType = userType;
                 break;
 
-            case 14:   //  Windows.UI.Xaml.Controls.Control
+            case 4:   //  Windows.UI.Xaml.Controls.Control
                 xamlType = new global::UWPService.UWPService_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 15:   //  System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries>
+            case 5:   //  System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries>
                 userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.CollectionAdd = VectorAdd_15_Collection;
+                userType.CollectionAdd = VectorAdd_5_Collection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 16:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries
+            case 6:   //  Object
+                xamlType = new global::UWPService.UWPService_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 7:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries
                 userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.AddMemberName("LegendItems");
                 xamlType = userType;
                 break;
 
-            case 17:   //  System.Collections.ObjectModel.ObservableCollection`1<Object>
+            case 8:   //  System.Collections.ObjectModel.ObservableCollection`1<Object>
                 userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Object>"));
-                userType.CollectionAdd = VectorAdd_17_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_8_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 18:   //  System.Collections.ObjectModel.Collection`1<Object>
+            case 9:   //  System.Collections.ObjectModel.Collection`1<Object>
                 userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_18_Collection;
-                userType.CollectionAdd = VectorAdd_18_Collection;
+                userType.Activator = Activate_9_Collection;
+                userType.CollectionAdd = VectorAdd_9_Collection;
                 xamlType = userType;
                 break;
 
-            case 19:   //  System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>
+            case 10:   //  System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.ResourceDictionary>
                 userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_19_Collection;
-                userType.CollectionAdd = VectorAdd_19_Collection;
+                userType.Activator = Activate_10_Collection;
+                userType.CollectionAdd = VectorAdd_10_Collection;
+                userType.AddMemberName("Count");
                 xamlType = userType;
                 break;
 
-            case 20:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis
+            case 11:   //  Windows.UI.Xaml.ResourceDictionary
+                xamlType = new global::UWPService.UWPService_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 12:   //  System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>
+                userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_12_Collection;
+                userType.CollectionAdd = VectorAdd_12_Collection;
+                xamlType = userType;
+                break;
+
+            case 13:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis
                 userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.AddMemberName("Orientation");
                 userType.AddMemberName("RegisteredListeners");
@@ -689,7 +470,7 @@ namespace UWPService.UWPService_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 21:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.AxisOrientation
+            case 14:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.AxisOrientation
                 userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("None", global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AxisOrientation.None);
                 userType.AddEnumValue("X", global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AxisOrientation.X);
@@ -697,73 +478,80 @@ namespace UWPService.UWPService_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 22:   //  System.Enum
+            case 15:   //  System.Enum
                 userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 xamlType = userType;
                 break;
 
-            case 23:   //  System.ValueType
+            case 16:   //  System.ValueType
                 userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 xamlType = userType;
                 break;
 
-            case 24:   //  System.Collections.ObjectModel.ObservableCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>
+            case 17:   //  System.Collections.ObjectModel.ObservableCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>
                 userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>"));
-                userType.CollectionAdd = VectorAdd_24_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_17_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 25:   //  System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>
+            case 18:   //  System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>
                 userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_25_Collection;
-                userType.CollectionAdd = VectorAdd_25_Collection;
+                userType.Activator = Activate_18_Collection;
+                userType.CollectionAdd = VectorAdd_18_Collection;
                 xamlType = userType;
                 break;
 
-            case 26:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener
+            case 19:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener
                 userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 xamlType = userType;
                 break;
 
-            case 27:   //  System.Collections.ObjectModel.ObservableCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>
+            case 20:   //  System.Collections.ObjectModel.ObservableCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>
                 userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>"));
-                userType.CollectionAdd = VectorAdd_27_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_20_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 28:   //  System.Collections.ObjectModel.ReadOnlyCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>
+            case 21:   //  System.Collections.ObjectModel.ReadOnlyCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>
                 userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.CollectionAdd = VectorAdd_28_ReadOnlyCollection;
+                userType.CollectionAdd = VectorAdd_21_ReadOnlyCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 29:   //  Windows.UI.Xaml.Style
+            case 22:   //  Windows.UI.Xaml.Style
                 xamlType = new global::UWPService.UWPService_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 30:   //  System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.ResourceDictionary>
-                userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.CollectionAdd = VectorAdd_30_Collection;
-                userType.SetIsReturnTypeStub();
+            case 23:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.ResourceDictionaryCollection
+                userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.ResourceDictionary>"));
+                userType.Activator = Activate_23_ResourceDictionaryCollection;
+                userType.CollectionAdd = VectorAdd_23_ResourceDictionaryCollection;
                 xamlType = userType;
                 break;
 
-            case 31:   //  Windows.UI.Xaml.ResourceDictionary
+            case 24:   //  Int32
                 xamlType = new global::UWPService.UWPService_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 32:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaSeries
+            case 25:   //  UWPService.Views.Client_Fournisseur
+                userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_25_Client_Fournisseur;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 26:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaSeries
                 userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaDataPoint>"));
-                userType.Activator = Activate_32_AreaSeries;
+                userType.Activator = Activate_26_AreaSeries;
                 userType.AddMemberName("Geometry");
                 userType.AddMemberName("PathStyle");
                 xamlType = userType;
                 break;
 
-            case 33:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaDataPoint>
+            case 27:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaDataPoint>
                 userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSingleSeriesWithAxes"));
                 userType.AddMemberName("DependentRangeAxis");
                 userType.AddMemberName("IndependentAxis");
@@ -772,24 +560,24 @@ namespace UWPService.UWPService_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 34:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSingleSeriesWithAxes
+            case 28:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSingleSeriesWithAxes
                 userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeriesWithAxes"));
                 userType.AddMemberName("GlobalSeriesIndex");
                 xamlType = userType;
                 break;
 
-            case 35:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeriesWithAxes
+            case 29:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeriesWithAxes
                 userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries"));
                 xamlType = userType;
                 break;
 
-            case 36:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries
+            case 30:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries
                 userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Series"));
-                userType.AddMemberName("IndependentValueBinding");
-                userType.AddMemberName("DependentValueBinding");
-                userType.AddMemberName("IsSelectionEnabled");
-                userType.AddMemberName("DependentValuePath");
                 userType.AddMemberName("IndependentValuePath");
+                userType.AddMemberName("DependentValuePath");
+                userType.AddMemberName("IsSelectionEnabled");
+                userType.AddMemberName("DependentValueBinding");
+                userType.AddMemberName("IndependentValueBinding");
                 userType.AddMemberName("ItemsSource");
                 userType.AddMemberName("AnimationSequence");
                 userType.AddMemberName("TransitionEasingFunction");
@@ -800,7 +588,7 @@ namespace UWPService.UWPService_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 37:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.Series
+            case 31:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.Series
                 userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Control"));
                 userType.AddMemberName("Title");
                 userType.AddMemberName("SeriesHost");
@@ -808,41 +596,41 @@ namespace UWPService.UWPService_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 38:   //  Windows.UI.Xaml.Data.Binding
+            case 32:   //  String
                 xamlType = new global::UWPService.UWPService_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 39:   //  Boolean
+            case 33:   //  Boolean
                 xamlType = new global::UWPService.UWPService_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 40:   //  Windows.UI.Xaml.Media.Geometry
+            case 34:   //  Windows.UI.Xaml.Media.Geometry
                 xamlType = new global::UWPService.UWPService_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 41:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis
+            case 35:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis
                 userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 42:   //  System.Nullable`1<Int32>
+            case 36:   //  System.Nullable`1<Int32>
                 userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 43:   //  String
+            case 37:   //  Windows.UI.Xaml.Data.Binding
                 xamlType = new global::UWPService.UWPService_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 44:   //  System.Collections.IEnumerable
+            case 38:   //  System.Collections.IEnumerable
                 userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 45:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.AnimationSequence
+            case 39:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.AnimationSequence
                 userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Simultaneous", global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AnimationSequence.Simultaneous);
                 userType.AddEnumValue("FirstToLast", global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AnimationSequence.FirstToLast);
@@ -850,360 +638,47 @@ namespace UWPService.UWPService_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 46:   //  Windows.UI.Xaml.Media.Animation.EasingFunctionBase
+            case 40:   //  Windows.UI.Xaml.Media.Animation.EasingFunctionBase
                 xamlType = new global::UWPService.UWPService_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 47:   //  TimeSpan
+            case 41:   //  TimeSpan
                 userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 48:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeriesHost
+            case 42:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeriesHost
                 userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 49:   //  UWPService.Views.Dashboard
+            case 43:   //  UWPService.Views.Dashboard
                 userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_49_Dashboard;
+                userType.Activator = Activate_43_Dashboard;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 50:   //  UWPService.Views.Factures
+            case 44:   //  UWPService.Views.Factures
                 userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_50_Factures;
+                userType.Activator = Activate_44_Factures;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 51:   //  UWPService.Views.Panier
+            case 45:   //  UWPService.Views.Panier
                 userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_51_Panier;
+                userType.Activator = Activate_45_Panier;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 52:   //  UWPService.Views.Produits
+            case 46:   //  UWPService.Views.Produits
                 userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_52_Produits;
+                userType.Activator = Activate_46_Produits;
                 userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 53:   //  DevExpress.UI.Xaml.GalleryGroupContainerGenerator
-                userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("DevExpress.UI.Xaml.GalleryItemContainerGeneratorBase"));
-                userType.Activator = Activate_53_GalleryGroupContainerGenerator;
-                userType.AddMemberName("GroupHeaderTemplate");
-                userType.AddMemberName("ItemContainerGenerator");
-                userType.AddMemberName("GroupItemsPath");
-                userType.AddMemberName("MaxColCount");
-                userType.AddMemberName("ActualGroupItemsPath");
-                userType.SetIsBindable();
-                xamlType = userType;
-                break;
-
-            case 54:   //  DevExpress.UI.Xaml.GalleryItemContainerGeneratorBase
-                userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.AddMemberName("ContentTemplate");
-                userType.AddMemberName("ContentTemplateSelector");
-                userType.AddMemberName("ContainerStyle");
-                userType.AddMemberName("ActualColumnWidth");
-                userType.AddMemberName("AverageContainerHeight");
-                userType.AddMemberName("GroupedItems");
-                userType.AddMemberName("MaxContainerHeight");
-                userType.AddMemberName("DummyItem");
-                xamlType = userType;
-                break;
-
-            case 55:   //  Windows.UI.Xaml.DependencyObject
-                xamlType = new global::UWPService.UWPService_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 56:   //  Windows.UI.Xaml.DataTemplate
-                xamlType = new global::UWPService.UWPService_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 57:   //  Windows.UI.Xaml.Controls.DataTemplateSelector
-                xamlType = new global::UWPService.UWPService_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 58:   //  Windows.UI.Xaml.FrameworkElement
-                xamlType = new global::UWPService.UWPService_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 59:   //  DevExpress.UI.Xaml.GalleryItemContainerGenerator
-                userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("DevExpress.UI.Xaml.GalleryItemContainerGeneratorBase"));
-                userType.Activator = Activate_59_GalleryItemContainerGenerator;
-                userType.SetIsBindable();
-                xamlType = userType;
-                break;
-
-            case 60:   //  DevExpress.UI.Xaml.GalleryItemGroup
-                userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_60_GalleryItemGroup;
-                userType.SetContentPropertyName("DevExpress.UI.Xaml.GalleryItemGroup.Items");
-                userType.AddMemberName("Items");
-                userType.AddMemberName("Title");
-                userType.SetIsBindable();
-                xamlType = userType;
-                break;
-
-            case 61:   //  DevExpress.UI.Xaml.GalleryItemCollection
-                userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("DevExpress.Core.Native.ObservableCollectionView`1<Object>"));
-                userType.CollectionAdd = VectorAdd_61_GalleryItemCollection;
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 62:   //  DevExpress.Core.Native.ObservableCollectionView`1<Object>
-                userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("DevExpress.Mvvm.BindableBase"));
-                userType.CollectionAdd = VectorAdd_62_ObservableCollectionView;
-                xamlType = userType;
-                break;
-
-            case 63:   //  DevExpress.Mvvm.BindableBase
-                userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                xamlType = userType;
-                break;
-
-            case 64:   //  DevExpress.UI.Xaml.TitleSettings
-                userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_64_TitleSettings;
-                userType.AddMemberName("ButtonInactiveForeground");
-                userType.AddMemberName("ButtonInactiveBackground");
-                userType.AddMemberName("ButtonPressedForeground");
-                userType.AddMemberName("ButtonPressedBackground");
-                userType.AddMemberName("ButtonHoverForeground");
-                userType.AddMemberName("ButtonHoverBackground");
-                userType.AddMemberName("ButtonBackground");
-                userType.AddMemberName("ButtonForeground");
-                userType.AddMemberName("InactiveForeground");
-                userType.AddMemberName("InactiveBackground");
-                userType.AddMemberName("Foreground");
-                userType.AddMemberName("Background");
-                userType.AddMemberName("Template");
-                userType.SetIsBindable();
-                xamlType = userType;
-                break;
-
-            case 65:   //  DevExpress.UI.Xaml.Internal.DXExpander
-                userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Panel"));
-                userType.Activator = Activate_65_DXExpander;
-                userType.SetContentPropertyName("DevExpress.UI.Xaml.Internal.DXExpander.Child");
-                userType.AddMemberName("Child");
-                userType.AddMemberName("IsExpanded");
-                userType.AddMemberName("ExpandStoryboard");
-                userType.AddMemberName("CollapseStoryboard");
-                userType.AddMemberName("Location");
-                userType.AddMemberName("AnimationDuration");
-                userType.AddMemberName("ClipToBounds");
-                userType.AddMemberName("DefineLayoutFromLocation");
-                userType.AddMemberName("Children");
-                userType.AddMemberName("IsLoaded");
-                userType.SetIsBindable();
-                xamlType = userType;
-                break;
-
-            case 66:   //  Windows.UI.Xaml.Controls.Panel
-                xamlType = new global::UWPService.UWPService_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 67:   //  Windows.UI.Xaml.UIElement
-                xamlType = new global::UWPService.UWPService_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 68:   //  Windows.UI.Xaml.Media.Animation.Storyboard
-                xamlType = new global::UWPService.UWPService_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 69:   //  Windows.UI.Xaml.Controls.Primitives.EdgeTransitionLocation
-                xamlType = new global::UWPService.UWPService_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 70:   //  Windows.UI.Xaml.Controls.UIElementCollection
-                xamlType = new global::UWPService.UWPService_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 71:   //  DevExpress.UI.Xaml.Internal.SelectorControl
-                userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("DevExpress.UI.Xaml.Internal.SelectorControlBase"));
-                userType.Activator = Activate_71_SelectorControl;
-                userType.AddMemberName("ItemsSource");
-                userType.AddMemberName("SelectedIndex");
-                userType.AddMemberName("SelectedItem");
-                userType.AddMemberName("SelectionEmptyAction");
-                userType.AddMemberName("CanSelect");
-                userType.SetIsBindable();
-                xamlType = userType;
-                break;
-
-            case 72:   //  DevExpress.UI.Xaml.Internal.SelectorControlBase
-                userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("DevExpress.UI.Xaml.Internal.ControlEx"));
-                userType.AddMemberName("Orientation");
-                userType.AddMemberName("ItemTemplate");
-                userType.AddMemberName("ItemTemplateSelector");
-                userType.AddMemberName("ItemContainerStyle");
-                userType.AddMemberName("IsLockUpdate");
-                userType.AddMemberName("Items");
-                xamlType = userType;
-                break;
-
-            case 73:   //  DevExpress.UI.Xaml.Internal.ControlEx
-                userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Control"));
-                userType.AddMemberName("ActualSize");
-                userType.AddMemberName("IsLoaded");
-                xamlType = userType;
-                break;
-
-            case 74:   //  DevExpress.UI.Xaml.Internal.SelectionEmptyAction
-                userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.AddEnumValue("SelectFirst", global::DevExpress.UI.Xaml.Internal.SelectionEmptyAction.SelectFirst);
-                userType.AddEnumValue("SelectLast", global::DevExpress.UI.Xaml.Internal.SelectionEmptyAction.SelectLast);
-                userType.AddEnumValue("Default", global::DevExpress.UI.Xaml.Internal.SelectionEmptyAction.Default);
-                xamlType = userType;
-                break;
-
-            case 75:   //  Windows.UI.Xaml.Controls.Orientation
-                xamlType = new global::UWPService.UWPService_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 76:   //  DevExpress.UI.Xaml.Internal.SelectableItemCollection
-                userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("DevExpress.UI.Xaml.Internal.ItemContainerCollectionWithOwner`2<DevExpress.UI.Xaml.Internal.SelectorItemBase, DevExpress.UI.Xaml.Internal.ISupportSelection>"));
-                userType.CollectionAdd = VectorAdd_76_SelectableItemCollection;
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 77:   //  DevExpress.UI.Xaml.Internal.ItemContainerCollectionWithOwner`2<DevExpress.UI.Xaml.Internal.SelectorItemBase, DevExpress.UI.Xaml.Internal.ISupportSelection>
-                userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("DevExpress.UI.Xaml.Internal.ItemContainerCollection`1<DevExpress.UI.Xaml.Internal.SelectorItemBase>"));
-                userType.CollectionAdd = VectorAdd_77_ItemContainerCollectionWithOwner;
-                xamlType = userType;
-                break;
-
-            case 78:   //  DevExpress.UI.Xaml.Internal.ItemContainerCollection`1<DevExpress.UI.Xaml.Internal.SelectorItemBase>
-                userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("DevExpress.UI.Xaml.Internal.TemplatedCollectionBase`1<DevExpress.UI.Xaml.Internal.SelectorItemBase>"));
-                userType.Activator = Activate_78_ItemContainerCollection;
-                userType.CollectionAdd = VectorAdd_78_ItemContainerCollection;
-                xamlType = userType;
-                break;
-
-            case 79:   //  DevExpress.UI.Xaml.Internal.TemplatedCollectionBase`1<DevExpress.UI.Xaml.Internal.SelectorItemBase>
-                userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("DevExpress.Core.Native.ObservableCollectionView`1<DevExpress.UI.Xaml.Internal.SelectorItemBase>"));
-                userType.CollectionAdd = VectorAdd_79_TemplatedCollectionBase;
-                xamlType = userType;
-                break;
-
-            case 80:   //  DevExpress.Core.Native.ObservableCollectionView`1<DevExpress.UI.Xaml.Internal.SelectorItemBase>
-                userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("DevExpress.Mvvm.BindableBase"));
-                userType.CollectionAdd = VectorAdd_80_ObservableCollectionView;
-                xamlType = userType;
-                break;
-
-            case 81:   //  DevExpress.UI.Xaml.Internal.SelectorItemBase
-                userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("DevExpress.UI.Xaml.Internal.PointerItemBase"));
-                userType.AddMemberName("IsSelected");
-                xamlType = userType;
-                break;
-
-            case 82:   //  DevExpress.UI.Xaml.Internal.PointerItemBase
-                userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("DevExpress.UI.Xaml.Internal.ContentControlEx"));
-                userType.AddMemberName("ClickMode");
-                userType.AddMemberName("IsPointerOver");
-                userType.AddMemberName("IsPressed");
-                xamlType = userType;
-                break;
-
-            case 83:   //  DevExpress.UI.Xaml.Internal.ContentControlEx
-                userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.ContentControl"));
-                userType.AddMemberName("ActualSize");
-                userType.AddMemberName("IsLoaded");
-                xamlType = userType;
-                break;
-
-            case 84:   //  Windows.UI.Xaml.Controls.ContentControl
-                xamlType = new global::UWPService.UWPService_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 85:   //  Windows.UI.Xaml.Controls.ClickMode
-                xamlType = new global::UWPService.UWPService_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 86:   //  Windows.Foundation.Size
-                xamlType = new global::UWPService.UWPService_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 87:   //  DevExpress.UI.Xaml.Internal.TreeNavigator
-                userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("DevExpress.UI.Xaml.Internal.SelectorControlBase"));
-                userType.Activator = Activate_87_TreeNavigator;
-                userType.AddMemberName("RootNode");
-                userType.AddMemberName("CurrentNode");
-                userType.AddMemberName("RootHeaderContent");
-                userType.AddMemberName("RootHeaderContentTemplate");
-                userType.AddMemberName("HeaderContent");
-                userType.AddMemberName("HeaderContentTemplate");
-                userType.AddMemberName("HeaderPadding");
-                userType.AddMemberName("HeaderFontSize");
-                userType.AddMemberName("NavigateToItemCommand");
-                userType.AddMemberName("NavigateUpperCommand");
-                userType.SetIsBindable();
-                xamlType = userType;
-                break;
-
-            case 88:   //  DevExpress.UI.Xaml.Internal.TreeNavigatorNode
-                userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("DevExpress.Mvvm.BindableBase"));
-                userType.AddMemberName("Parent");
-                userType.AddMemberName("IsRootNode");
-                userType.AddMemberName("IsSubNode");
-                userType.AddMemberName("Node");
-                userType.AddMemberName("Children");
-                userType.AddMemberName("HasChildren");
-                userType.SetIsBindable();
-                xamlType = userType;
-                break;
-
-            case 89:   //  Windows.UI.Xaml.Thickness
-                xamlType = new global::UWPService.UWPService_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 90:   //  System.Windows.Input.ICommand
-                userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 91:   //  DevExpress.UI.Xaml.Internal.TreeNavigatorItem
-                userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("DevExpress.UI.Xaml.Internal.SelectorItemBase"));
-                userType.Activator = Activate_91_TreeNavigatorItem;
-                userType.AddMemberName("Node");
-                userType.AddMemberName("IconPadding");
-                userType.AddMemberName("ArrowGlyph");
-                userType.AddMemberName("ArrowGlyphPressed");
-                userType.AddMemberName("IsSelected");
-                userType.SetIsBindable();
-                xamlType = userType;
-                break;
-
-            case 92:   //  DevExpress.UI.Xaml.Internal.TreeNavigatorNodeCollection
-                userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.ObservableCollection`1<DevExpress.UI.Xaml.Internal.TreeNavigatorNode>"));
-                userType.CollectionAdd = VectorAdd_92_TreeNavigatorNodeCollection;
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 93:   //  System.Collections.ObjectModel.ObservableCollection`1<DevExpress.UI.Xaml.Internal.TreeNavigatorNode>
-                userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<DevExpress.UI.Xaml.Internal.TreeNavigatorNode>"));
-                userType.Activator = Activate_93_ObservableCollection;
-                userType.CollectionAdd = VectorAdd_93_ObservableCollection;
-                xamlType = userType;
-                break;
-
-            case 94:   //  System.Collections.ObjectModel.Collection`1<DevExpress.UI.Xaml.Internal.TreeNavigatorNode>
-                userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_94_Collection;
-                userType.CollectionAdd = VectorAdd_94_Collection;
                 xamlType = userType;
                 break;
             }
@@ -1219,16 +694,6 @@ namespace UWPService.UWPService_XamlTypeInfo
                 {
                     var otherProviders = new global::System.Collections.Generic.List<global::Windows.UI.Xaml.Markup.IXamlMetadataProvider>();
                     global::Windows.UI.Xaml.Markup.IXamlMetadataProvider provider;
-                    provider = new global::DevExpress.Core.DevExpress_Core_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
-                    otherProviders.Add(provider); 
-                    provider = new global::DevExpress.UI.Xaml.Charts.DevExpress_UI_Xaml_Charts_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
-                    otherProviders.Add(provider); 
-                    provider = new global::DevExpress.UI.Xaml.Gauges.DevExpress_UI_Xaml_Gauges_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
-                    otherProviders.Add(provider); 
-                    provider = new global::DevExpress.UI.Xaml.Map.DevExpress_UI_Xaml_Map_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
-                    otherProviders.Add(provider); 
-                    provider = new global::DevExpress.UI.Xaml.DevExpress_UI_Xaml_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
-                    otherProviders.Add(provider); 
                     provider = new global::WinRTXamlToolkit.Controls.DataVisualization.WinRTXamlToolkit_Controls_DataVisualization_UWP_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
                     otherProviders.Add(provider); 
                     provider = new global::WinRTXamlToolkit.WinRTXamlToolkit_UWP_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
@@ -1277,1088 +742,330 @@ namespace UWPService.UWPService_XamlTypeInfo
             return foundXamlType;
         }
 
-        private object get_0_RichPieChart_Radius(object instance)
-        {
-            var that = (global::CrossPieCharts.UWP.PieCharts.RichPieChart)instance;
-            return that.Radius;
-        }
-        private void set_0_RichPieChart_Radius(object instance, object Value)
-        {
-            var that = (global::CrossPieCharts.UWP.PieCharts.RichPieChart)instance;
-            that.Radius = (global::System.Int32)Value;
-        }
-        private object get_1_RichPieChart_StrokeThickness(object instance)
-        {
-            var that = (global::CrossPieCharts.UWP.PieCharts.RichPieChart)instance;
-            return that.StrokeThickness;
-        }
-        private void set_1_RichPieChart_StrokeThickness(object instance, object Value)
-        {
-            var that = (global::CrossPieCharts.UWP.PieCharts.RichPieChart)instance;
-            that.StrokeThickness = (global::System.Int32)Value;
-        }
-        private object get_2_RichPieChart_PieChartArgsCollection(object instance)
-        {
-            var that = (global::CrossPieCharts.UWP.PieCharts.RichPieChart)instance;
-            return that.PieChartArgsCollection;
-        }
-        private void set_2_RichPieChart_PieChartArgsCollection(object instance, object Value)
-        {
-            var that = (global::CrossPieCharts.UWP.PieCharts.RichPieChart)instance;
-            that.PieChartArgsCollection = (global::System.Collections.Generic.List<global::CrossPieCharts.UWP.PieCharts.PieChartArgs>)Value;
-        }
-        private object get_3_PieChartArgs_Percentage(object instance)
-        {
-            var that = (global::CrossPieCharts.UWP.PieCharts.PieChartArgs)instance;
-            return that.Percentage;
-        }
-        private void set_3_PieChartArgs_Percentage(object instance, object Value)
-        {
-            var that = (global::CrossPieCharts.UWP.PieCharts.PieChartArgs)instance;
-            that.Percentage = (global::System.Int32)Value;
-        }
-        private object get_4_PieChartArgs_ColorBrush(object instance)
-        {
-            var that = (global::CrossPieCharts.UWP.PieCharts.PieChartArgs)instance;
-            return that.ColorBrush;
-        }
-        private void set_4_PieChartArgs_ColorBrush(object instance, object Value)
-        {
-            var that = (global::CrossPieCharts.UWP.PieCharts.PieChartArgs)instance;
-            that.ColorBrush = (global::Windows.UI.Xaml.Media.SolidColorBrush)Value;
-        }
-        private object get_5_PieChart_Radius(object instance)
-        {
-            var that = (global::CrossPieCharts.UWP.PieCharts.PieChart)instance;
-            return that.Radius;
-        }
-        private void set_5_PieChart_Radius(object instance, object Value)
-        {
-            var that = (global::CrossPieCharts.UWP.PieCharts.PieChart)instance;
-            that.Radius = (global::System.Int32)Value;
-        }
-        private object get_6_PieChart_Percentage(object instance)
-        {
-            var that = (global::CrossPieCharts.UWP.PieCharts.PieChart)instance;
-            return that.Percentage;
-        }
-        private void set_6_PieChart_Percentage(object instance, object Value)
-        {
-            var that = (global::CrossPieCharts.UWP.PieCharts.PieChart)instance;
-            that.Percentage = (global::System.Double)Value;
-        }
-        private object get_7_PieChart_StrokeThickness(object instance)
-        {
-            var that = (global::CrossPieCharts.UWP.PieCharts.PieChart)instance;
-            return that.StrokeThickness;
-        }
-        private void set_7_PieChart_StrokeThickness(object instance, object Value)
-        {
-            var that = (global::CrossPieCharts.UWP.PieCharts.PieChart)instance;
-            that.StrokeThickness = (global::System.Int32)Value;
-        }
-        private object get_8_PieChart_SegmentColor(object instance)
-        {
-            var that = (global::CrossPieCharts.UWP.PieCharts.PieChart)instance;
-            return that.SegmentColor;
-        }
-        private void set_8_PieChart_SegmentColor(object instance, object Value)
-        {
-            var that = (global::CrossPieCharts.UWP.PieCharts.PieChart)instance;
-            that.SegmentColor = (global::Windows.UI.Xaml.Media.Brush)Value;
-        }
-        private object get_9_PieChart_Segment360Color(object instance)
-        {
-            var that = (global::CrossPieCharts.UWP.PieCharts.PieChart)instance;
-            return that.Segment360Color;
-        }
-        private void set_9_PieChart_Segment360Color(object instance, object Value)
-        {
-            var that = (global::CrossPieCharts.UWP.PieCharts.PieChart)instance;
-            that.Segment360Color = (global::Windows.UI.Xaml.Media.Brush)Value;
-        }
-        private object get_10_PieChart_BackgroundColor(object instance)
-        {
-            var that = (global::CrossPieCharts.UWP.PieCharts.PieChart)instance;
-            return that.BackgroundColor;
-        }
-        private void set_10_PieChart_BackgroundColor(object instance, object Value)
-        {
-            var that = (global::CrossPieCharts.UWP.PieCharts.PieChart)instance;
-            that.BackgroundColor = (global::Windows.UI.Xaml.Media.Brush)Value;
-        }
-        private object get_11_Chart_Series(object instance)
+        private object get_0_Chart_Series(object instance)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
             return that.Series;
         }
-        private void set_11_Chart_Series(object instance, object Value)
+        private void set_0_Chart_Series(object instance, object Value)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
             that.Series = (global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries>)Value;
         }
-        private object get_12_ISeries_LegendItems(object instance)
+        private object get_1_ISeries_LegendItems(object instance)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries)instance;
             return that.LegendItems;
         }
-        private object get_13_Chart_Axes(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
-            return that.Axes;
-        }
-        private void set_13_Chart_Axes(object instance, object Value)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
-            that.Axes = (global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>)Value;
-        }
-        private object get_14_IAxis_Orientation(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)instance;
-            return that.Orientation;
-        }
-        private void set_14_IAxis_Orientation(object instance, object Value)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)instance;
-            that.Orientation = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AxisOrientation)Value;
-        }
-        private object get_15_IAxis_RegisteredListeners(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)instance;
-            return that.RegisteredListeners;
-        }
-        private object get_16_IAxis_DependentAxes(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)instance;
-            return that.DependentAxes;
-        }
-        private object get_17_Chart_ActualAxes(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
-            return that.ActualAxes;
-        }
-        private object get_18_Chart_ChartAreaStyle(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
-            return that.ChartAreaStyle;
-        }
-        private void set_18_Chart_ChartAreaStyle(object instance, object Value)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
-            that.ChartAreaStyle = (global::Windows.UI.Xaml.Style)Value;
-        }
-        private object get_19_Chart_LegendItems(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
-            return that.LegendItems;
-        }
-        private object get_20_Chart_LegendStyle(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
-            return that.LegendStyle;
-        }
-        private void set_20_Chart_LegendStyle(object instance, object Value)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
-            that.LegendStyle = (global::Windows.UI.Xaml.Style)Value;
-        }
-        private object get_21_Chart_LegendTitle(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
-            return that.LegendTitle;
-        }
-        private void set_21_Chart_LegendTitle(object instance, object Value)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
-            that.LegendTitle = (global::System.Object)Value;
-        }
-        private object get_22_Chart_PlotAreaStyle(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
-            return that.PlotAreaStyle;
-        }
-        private void set_22_Chart_PlotAreaStyle(object instance, object Value)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
-            that.PlotAreaStyle = (global::Windows.UI.Xaml.Style)Value;
-        }
-        private object get_23_Chart_Palette(object instance)
+        private object get_2_Chart_Palette(object instance)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
             return that.Palette;
         }
-        private void set_23_Chart_Palette(object instance, object Value)
+        private void set_2_Chart_Palette(object instance, object Value)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
             that.Palette = (global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.ResourceDictionary>)Value;
         }
-        private object get_24_Chart_Title(object instance)
+        private object get_3_Chart_Axes(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
+            return that.Axes;
+        }
+        private void set_3_Chart_Axes(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
+            that.Axes = (global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>)Value;
+        }
+        private object get_4_IAxis_Orientation(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)instance;
+            return that.Orientation;
+        }
+        private void set_4_IAxis_Orientation(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)instance;
+            that.Orientation = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AxisOrientation)Value;
+        }
+        private object get_5_IAxis_RegisteredListeners(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)instance;
+            return that.RegisteredListeners;
+        }
+        private object get_6_IAxis_DependentAxes(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)instance;
+            return that.DependentAxes;
+        }
+        private object get_7_Chart_ActualAxes(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
+            return that.ActualAxes;
+        }
+        private object get_8_Chart_ChartAreaStyle(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
+            return that.ChartAreaStyle;
+        }
+        private void set_8_Chart_ChartAreaStyle(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
+            that.ChartAreaStyle = (global::Windows.UI.Xaml.Style)Value;
+        }
+        private object get_9_Chart_LegendItems(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
+            return that.LegendItems;
+        }
+        private object get_10_Chart_LegendStyle(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
+            return that.LegendStyle;
+        }
+        private void set_10_Chart_LegendStyle(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
+            that.LegendStyle = (global::Windows.UI.Xaml.Style)Value;
+        }
+        private object get_11_Chart_LegendTitle(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
+            return that.LegendTitle;
+        }
+        private void set_11_Chart_LegendTitle(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
+            that.LegendTitle = (global::System.Object)Value;
+        }
+        private object get_12_Chart_PlotAreaStyle(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
+            return that.PlotAreaStyle;
+        }
+        private void set_12_Chart_PlotAreaStyle(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
+            that.PlotAreaStyle = (global::Windows.UI.Xaml.Style)Value;
+        }
+        private object get_13_Chart_Title(object instance)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
             return that.Title;
         }
-        private void set_24_Chart_Title(object instance, object Value)
+        private void set_13_Chart_Title(object instance, object Value)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
             that.Title = (global::System.Object)Value;
         }
-        private object get_25_Chart_TitleStyle(object instance)
+        private object get_14_Chart_TitleStyle(object instance)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
             return that.TitleStyle;
         }
-        private void set_25_Chart_TitleStyle(object instance, object Value)
+        private void set_14_Chart_TitleStyle(object instance, object Value)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
             that.TitleStyle = (global::Windows.UI.Xaml.Style)Value;
         }
-        private object get_26_Series_Title(object instance)
+        private object get_15_Collection_Count(object instance)
+        {
+            var that = (global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.ResourceDictionary>)instance;
+            return that.Count;
+        }
+        private object get_16_Series_Title(object instance)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Series)instance;
             return that.Title;
         }
-        private void set_26_Series_Title(object instance, object Value)
+        private void set_16_Series_Title(object instance, object Value)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Series)instance;
             that.Title = (global::System.Object)Value;
         }
-        private object get_27_DataPointSeries_IndependentValueBinding(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
-            return that.IndependentValueBinding;
-        }
-        private void set_27_DataPointSeries_IndependentValueBinding(object instance, object Value)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
-            that.IndependentValueBinding = (global::Windows.UI.Xaml.Data.Binding)Value;
-        }
-        private object get_28_DataPointSeries_DependentValueBinding(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
-            return that.DependentValueBinding;
-        }
-        private void set_28_DataPointSeries_DependentValueBinding(object instance, object Value)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
-            that.DependentValueBinding = (global::Windows.UI.Xaml.Data.Binding)Value;
-        }
-        private object get_29_DataPointSeries_IsSelectionEnabled(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
-            return that.IsSelectionEnabled;
-        }
-        private void set_29_DataPointSeries_IsSelectionEnabled(object instance, object Value)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
-            that.IsSelectionEnabled = (global::System.Boolean)Value;
-        }
-        private object get_30_AreaSeries_Geometry(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaSeries)instance;
-            return that.Geometry;
-        }
-        private object get_31_AreaSeries_PathStyle(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaSeries)instance;
-            return that.PathStyle;
-        }
-        private void set_31_AreaSeries_PathStyle(object instance, object Value)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaSeries)instance;
-            that.PathStyle = (global::Windows.UI.Xaml.Style)Value;
-        }
-        private object get_32_LineAreaBaseSeries_DependentRangeAxis(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaDataPoint>)instance;
-            return that.DependentRangeAxis;
-        }
-        private void set_32_LineAreaBaseSeries_DependentRangeAxis(object instance, object Value)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaDataPoint>)instance;
-            that.DependentRangeAxis = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis)Value;
-        }
-        private object get_33_LineAreaBaseSeries_IndependentAxis(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaDataPoint>)instance;
-            return that.IndependentAxis;
-        }
-        private void set_33_LineAreaBaseSeries_IndependentAxis(object instance, object Value)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaDataPoint>)instance;
-            that.IndependentAxis = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)Value;
-        }
-        private object get_34_LineAreaBaseSeries_ActualIndependentAxis(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaDataPoint>)instance;
-            return that.ActualIndependentAxis;
-        }
-        private object get_35_LineAreaBaseSeries_ActualDependentRangeAxis(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaDataPoint>)instance;
-            return that.ActualDependentRangeAxis;
-        }
-        private object get_36_DataPointSingleSeriesWithAxes_GlobalSeriesIndex(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSingleSeriesWithAxes)instance;
-            return that.GlobalSeriesIndex;
-        }
-        private object get_37_DataPointSeries_DependentValuePath(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
-            return that.DependentValuePath;
-        }
-        private void set_37_DataPointSeries_DependentValuePath(object instance, object Value)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
-            that.DependentValuePath = (global::System.String)Value;
-        }
-        private object get_38_DataPointSeries_IndependentValuePath(object instance)
+        private object get_17_DataPointSeries_IndependentValuePath(object instance)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
             return that.IndependentValuePath;
         }
-        private void set_38_DataPointSeries_IndependentValuePath(object instance, object Value)
+        private void set_17_DataPointSeries_IndependentValuePath(object instance, object Value)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
             that.IndependentValuePath = (global::System.String)Value;
         }
-        private object get_39_DataPointSeries_ItemsSource(object instance)
+        private object get_18_DataPointSeries_DependentValuePath(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
+            return that.DependentValuePath;
+        }
+        private void set_18_DataPointSeries_DependentValuePath(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
+            that.DependentValuePath = (global::System.String)Value;
+        }
+        private object get_19_DataPointSeries_IsSelectionEnabled(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
+            return that.IsSelectionEnabled;
+        }
+        private void set_19_DataPointSeries_IsSelectionEnabled(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
+            that.IsSelectionEnabled = (global::System.Boolean)Value;
+        }
+        private object get_20_AreaSeries_Geometry(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaSeries)instance;
+            return that.Geometry;
+        }
+        private object get_21_AreaSeries_PathStyle(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaSeries)instance;
+            return that.PathStyle;
+        }
+        private void set_21_AreaSeries_PathStyle(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaSeries)instance;
+            that.PathStyle = (global::Windows.UI.Xaml.Style)Value;
+        }
+        private object get_22_LineAreaBaseSeries_DependentRangeAxis(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaDataPoint>)instance;
+            return that.DependentRangeAxis;
+        }
+        private void set_22_LineAreaBaseSeries_DependentRangeAxis(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaDataPoint>)instance;
+            that.DependentRangeAxis = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis)Value;
+        }
+        private object get_23_LineAreaBaseSeries_IndependentAxis(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaDataPoint>)instance;
+            return that.IndependentAxis;
+        }
+        private void set_23_LineAreaBaseSeries_IndependentAxis(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaDataPoint>)instance;
+            that.IndependentAxis = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)Value;
+        }
+        private object get_24_LineAreaBaseSeries_ActualIndependentAxis(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaDataPoint>)instance;
+            return that.ActualIndependentAxis;
+        }
+        private object get_25_LineAreaBaseSeries_ActualDependentRangeAxis(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaDataPoint>)instance;
+            return that.ActualDependentRangeAxis;
+        }
+        private object get_26_DataPointSingleSeriesWithAxes_GlobalSeriesIndex(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSingleSeriesWithAxes)instance;
+            return that.GlobalSeriesIndex;
+        }
+        private object get_27_DataPointSeries_DependentValueBinding(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
+            return that.DependentValueBinding;
+        }
+        private void set_27_DataPointSeries_DependentValueBinding(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
+            that.DependentValueBinding = (global::Windows.UI.Xaml.Data.Binding)Value;
+        }
+        private object get_28_DataPointSeries_IndependentValueBinding(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
+            return that.IndependentValueBinding;
+        }
+        private void set_28_DataPointSeries_IndependentValueBinding(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
+            that.IndependentValueBinding = (global::Windows.UI.Xaml.Data.Binding)Value;
+        }
+        private object get_29_DataPointSeries_ItemsSource(object instance)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
             return that.ItemsSource;
         }
-        private void set_39_DataPointSeries_ItemsSource(object instance, object Value)
+        private void set_29_DataPointSeries_ItemsSource(object instance, object Value)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
             that.ItemsSource = (global::System.Collections.IEnumerable)Value;
         }
-        private object get_40_DataPointSeries_AnimationSequence(object instance)
+        private object get_30_DataPointSeries_AnimationSequence(object instance)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
             return that.AnimationSequence;
         }
-        private void set_40_DataPointSeries_AnimationSequence(object instance, object Value)
+        private void set_30_DataPointSeries_AnimationSequence(object instance, object Value)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
             that.AnimationSequence = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AnimationSequence)Value;
         }
-        private object get_41_DataPointSeries_TransitionEasingFunction(object instance)
+        private object get_31_DataPointSeries_TransitionEasingFunction(object instance)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
             return that.TransitionEasingFunction;
         }
-        private void set_41_DataPointSeries_TransitionEasingFunction(object instance, object Value)
+        private void set_31_DataPointSeries_TransitionEasingFunction(object instance, object Value)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
             that.TransitionEasingFunction = (global::Windows.UI.Xaml.Media.Animation.EasingFunctionBase)Value;
         }
-        private object get_42_DataPointSeries_SelectedItem(object instance)
+        private object get_32_DataPointSeries_SelectedItem(object instance)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
             return that.SelectedItem;
         }
-        private void set_42_DataPointSeries_SelectedItem(object instance, object Value)
+        private void set_32_DataPointSeries_SelectedItem(object instance, object Value)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
             that.SelectedItem = (global::System.Object)Value;
         }
-        private object get_43_DataPointSeries_DataPointStyle(object instance)
+        private object get_33_DataPointSeries_DataPointStyle(object instance)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
             return that.DataPointStyle;
         }
-        private void set_43_DataPointSeries_DataPointStyle(object instance, object Value)
+        private void set_33_DataPointSeries_DataPointStyle(object instance, object Value)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
             that.DataPointStyle = (global::Windows.UI.Xaml.Style)Value;
         }
-        private object get_44_DataPointSeries_LegendItemStyle(object instance)
+        private object get_34_DataPointSeries_LegendItemStyle(object instance)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
             return that.LegendItemStyle;
         }
-        private void set_44_DataPointSeries_LegendItemStyle(object instance, object Value)
+        private void set_34_DataPointSeries_LegendItemStyle(object instance, object Value)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
             that.LegendItemStyle = (global::Windows.UI.Xaml.Style)Value;
         }
-        private object get_45_DataPointSeries_TransitionDuration(object instance)
+        private object get_35_DataPointSeries_TransitionDuration(object instance)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
             return that.TransitionDuration;
         }
-        private void set_45_DataPointSeries_TransitionDuration(object instance, object Value)
+        private void set_35_DataPointSeries_TransitionDuration(object instance, object Value)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
             that.TransitionDuration = (global::System.TimeSpan)Value;
         }
-        private object get_46_Series_SeriesHost(object instance)
+        private object get_36_Series_SeriesHost(object instance)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Series)instance;
             return that.SeriesHost;
         }
-        private void set_46_Series_SeriesHost(object instance, object Value)
+        private void set_36_Series_SeriesHost(object instance, object Value)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Series)instance;
             that.SeriesHost = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeriesHost)Value;
         }
-        private object get_47_Series_LegendItems(object instance)
+        private object get_37_Series_LegendItems(object instance)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Series)instance;
             return that.LegendItems;
-        }
-        private object get_48_GalleryGroupContainerGenerator_GroupHeaderTemplate(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.GalleryGroupContainerGenerator)instance;
-            return that.GroupHeaderTemplate;
-        }
-        private void set_48_GalleryGroupContainerGenerator_GroupHeaderTemplate(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.GalleryGroupContainerGenerator)instance;
-            that.GroupHeaderTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
-        }
-        private object get_49_GalleryGroupContainerGenerator_ItemContainerGenerator(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.GalleryGroupContainerGenerator)instance;
-            return that.ItemContainerGenerator;
-        }
-        private void set_49_GalleryGroupContainerGenerator_ItemContainerGenerator(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.GalleryGroupContainerGenerator)instance;
-            that.ItemContainerGenerator = (global::DevExpress.UI.Xaml.GalleryItemContainerGeneratorBase)Value;
-        }
-        private object get_50_GalleryGroupContainerGenerator_GroupItemsPath(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.GalleryGroupContainerGenerator)instance;
-            return that.GroupItemsPath;
-        }
-        private void set_50_GalleryGroupContainerGenerator_GroupItemsPath(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.GalleryGroupContainerGenerator)instance;
-            that.GroupItemsPath = (global::System.String)Value;
-        }
-        private object get_51_GalleryGroupContainerGenerator_MaxColCount(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.GalleryGroupContainerGenerator)instance;
-            return that.MaxColCount;
-        }
-        private void set_51_GalleryGroupContainerGenerator_MaxColCount(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.GalleryGroupContainerGenerator)instance;
-            that.MaxColCount = (global::System.Int32)Value;
-        }
-        private object get_52_GalleryGroupContainerGenerator_ActualGroupItemsPath(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.GalleryGroupContainerGenerator)instance;
-            return that.ActualGroupItemsPath;
-        }
-        private object get_53_GalleryItemContainerGeneratorBase_ContentTemplate(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.GalleryItemContainerGeneratorBase)instance;
-            return that.ContentTemplate;
-        }
-        private void set_53_GalleryItemContainerGeneratorBase_ContentTemplate(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.GalleryItemContainerGeneratorBase)instance;
-            that.ContentTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
-        }
-        private object get_54_GalleryItemContainerGeneratorBase_ContentTemplateSelector(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.GalleryItemContainerGeneratorBase)instance;
-            return that.ContentTemplateSelector;
-        }
-        private void set_54_GalleryItemContainerGeneratorBase_ContentTemplateSelector(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.GalleryItemContainerGeneratorBase)instance;
-            that.ContentTemplateSelector = (global::Windows.UI.Xaml.Controls.DataTemplateSelector)Value;
-        }
-        private object get_55_GalleryItemContainerGeneratorBase_ContainerStyle(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.GalleryItemContainerGeneratorBase)instance;
-            return that.ContainerStyle;
-        }
-        private void set_55_GalleryItemContainerGeneratorBase_ContainerStyle(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.GalleryItemContainerGeneratorBase)instance;
-            that.ContainerStyle = (global::Windows.UI.Xaml.Style)Value;
-        }
-        private object get_56_GalleryItemContainerGeneratorBase_ActualColumnWidth(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.GalleryItemContainerGeneratorBase)instance;
-            return that.ActualColumnWidth;
-        }
-        private object get_57_GalleryItemContainerGeneratorBase_AverageContainerHeight(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.GalleryItemContainerGeneratorBase)instance;
-            return that.AverageContainerHeight;
-        }
-        private object get_58_GalleryItemContainerGeneratorBase_GroupedItems(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.GalleryItemContainerGeneratorBase)instance;
-            return that.GroupedItems;
-        }
-        private void set_58_GalleryItemContainerGeneratorBase_GroupedItems(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.GalleryItemContainerGeneratorBase)instance;
-            that.GroupedItems = (global::System.Boolean)Value;
-        }
-        private object get_59_GalleryItemContainerGeneratorBase_MaxContainerHeight(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.GalleryItemContainerGeneratorBase)instance;
-            return that.MaxContainerHeight;
-        }
-        private object get_60_GalleryItemContainerGeneratorBase_DummyItem(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.GalleryItemContainerGeneratorBase)instance;
-            return that.DummyItem;
-        }
-        private object get_61_GalleryItemGroup_Items(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.GalleryItemGroup)instance;
-            return that.Items;
-        }
-        private object get_62_GalleryItemGroup_Title(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.GalleryItemGroup)instance;
-            return that.Title;
-        }
-        private void set_62_GalleryItemGroup_Title(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.GalleryItemGroup)instance;
-            that.Title = (global::System.String)Value;
-        }
-        private object get_63_TitleSettings_ButtonInactiveForeground(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.TitleSettings)instance;
-            return that.ButtonInactiveForeground;
-        }
-        private void set_63_TitleSettings_ButtonInactiveForeground(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.TitleSettings)instance;
-            that.ButtonInactiveForeground = (global::Windows.UI.Xaml.Media.SolidColorBrush)Value;
-        }
-        private object get_64_TitleSettings_ButtonInactiveBackground(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.TitleSettings)instance;
-            return that.ButtonInactiveBackground;
-        }
-        private void set_64_TitleSettings_ButtonInactiveBackground(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.TitleSettings)instance;
-            that.ButtonInactiveBackground = (global::Windows.UI.Xaml.Media.SolidColorBrush)Value;
-        }
-        private object get_65_TitleSettings_ButtonPressedForeground(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.TitleSettings)instance;
-            return that.ButtonPressedForeground;
-        }
-        private void set_65_TitleSettings_ButtonPressedForeground(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.TitleSettings)instance;
-            that.ButtonPressedForeground = (global::Windows.UI.Xaml.Media.SolidColorBrush)Value;
-        }
-        private object get_66_TitleSettings_ButtonPressedBackground(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.TitleSettings)instance;
-            return that.ButtonPressedBackground;
-        }
-        private void set_66_TitleSettings_ButtonPressedBackground(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.TitleSettings)instance;
-            that.ButtonPressedBackground = (global::Windows.UI.Xaml.Media.SolidColorBrush)Value;
-        }
-        private object get_67_TitleSettings_ButtonHoverForeground(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.TitleSettings)instance;
-            return that.ButtonHoverForeground;
-        }
-        private void set_67_TitleSettings_ButtonHoverForeground(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.TitleSettings)instance;
-            that.ButtonHoverForeground = (global::Windows.UI.Xaml.Media.SolidColorBrush)Value;
-        }
-        private object get_68_TitleSettings_ButtonHoverBackground(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.TitleSettings)instance;
-            return that.ButtonHoverBackground;
-        }
-        private void set_68_TitleSettings_ButtonHoverBackground(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.TitleSettings)instance;
-            that.ButtonHoverBackground = (global::Windows.UI.Xaml.Media.SolidColorBrush)Value;
-        }
-        private object get_69_TitleSettings_ButtonBackground(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.TitleSettings)instance;
-            return that.ButtonBackground;
-        }
-        private void set_69_TitleSettings_ButtonBackground(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.TitleSettings)instance;
-            that.ButtonBackground = (global::Windows.UI.Xaml.Media.SolidColorBrush)Value;
-        }
-        private object get_70_TitleSettings_ButtonForeground(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.TitleSettings)instance;
-            return that.ButtonForeground;
-        }
-        private void set_70_TitleSettings_ButtonForeground(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.TitleSettings)instance;
-            that.ButtonForeground = (global::Windows.UI.Xaml.Media.SolidColorBrush)Value;
-        }
-        private object get_71_TitleSettings_InactiveForeground(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.TitleSettings)instance;
-            return that.InactiveForeground;
-        }
-        private void set_71_TitleSettings_InactiveForeground(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.TitleSettings)instance;
-            that.InactiveForeground = (global::Windows.UI.Xaml.Media.SolidColorBrush)Value;
-        }
-        private object get_72_TitleSettings_InactiveBackground(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.TitleSettings)instance;
-            return that.InactiveBackground;
-        }
-        private void set_72_TitleSettings_InactiveBackground(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.TitleSettings)instance;
-            that.InactiveBackground = (global::Windows.UI.Xaml.Media.SolidColorBrush)Value;
-        }
-        private object get_73_TitleSettings_Foreground(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.TitleSettings)instance;
-            return that.Foreground;
-        }
-        private void set_73_TitleSettings_Foreground(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.TitleSettings)instance;
-            that.Foreground = (global::Windows.UI.Xaml.Media.SolidColorBrush)Value;
-        }
-        private object get_74_TitleSettings_Background(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.TitleSettings)instance;
-            return that.Background;
-        }
-        private void set_74_TitleSettings_Background(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.TitleSettings)instance;
-            that.Background = (global::Windows.UI.Xaml.Media.SolidColorBrush)Value;
-        }
-        private object get_75_TitleSettings_Template(object instance)
-        {
-            return global::DevExpress.UI.Xaml.TitleSettings.GetTemplate((global::Windows.UI.Xaml.DependencyObject)instance);
-        }
-        private void set_75_TitleSettings_Template(object instance, object Value)
-        {
-            global::DevExpress.UI.Xaml.TitleSettings.SetTemplate((global::Windows.UI.Xaml.DependencyObject)instance, (global::Windows.UI.Xaml.DataTemplate)Value);
-        }
-        private object get_76_DXExpander_Child(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.DXExpander)instance;
-            return that.Child;
-        }
-        private void set_76_DXExpander_Child(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.DXExpander)instance;
-            that.Child = (global::Windows.UI.Xaml.UIElement)Value;
-        }
-        private object get_77_DXExpander_IsExpanded(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.DXExpander)instance;
-            return that.IsExpanded;
-        }
-        private void set_77_DXExpander_IsExpanded(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.DXExpander)instance;
-            that.IsExpanded = (global::System.Boolean)Value;
-        }
-        private object get_78_DXExpander_ExpandStoryboard(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.DXExpander)instance;
-            return that.ExpandStoryboard;
-        }
-        private void set_78_DXExpander_ExpandStoryboard(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.DXExpander)instance;
-            that.ExpandStoryboard = (global::Windows.UI.Xaml.Media.Animation.Storyboard)Value;
-        }
-        private object get_79_DXExpander_CollapseStoryboard(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.DXExpander)instance;
-            return that.CollapseStoryboard;
-        }
-        private void set_79_DXExpander_CollapseStoryboard(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.DXExpander)instance;
-            that.CollapseStoryboard = (global::Windows.UI.Xaml.Media.Animation.Storyboard)Value;
-        }
-        private object get_80_DXExpander_Location(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.DXExpander)instance;
-            return that.Location;
-        }
-        private void set_80_DXExpander_Location(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.DXExpander)instance;
-            that.Location = (global::Windows.UI.Xaml.Controls.Primitives.EdgeTransitionLocation)Value;
-        }
-        private object get_81_DXExpander_AnimationDuration(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.DXExpander)instance;
-            return that.AnimationDuration;
-        }
-        private void set_81_DXExpander_AnimationDuration(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.DXExpander)instance;
-            that.AnimationDuration = (global::System.TimeSpan)Value;
-        }
-        private object get_82_DXExpander_ClipToBounds(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.DXExpander)instance;
-            return that.ClipToBounds;
-        }
-        private void set_82_DXExpander_ClipToBounds(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.DXExpander)instance;
-            that.ClipToBounds = (global::System.Boolean)Value;
-        }
-        private object get_83_DXExpander_DefineLayoutFromLocation(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.DXExpander)instance;
-            return that.DefineLayoutFromLocation;
-        }
-        private void set_83_DXExpander_DefineLayoutFromLocation(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.DXExpander)instance;
-            that.DefineLayoutFromLocation = (global::System.Boolean)Value;
-        }
-        private object get_84_DXExpander_Children(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.DXExpander)instance;
-            return that.Children;
-        }
-        private object get_85_DXExpander_IsLoaded(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.DXExpander)instance;
-            return that.IsLoaded;
-        }
-        private object get_86_SelectorControl_ItemsSource(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.SelectorControl)instance;
-            return that.ItemsSource;
-        }
-        private void set_86_SelectorControl_ItemsSource(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.SelectorControl)instance;
-            that.ItemsSource = (global::System.Object)Value;
-        }
-        private object get_87_SelectorControl_SelectedIndex(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.SelectorControl)instance;
-            return that.SelectedIndex;
-        }
-        private void set_87_SelectorControl_SelectedIndex(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.SelectorControl)instance;
-            that.SelectedIndex = (global::System.Int32)Value;
-        }
-        private object get_88_SelectorControl_SelectedItem(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.SelectorControl)instance;
-            return that.SelectedItem;
-        }
-        private void set_88_SelectorControl_SelectedItem(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.SelectorControl)instance;
-            that.SelectedItem = (global::System.Object)Value;
-        }
-        private object get_89_SelectorControl_SelectionEmptyAction(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.SelectorControl)instance;
-            return that.SelectionEmptyAction;
-        }
-        private void set_89_SelectorControl_SelectionEmptyAction(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.SelectorControl)instance;
-            that.SelectionEmptyAction = (global::DevExpress.UI.Xaml.Internal.SelectionEmptyAction)Value;
-        }
-        private object get_90_SelectorControl_CanSelect(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.SelectorControl)instance;
-            return that.CanSelect;
-        }
-        private void set_90_SelectorControl_CanSelect(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.SelectorControl)instance;
-            that.CanSelect = (global::System.Boolean)Value;
-        }
-        private object get_91_SelectorControlBase_Orientation(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.SelectorControlBase)instance;
-            return that.Orientation;
-        }
-        private void set_91_SelectorControlBase_Orientation(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.SelectorControlBase)instance;
-            that.Orientation = (global::Windows.UI.Xaml.Controls.Orientation)Value;
-        }
-        private object get_92_SelectorControlBase_ItemTemplate(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.SelectorControlBase)instance;
-            return that.ItemTemplate;
-        }
-        private void set_92_SelectorControlBase_ItemTemplate(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.SelectorControlBase)instance;
-            that.ItemTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
-        }
-        private object get_93_SelectorControlBase_ItemTemplateSelector(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.SelectorControlBase)instance;
-            return that.ItemTemplateSelector;
-        }
-        private void set_93_SelectorControlBase_ItemTemplateSelector(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.SelectorControlBase)instance;
-            that.ItemTemplateSelector = (global::Windows.UI.Xaml.Controls.DataTemplateSelector)Value;
-        }
-        private object get_94_SelectorControlBase_ItemContainerStyle(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.SelectorControlBase)instance;
-            return that.ItemContainerStyle;
-        }
-        private void set_94_SelectorControlBase_ItemContainerStyle(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.SelectorControlBase)instance;
-            that.ItemContainerStyle = (global::Windows.UI.Xaml.Style)Value;
-        }
-        private object get_95_SelectorControlBase_IsLockUpdate(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.SelectorControlBase)instance;
-            return that.IsLockUpdate;
-        }
-        private object get_96_SelectorControlBase_Items(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.SelectorControlBase)instance;
-            return that.Items;
-        }
-        private object get_97_SelectorItemBase_IsSelected(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.SelectorItemBase)instance;
-            return that.IsSelected;
-        }
-        private void set_97_SelectorItemBase_IsSelected(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.SelectorItemBase)instance;
-            that.IsSelected = (global::System.Boolean)Value;
-        }
-        private object get_98_PointerItemBase_ClickMode(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.PointerItemBase)instance;
-            return that.ClickMode;
-        }
-        private void set_98_PointerItemBase_ClickMode(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.PointerItemBase)instance;
-            that.ClickMode = (global::Windows.UI.Xaml.Controls.ClickMode)Value;
-        }
-        private object get_99_PointerItemBase_IsPointerOver(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.PointerItemBase)instance;
-            return that.IsPointerOver;
-        }
-        private object get_100_PointerItemBase_IsPressed(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.PointerItemBase)instance;
-            return that.IsPressed;
-        }
-        private object get_101_ContentControlEx_ActualSize(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.ContentControlEx)instance;
-            return that.ActualSize;
-        }
-        private object get_102_ContentControlEx_IsLoaded(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.ContentControlEx)instance;
-            return that.IsLoaded;
-        }
-        private object get_103_ControlEx_ActualSize(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.ControlEx)instance;
-            return that.ActualSize;
-        }
-        private object get_104_ControlEx_IsLoaded(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.ControlEx)instance;
-            return that.IsLoaded;
-        }
-        private object get_105_TreeNavigator_RootNode(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.TreeNavigator)instance;
-            return that.RootNode;
-        }
-        private void set_105_TreeNavigator_RootNode(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.TreeNavigator)instance;
-            that.RootNode = (global::DevExpress.UI.Xaml.Internal.TreeNavigatorNode)Value;
-        }
-        private object get_106_TreeNavigator_CurrentNode(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.TreeNavigator)instance;
-            return that.CurrentNode;
-        }
-        private object get_107_TreeNavigator_RootHeaderContent(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.TreeNavigator)instance;
-            return that.RootHeaderContent;
-        }
-        private void set_107_TreeNavigator_RootHeaderContent(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.TreeNavigator)instance;
-            that.RootHeaderContent = (global::System.Object)Value;
-        }
-        private object get_108_TreeNavigator_RootHeaderContentTemplate(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.TreeNavigator)instance;
-            return that.RootHeaderContentTemplate;
-        }
-        private void set_108_TreeNavigator_RootHeaderContentTemplate(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.TreeNavigator)instance;
-            that.RootHeaderContentTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
-        }
-        private object get_109_TreeNavigator_HeaderContent(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.TreeNavigator)instance;
-            return that.HeaderContent;
-        }
-        private void set_109_TreeNavigator_HeaderContent(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.TreeNavigator)instance;
-            that.HeaderContent = (global::System.Object)Value;
-        }
-        private object get_110_TreeNavigator_HeaderContentTemplate(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.TreeNavigator)instance;
-            return that.HeaderContentTemplate;
-        }
-        private void set_110_TreeNavigator_HeaderContentTemplate(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.TreeNavigator)instance;
-            that.HeaderContentTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
-        }
-        private object get_111_TreeNavigator_HeaderPadding(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.TreeNavigator)instance;
-            return that.HeaderPadding;
-        }
-        private void set_111_TreeNavigator_HeaderPadding(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.TreeNavigator)instance;
-            that.HeaderPadding = (global::Windows.UI.Xaml.Thickness)Value;
-        }
-        private object get_112_TreeNavigator_HeaderFontSize(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.TreeNavigator)instance;
-            return that.HeaderFontSize;
-        }
-        private void set_112_TreeNavigator_HeaderFontSize(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.TreeNavigator)instance;
-            that.HeaderFontSize = (global::System.Double)Value;
-        }
-        private object get_113_TreeNavigator_NavigateToItemCommand(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.TreeNavigator)instance;
-            return that.NavigateToItemCommand;
-        }
-        private object get_114_TreeNavigator_NavigateUpperCommand(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.TreeNavigator)instance;
-            return that.NavigateUpperCommand;
-        }
-        private object get_115_TreeNavigatorItem_Node(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.TreeNavigatorItem)instance;
-            return that.Node;
-        }
-        private void set_115_TreeNavigatorItem_Node(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.TreeNavigatorItem)instance;
-            that.Node = (global::DevExpress.UI.Xaml.Internal.TreeNavigatorNode)Value;
-        }
-        private object get_116_TreeNavigatorItem_IconPadding(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.TreeNavigatorItem)instance;
-            return that.IconPadding;
-        }
-        private void set_116_TreeNavigatorItem_IconPadding(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.TreeNavigatorItem)instance;
-            that.IconPadding = (global::Windows.UI.Xaml.Thickness)Value;
-        }
-        private object get_117_TreeNavigatorItem_ArrowGlyph(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.TreeNavigatorItem)instance;
-            return that.ArrowGlyph;
-        }
-        private void set_117_TreeNavigatorItem_ArrowGlyph(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.TreeNavigatorItem)instance;
-            that.ArrowGlyph = (global::Windows.UI.Xaml.Media.Geometry)Value;
-        }
-        private object get_118_TreeNavigatorItem_ArrowGlyphPressed(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.TreeNavigatorItem)instance;
-            return that.ArrowGlyphPressed;
-        }
-        private void set_118_TreeNavigatorItem_ArrowGlyphPressed(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.TreeNavigatorItem)instance;
-            that.ArrowGlyphPressed = (global::Windows.UI.Xaml.Media.Geometry)Value;
-        }
-        private object get_119_TreeNavigatorItem_IsSelected(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.TreeNavigatorItem)instance;
-            return that.IsSelected;
-        }
-        private void set_119_TreeNavigatorItem_IsSelected(object instance, object Value)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.TreeNavigatorItem)instance;
-            that.IsSelected = (global::System.Boolean)Value;
-        }
-        private object get_120_TreeNavigatorNode_Parent(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.TreeNavigatorNode)instance;
-            return that.Parent;
-        }
-        private object get_121_TreeNavigatorNode_IsRootNode(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.TreeNavigatorNode)instance;
-            return that.IsRootNode;
-        }
-        private object get_122_TreeNavigatorNode_IsSubNode(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.TreeNavigatorNode)instance;
-            return that.IsSubNode;
-        }
-        private object get_123_TreeNavigatorNode_Node(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.TreeNavigatorNode)instance;
-            return that.Node;
-        }
-        private object get_124_TreeNavigatorNode_Children(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.TreeNavigatorNode)instance;
-            return that.Children;
-        }
-        private object get_125_TreeNavigatorNode_HasChildren(object instance)
-        {
-            var that = (global::DevExpress.UI.Xaml.Internal.TreeNavigatorNode)instance;
-            return that.HasChildren;
         }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
@@ -2368,845 +1075,253 @@ namespace UWPService.UWPService_XamlTypeInfo
 
             switch (longMemberName)
             {
-            case "CrossPieCharts.UWP.PieCharts.RichPieChart.Radius":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CrossPieCharts.UWP.PieCharts.RichPieChart");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "Radius", "Int32");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_0_RichPieChart_Radius;
-                xamlMember.Setter = set_0_RichPieChart_Radius;
-                break;
-            case "CrossPieCharts.UWP.PieCharts.RichPieChart.StrokeThickness":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CrossPieCharts.UWP.PieCharts.RichPieChart");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "StrokeThickness", "Int32");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_1_RichPieChart_StrokeThickness;
-                xamlMember.Setter = set_1_RichPieChart_StrokeThickness;
-                break;
-            case "CrossPieCharts.UWP.PieCharts.RichPieChart.PieChartArgsCollection":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CrossPieCharts.UWP.PieCharts.RichPieChart");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "PieChartArgsCollection", "System.Collections.Generic.List`1<CrossPieCharts.UWP.PieCharts.PieChartArgs>");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_2_RichPieChart_PieChartArgsCollection;
-                xamlMember.Setter = set_2_RichPieChart_PieChartArgsCollection;
-                break;
-            case "CrossPieCharts.UWP.PieCharts.PieChartArgs.Percentage":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CrossPieCharts.UWP.PieCharts.PieChartArgs");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "Percentage", "Int32");
-                xamlMember.Getter = get_3_PieChartArgs_Percentage;
-                xamlMember.Setter = set_3_PieChartArgs_Percentage;
-                break;
-            case "CrossPieCharts.UWP.PieCharts.PieChartArgs.ColorBrush":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CrossPieCharts.UWP.PieCharts.PieChartArgs");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "ColorBrush", "Windows.UI.Xaml.Media.SolidColorBrush");
-                xamlMember.Getter = get_4_PieChartArgs_ColorBrush;
-                xamlMember.Setter = set_4_PieChartArgs_ColorBrush;
-                break;
-            case "CrossPieCharts.UWP.PieCharts.PieChart.Radius":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CrossPieCharts.UWP.PieCharts.PieChart");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "Radius", "Int32");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_5_PieChart_Radius;
-                xamlMember.Setter = set_5_PieChart_Radius;
-                break;
-            case "CrossPieCharts.UWP.PieCharts.PieChart.Percentage":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CrossPieCharts.UWP.PieCharts.PieChart");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "Percentage", "Double");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_6_PieChart_Percentage;
-                xamlMember.Setter = set_6_PieChart_Percentage;
-                break;
-            case "CrossPieCharts.UWP.PieCharts.PieChart.StrokeThickness":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CrossPieCharts.UWP.PieCharts.PieChart");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "StrokeThickness", "Int32");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_7_PieChart_StrokeThickness;
-                xamlMember.Setter = set_7_PieChart_StrokeThickness;
-                break;
-            case "CrossPieCharts.UWP.PieCharts.PieChart.SegmentColor":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CrossPieCharts.UWP.PieCharts.PieChart");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "SegmentColor", "Windows.UI.Xaml.Media.Brush");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_8_PieChart_SegmentColor;
-                xamlMember.Setter = set_8_PieChart_SegmentColor;
-                break;
-            case "CrossPieCharts.UWP.PieCharts.PieChart.Segment360Color":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CrossPieCharts.UWP.PieCharts.PieChart");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "Segment360Color", "Windows.UI.Xaml.Media.Brush");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_9_PieChart_Segment360Color;
-                xamlMember.Setter = set_9_PieChart_Segment360Color;
-                break;
-            case "CrossPieCharts.UWP.PieCharts.PieChart.BackgroundColor":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CrossPieCharts.UWP.PieCharts.PieChart");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "BackgroundColor", "Windows.UI.Xaml.Media.Brush");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_10_PieChart_BackgroundColor;
-                xamlMember.Setter = set_10_PieChart_BackgroundColor;
-                break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.Series":
                 userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart");
                 xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "Series", "System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries>");
-                xamlMember.Getter = get_11_Chart_Series;
-                xamlMember.Setter = set_11_Chart_Series;
+                xamlMember.Getter = get_0_Chart_Series;
+                xamlMember.Setter = set_0_Chart_Series;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries.LegendItems":
                 userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries");
                 xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "LegendItems", "System.Collections.ObjectModel.ObservableCollection`1<Object>");
-                xamlMember.Getter = get_12_ISeries_LegendItems;
+                xamlMember.Getter = get_1_ISeries_LegendItems;
                 xamlMember.SetIsReadOnly();
+                break;
+            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.Palette":
+                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart");
+                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "Palette", "System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.ResourceDictionary>");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_2_Chart_Palette;
+                xamlMember.Setter = set_2_Chart_Palette;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.Axes":
                 userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart");
                 xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "Axes", "System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>");
-                xamlMember.Getter = get_13_Chart_Axes;
-                xamlMember.Setter = set_13_Chart_Axes;
+                xamlMember.Getter = get_3_Chart_Axes;
+                xamlMember.Setter = set_3_Chart_Axes;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis.Orientation":
                 userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis");
                 xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "Orientation", "WinRTXamlToolkit.Controls.DataVisualization.Charting.AxisOrientation");
-                xamlMember.Getter = get_14_IAxis_Orientation;
-                xamlMember.Setter = set_14_IAxis_Orientation;
+                xamlMember.Getter = get_4_IAxis_Orientation;
+                xamlMember.Setter = set_4_IAxis_Orientation;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis.RegisteredListeners":
                 userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis");
                 xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "RegisteredListeners", "System.Collections.ObjectModel.ObservableCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>");
-                xamlMember.Getter = get_15_IAxis_RegisteredListeners;
+                xamlMember.Getter = get_5_IAxis_RegisteredListeners;
                 xamlMember.SetIsReadOnly();
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis.DependentAxes":
                 userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis");
                 xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "DependentAxes", "System.Collections.ObjectModel.ObservableCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>");
-                xamlMember.Getter = get_16_IAxis_DependentAxes;
+                xamlMember.Getter = get_6_IAxis_DependentAxes;
                 xamlMember.SetIsReadOnly();
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.ActualAxes":
                 userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart");
                 xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "ActualAxes", "System.Collections.ObjectModel.ReadOnlyCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>");
-                xamlMember.Getter = get_17_Chart_ActualAxes;
+                xamlMember.Getter = get_7_Chart_ActualAxes;
                 xamlMember.SetIsReadOnly();
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.ChartAreaStyle":
                 userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart");
                 xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "ChartAreaStyle", "Windows.UI.Xaml.Style");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_18_Chart_ChartAreaStyle;
-                xamlMember.Setter = set_18_Chart_ChartAreaStyle;
+                xamlMember.Getter = get_8_Chart_ChartAreaStyle;
+                xamlMember.Setter = set_8_Chart_ChartAreaStyle;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.LegendItems":
                 userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart");
                 xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "LegendItems", "System.Collections.ObjectModel.Collection`1<Object>");
-                xamlMember.Getter = get_19_Chart_LegendItems;
+                xamlMember.Getter = get_9_Chart_LegendItems;
                 xamlMember.SetIsReadOnly();
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.LegendStyle":
                 userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart");
                 xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "LegendStyle", "Windows.UI.Xaml.Style");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_20_Chart_LegendStyle;
-                xamlMember.Setter = set_20_Chart_LegendStyle;
+                xamlMember.Getter = get_10_Chart_LegendStyle;
+                xamlMember.Setter = set_10_Chart_LegendStyle;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.LegendTitle":
                 userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart");
                 xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "LegendTitle", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_21_Chart_LegendTitle;
-                xamlMember.Setter = set_21_Chart_LegendTitle;
+                xamlMember.Getter = get_11_Chart_LegendTitle;
+                xamlMember.Setter = set_11_Chart_LegendTitle;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.PlotAreaStyle":
                 userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart");
                 xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "PlotAreaStyle", "Windows.UI.Xaml.Style");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_22_Chart_PlotAreaStyle;
-                xamlMember.Setter = set_22_Chart_PlotAreaStyle;
-                break;
-            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.Palette":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "Palette", "System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.ResourceDictionary>");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_23_Chart_Palette;
-                xamlMember.Setter = set_23_Chart_Palette;
+                xamlMember.Getter = get_12_Chart_PlotAreaStyle;
+                xamlMember.Setter = set_12_Chart_PlotAreaStyle;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.Title":
                 userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart");
                 xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "Title", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_24_Chart_Title;
-                xamlMember.Setter = set_24_Chart_Title;
+                xamlMember.Getter = get_13_Chart_Title;
+                xamlMember.Setter = set_13_Chart_Title;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.TitleStyle":
                 userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart");
                 xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "TitleStyle", "Windows.UI.Xaml.Style");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_25_Chart_TitleStyle;
-                xamlMember.Setter = set_25_Chart_TitleStyle;
+                xamlMember.Getter = get_14_Chart_TitleStyle;
+                xamlMember.Setter = set_14_Chart_TitleStyle;
+                break;
+            case "System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.ResourceDictionary>.Count":
+                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.ResourceDictionary>");
+                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "Count", "Int32");
+                xamlMember.Getter = get_15_Collection_Count;
+                xamlMember.SetIsReadOnly();
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Series.Title":
                 userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Series");
                 xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "Title", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_26_Series_Title;
-                xamlMember.Setter = set_26_Series_Title;
+                xamlMember.Getter = get_16_Series_Title;
+                xamlMember.Setter = set_16_Series_Title;
                 break;
-            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries.IndependentValueBinding":
+            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries.IndependentValuePath":
                 userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "IndependentValueBinding", "Windows.UI.Xaml.Data.Binding");
-                xamlMember.Getter = get_27_DataPointSeries_IndependentValueBinding;
-                xamlMember.Setter = set_27_DataPointSeries_IndependentValueBinding;
+                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "IndependentValuePath", "String");
+                xamlMember.Getter = get_17_DataPointSeries_IndependentValuePath;
+                xamlMember.Setter = set_17_DataPointSeries_IndependentValuePath;
                 break;
-            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries.DependentValueBinding":
+            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries.DependentValuePath":
                 userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "DependentValueBinding", "Windows.UI.Xaml.Data.Binding");
-                xamlMember.Getter = get_28_DataPointSeries_DependentValueBinding;
-                xamlMember.Setter = set_28_DataPointSeries_DependentValueBinding;
+                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "DependentValuePath", "String");
+                xamlMember.Getter = get_18_DataPointSeries_DependentValuePath;
+                xamlMember.Setter = set_18_DataPointSeries_DependentValuePath;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries.IsSelectionEnabled":
                 userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries");
                 xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "IsSelectionEnabled", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_29_DataPointSeries_IsSelectionEnabled;
-                xamlMember.Setter = set_29_DataPointSeries_IsSelectionEnabled;
+                xamlMember.Getter = get_19_DataPointSeries_IsSelectionEnabled;
+                xamlMember.Setter = set_19_DataPointSeries_IsSelectionEnabled;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaSeries.Geometry":
                 userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaSeries");
                 xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "Geometry", "Windows.UI.Xaml.Media.Geometry");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_30_AreaSeries_Geometry;
+                xamlMember.Getter = get_20_AreaSeries_Geometry;
                 xamlMember.SetIsReadOnly();
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaSeries.PathStyle":
                 userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaSeries");
                 xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "PathStyle", "Windows.UI.Xaml.Style");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_31_AreaSeries_PathStyle;
-                xamlMember.Setter = set_31_AreaSeries_PathStyle;
+                xamlMember.Getter = get_21_AreaSeries_PathStyle;
+                xamlMember.Setter = set_21_AreaSeries_PathStyle;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaDataPoint>.DependentRangeAxis":
                 userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaDataPoint>");
                 xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "DependentRangeAxis", "WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_32_LineAreaBaseSeries_DependentRangeAxis;
-                xamlMember.Setter = set_32_LineAreaBaseSeries_DependentRangeAxis;
+                xamlMember.Getter = get_22_LineAreaBaseSeries_DependentRangeAxis;
+                xamlMember.Setter = set_22_LineAreaBaseSeries_DependentRangeAxis;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaDataPoint>.IndependentAxis":
                 userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaDataPoint>");
                 xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "IndependentAxis", "WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_33_LineAreaBaseSeries_IndependentAxis;
-                xamlMember.Setter = set_33_LineAreaBaseSeries_IndependentAxis;
+                xamlMember.Getter = get_23_LineAreaBaseSeries_IndependentAxis;
+                xamlMember.Setter = set_23_LineAreaBaseSeries_IndependentAxis;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaDataPoint>.ActualIndependentAxis":
                 userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaDataPoint>");
                 xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "ActualIndependentAxis", "WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis");
-                xamlMember.Getter = get_34_LineAreaBaseSeries_ActualIndependentAxis;
+                xamlMember.Getter = get_24_LineAreaBaseSeries_ActualIndependentAxis;
                 xamlMember.SetIsReadOnly();
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaDataPoint>.ActualDependentRangeAxis":
                 userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaDataPoint>");
                 xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "ActualDependentRangeAxis", "WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis");
-                xamlMember.Getter = get_35_LineAreaBaseSeries_ActualDependentRangeAxis;
+                xamlMember.Getter = get_25_LineAreaBaseSeries_ActualDependentRangeAxis;
                 xamlMember.SetIsReadOnly();
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSingleSeriesWithAxes.GlobalSeriesIndex":
                 userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSingleSeriesWithAxes");
                 xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "GlobalSeriesIndex", "System.Nullable`1<Int32>");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_36_DataPointSingleSeriesWithAxes_GlobalSeriesIndex;
+                xamlMember.Getter = get_26_DataPointSingleSeriesWithAxes_GlobalSeriesIndex;
                 xamlMember.SetIsReadOnly();
                 break;
-            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries.DependentValuePath":
+            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries.DependentValueBinding":
                 userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "DependentValuePath", "String");
-                xamlMember.Getter = get_37_DataPointSeries_DependentValuePath;
-                xamlMember.Setter = set_37_DataPointSeries_DependentValuePath;
+                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "DependentValueBinding", "Windows.UI.Xaml.Data.Binding");
+                xamlMember.Getter = get_27_DataPointSeries_DependentValueBinding;
+                xamlMember.Setter = set_27_DataPointSeries_DependentValueBinding;
                 break;
-            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries.IndependentValuePath":
+            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries.IndependentValueBinding":
                 userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "IndependentValuePath", "String");
-                xamlMember.Getter = get_38_DataPointSeries_IndependentValuePath;
-                xamlMember.Setter = set_38_DataPointSeries_IndependentValuePath;
+                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "IndependentValueBinding", "Windows.UI.Xaml.Data.Binding");
+                xamlMember.Getter = get_28_DataPointSeries_IndependentValueBinding;
+                xamlMember.Setter = set_28_DataPointSeries_IndependentValueBinding;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries.ItemsSource":
                 userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries");
                 xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "ItemsSource", "System.Collections.IEnumerable");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_39_DataPointSeries_ItemsSource;
-                xamlMember.Setter = set_39_DataPointSeries_ItemsSource;
+                xamlMember.Getter = get_29_DataPointSeries_ItemsSource;
+                xamlMember.Setter = set_29_DataPointSeries_ItemsSource;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries.AnimationSequence":
                 userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries");
                 xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "AnimationSequence", "WinRTXamlToolkit.Controls.DataVisualization.Charting.AnimationSequence");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_40_DataPointSeries_AnimationSequence;
-                xamlMember.Setter = set_40_DataPointSeries_AnimationSequence;
+                xamlMember.Getter = get_30_DataPointSeries_AnimationSequence;
+                xamlMember.Setter = set_30_DataPointSeries_AnimationSequence;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries.TransitionEasingFunction":
                 userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries");
                 xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "TransitionEasingFunction", "Windows.UI.Xaml.Media.Animation.EasingFunctionBase");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_41_DataPointSeries_TransitionEasingFunction;
-                xamlMember.Setter = set_41_DataPointSeries_TransitionEasingFunction;
+                xamlMember.Getter = get_31_DataPointSeries_TransitionEasingFunction;
+                xamlMember.Setter = set_31_DataPointSeries_TransitionEasingFunction;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries.SelectedItem":
                 userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries");
                 xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "SelectedItem", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_42_DataPointSeries_SelectedItem;
-                xamlMember.Setter = set_42_DataPointSeries_SelectedItem;
+                xamlMember.Getter = get_32_DataPointSeries_SelectedItem;
+                xamlMember.Setter = set_32_DataPointSeries_SelectedItem;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries.DataPointStyle":
                 userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries");
                 xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "DataPointStyle", "Windows.UI.Xaml.Style");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_43_DataPointSeries_DataPointStyle;
-                xamlMember.Setter = set_43_DataPointSeries_DataPointStyle;
+                xamlMember.Getter = get_33_DataPointSeries_DataPointStyle;
+                xamlMember.Setter = set_33_DataPointSeries_DataPointStyle;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries.LegendItemStyle":
                 userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries");
                 xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "LegendItemStyle", "Windows.UI.Xaml.Style");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_44_DataPointSeries_LegendItemStyle;
-                xamlMember.Setter = set_44_DataPointSeries_LegendItemStyle;
+                xamlMember.Getter = get_34_DataPointSeries_LegendItemStyle;
+                xamlMember.Setter = set_34_DataPointSeries_LegendItemStyle;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries.TransitionDuration":
                 userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries");
                 xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "TransitionDuration", "TimeSpan");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_45_DataPointSeries_TransitionDuration;
-                xamlMember.Setter = set_45_DataPointSeries_TransitionDuration;
+                xamlMember.Getter = get_35_DataPointSeries_TransitionDuration;
+                xamlMember.Setter = set_35_DataPointSeries_TransitionDuration;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Series.SeriesHost":
                 userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Series");
                 xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "SeriesHost", "WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeriesHost");
-                xamlMember.Getter = get_46_Series_SeriesHost;
-                xamlMember.Setter = set_46_Series_SeriesHost;
+                xamlMember.Getter = get_36_Series_SeriesHost;
+                xamlMember.Setter = set_36_Series_SeriesHost;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Series.LegendItems":
                 userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Series");
                 xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "LegendItems", "System.Collections.ObjectModel.ObservableCollection`1<Object>");
-                xamlMember.Getter = get_47_Series_LegendItems;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "DevExpress.UI.Xaml.GalleryGroupContainerGenerator.GroupHeaderTemplate":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.GalleryGroupContainerGenerator");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "GroupHeaderTemplate", "Windows.UI.Xaml.DataTemplate");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_48_GalleryGroupContainerGenerator_GroupHeaderTemplate;
-                xamlMember.Setter = set_48_GalleryGroupContainerGenerator_GroupHeaderTemplate;
-                break;
-            case "DevExpress.UI.Xaml.GalleryGroupContainerGenerator.ItemContainerGenerator":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.GalleryGroupContainerGenerator");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "ItemContainerGenerator", "DevExpress.UI.Xaml.GalleryItemContainerGeneratorBase");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_49_GalleryGroupContainerGenerator_ItemContainerGenerator;
-                xamlMember.Setter = set_49_GalleryGroupContainerGenerator_ItemContainerGenerator;
-                break;
-            case "DevExpress.UI.Xaml.GalleryGroupContainerGenerator.GroupItemsPath":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.GalleryGroupContainerGenerator");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "GroupItemsPath", "String");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_50_GalleryGroupContainerGenerator_GroupItemsPath;
-                xamlMember.Setter = set_50_GalleryGroupContainerGenerator_GroupItemsPath;
-                break;
-            case "DevExpress.UI.Xaml.GalleryGroupContainerGenerator.MaxColCount":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.GalleryGroupContainerGenerator");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "MaxColCount", "Int32");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_51_GalleryGroupContainerGenerator_MaxColCount;
-                xamlMember.Setter = set_51_GalleryGroupContainerGenerator_MaxColCount;
-                break;
-            case "DevExpress.UI.Xaml.GalleryGroupContainerGenerator.ActualGroupItemsPath":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.GalleryGroupContainerGenerator");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "ActualGroupItemsPath", "String");
-                xamlMember.Getter = get_52_GalleryGroupContainerGenerator_ActualGroupItemsPath;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "DevExpress.UI.Xaml.GalleryItemContainerGeneratorBase.ContentTemplate":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.GalleryItemContainerGeneratorBase");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "ContentTemplate", "Windows.UI.Xaml.DataTemplate");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_53_GalleryItemContainerGeneratorBase_ContentTemplate;
-                xamlMember.Setter = set_53_GalleryItemContainerGeneratorBase_ContentTemplate;
-                break;
-            case "DevExpress.UI.Xaml.GalleryItemContainerGeneratorBase.ContentTemplateSelector":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.GalleryItemContainerGeneratorBase");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "ContentTemplateSelector", "Windows.UI.Xaml.Controls.DataTemplateSelector");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_54_GalleryItemContainerGeneratorBase_ContentTemplateSelector;
-                xamlMember.Setter = set_54_GalleryItemContainerGeneratorBase_ContentTemplateSelector;
-                break;
-            case "DevExpress.UI.Xaml.GalleryItemContainerGeneratorBase.ContainerStyle":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.GalleryItemContainerGeneratorBase");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "ContainerStyle", "Windows.UI.Xaml.Style");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_55_GalleryItemContainerGeneratorBase_ContainerStyle;
-                xamlMember.Setter = set_55_GalleryItemContainerGeneratorBase_ContainerStyle;
-                break;
-            case "DevExpress.UI.Xaml.GalleryItemContainerGeneratorBase.ActualColumnWidth":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.GalleryItemContainerGeneratorBase");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "ActualColumnWidth", "Double");
-                xamlMember.Getter = get_56_GalleryItemContainerGeneratorBase_ActualColumnWidth;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "DevExpress.UI.Xaml.GalleryItemContainerGeneratorBase.AverageContainerHeight":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.GalleryItemContainerGeneratorBase");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "AverageContainerHeight", "Double");
-                xamlMember.Getter = get_57_GalleryItemContainerGeneratorBase_AverageContainerHeight;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "DevExpress.UI.Xaml.GalleryItemContainerGeneratorBase.GroupedItems":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.GalleryItemContainerGeneratorBase");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "GroupedItems", "Boolean");
-                xamlMember.Getter = get_58_GalleryItemContainerGeneratorBase_GroupedItems;
-                xamlMember.Setter = set_58_GalleryItemContainerGeneratorBase_GroupedItems;
-                break;
-            case "DevExpress.UI.Xaml.GalleryItemContainerGeneratorBase.MaxContainerHeight":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.GalleryItemContainerGeneratorBase");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "MaxContainerHeight", "Double");
-                xamlMember.Getter = get_59_GalleryItemContainerGeneratorBase_MaxContainerHeight;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "DevExpress.UI.Xaml.GalleryItemContainerGeneratorBase.DummyItem":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.GalleryItemContainerGeneratorBase");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "DummyItem", "Windows.UI.Xaml.FrameworkElement");
-                xamlMember.Getter = get_60_GalleryItemContainerGeneratorBase_DummyItem;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "DevExpress.UI.Xaml.GalleryItemGroup.Items":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.GalleryItemGroup");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "Items", "DevExpress.UI.Xaml.GalleryItemCollection");
-                xamlMember.Getter = get_61_GalleryItemGroup_Items;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "DevExpress.UI.Xaml.GalleryItemGroup.Title":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.GalleryItemGroup");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "Title", "String");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_62_GalleryItemGroup_Title;
-                xamlMember.Setter = set_62_GalleryItemGroup_Title;
-                break;
-            case "DevExpress.UI.Xaml.TitleSettings.ButtonInactiveForeground":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.TitleSettings");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "ButtonInactiveForeground", "Windows.UI.Xaml.Media.SolidColorBrush");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_63_TitleSettings_ButtonInactiveForeground;
-                xamlMember.Setter = set_63_TitleSettings_ButtonInactiveForeground;
-                break;
-            case "DevExpress.UI.Xaml.TitleSettings.ButtonInactiveBackground":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.TitleSettings");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "ButtonInactiveBackground", "Windows.UI.Xaml.Media.SolidColorBrush");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_64_TitleSettings_ButtonInactiveBackground;
-                xamlMember.Setter = set_64_TitleSettings_ButtonInactiveBackground;
-                break;
-            case "DevExpress.UI.Xaml.TitleSettings.ButtonPressedForeground":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.TitleSettings");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "ButtonPressedForeground", "Windows.UI.Xaml.Media.SolidColorBrush");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_65_TitleSettings_ButtonPressedForeground;
-                xamlMember.Setter = set_65_TitleSettings_ButtonPressedForeground;
-                break;
-            case "DevExpress.UI.Xaml.TitleSettings.ButtonPressedBackground":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.TitleSettings");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "ButtonPressedBackground", "Windows.UI.Xaml.Media.SolidColorBrush");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_66_TitleSettings_ButtonPressedBackground;
-                xamlMember.Setter = set_66_TitleSettings_ButtonPressedBackground;
-                break;
-            case "DevExpress.UI.Xaml.TitleSettings.ButtonHoverForeground":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.TitleSettings");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "ButtonHoverForeground", "Windows.UI.Xaml.Media.SolidColorBrush");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_67_TitleSettings_ButtonHoverForeground;
-                xamlMember.Setter = set_67_TitleSettings_ButtonHoverForeground;
-                break;
-            case "DevExpress.UI.Xaml.TitleSettings.ButtonHoverBackground":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.TitleSettings");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "ButtonHoverBackground", "Windows.UI.Xaml.Media.SolidColorBrush");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_68_TitleSettings_ButtonHoverBackground;
-                xamlMember.Setter = set_68_TitleSettings_ButtonHoverBackground;
-                break;
-            case "DevExpress.UI.Xaml.TitleSettings.ButtonBackground":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.TitleSettings");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "ButtonBackground", "Windows.UI.Xaml.Media.SolidColorBrush");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_69_TitleSettings_ButtonBackground;
-                xamlMember.Setter = set_69_TitleSettings_ButtonBackground;
-                break;
-            case "DevExpress.UI.Xaml.TitleSettings.ButtonForeground":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.TitleSettings");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "ButtonForeground", "Windows.UI.Xaml.Media.SolidColorBrush");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_70_TitleSettings_ButtonForeground;
-                xamlMember.Setter = set_70_TitleSettings_ButtonForeground;
-                break;
-            case "DevExpress.UI.Xaml.TitleSettings.InactiveForeground":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.TitleSettings");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "InactiveForeground", "Windows.UI.Xaml.Media.SolidColorBrush");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_71_TitleSettings_InactiveForeground;
-                xamlMember.Setter = set_71_TitleSettings_InactiveForeground;
-                break;
-            case "DevExpress.UI.Xaml.TitleSettings.InactiveBackground":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.TitleSettings");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "InactiveBackground", "Windows.UI.Xaml.Media.SolidColorBrush");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_72_TitleSettings_InactiveBackground;
-                xamlMember.Setter = set_72_TitleSettings_InactiveBackground;
-                break;
-            case "DevExpress.UI.Xaml.TitleSettings.Foreground":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.TitleSettings");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "Foreground", "Windows.UI.Xaml.Media.SolidColorBrush");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_73_TitleSettings_Foreground;
-                xamlMember.Setter = set_73_TitleSettings_Foreground;
-                break;
-            case "DevExpress.UI.Xaml.TitleSettings.Background":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.TitleSettings");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "Background", "Windows.UI.Xaml.Media.SolidColorBrush");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_74_TitleSettings_Background;
-                xamlMember.Setter = set_74_TitleSettings_Background;
-                break;
-            case "DevExpress.UI.Xaml.TitleSettings.Template":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.TitleSettings");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "Template", "Windows.UI.Xaml.DataTemplate");
-                xamlMember.SetTargetTypeName("Windows.UI.Xaml.DependencyObject");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.SetIsAttachable();
-                xamlMember.Getter = get_75_TitleSettings_Template;
-                xamlMember.Setter = set_75_TitleSettings_Template;
-                break;
-            case "DevExpress.UI.Xaml.Internal.DXExpander.Child":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.DXExpander");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "Child", "Windows.UI.Xaml.UIElement");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_76_DXExpander_Child;
-                xamlMember.Setter = set_76_DXExpander_Child;
-                break;
-            case "DevExpress.UI.Xaml.Internal.DXExpander.IsExpanded":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.DXExpander");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "IsExpanded", "Boolean");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_77_DXExpander_IsExpanded;
-                xamlMember.Setter = set_77_DXExpander_IsExpanded;
-                break;
-            case "DevExpress.UI.Xaml.Internal.DXExpander.ExpandStoryboard":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.DXExpander");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "ExpandStoryboard", "Windows.UI.Xaml.Media.Animation.Storyboard");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_78_DXExpander_ExpandStoryboard;
-                xamlMember.Setter = set_78_DXExpander_ExpandStoryboard;
-                break;
-            case "DevExpress.UI.Xaml.Internal.DXExpander.CollapseStoryboard":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.DXExpander");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "CollapseStoryboard", "Windows.UI.Xaml.Media.Animation.Storyboard");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_79_DXExpander_CollapseStoryboard;
-                xamlMember.Setter = set_79_DXExpander_CollapseStoryboard;
-                break;
-            case "DevExpress.UI.Xaml.Internal.DXExpander.Location":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.DXExpander");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "Location", "Windows.UI.Xaml.Controls.Primitives.EdgeTransitionLocation");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_80_DXExpander_Location;
-                xamlMember.Setter = set_80_DXExpander_Location;
-                break;
-            case "DevExpress.UI.Xaml.Internal.DXExpander.AnimationDuration":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.DXExpander");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "AnimationDuration", "TimeSpan");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_81_DXExpander_AnimationDuration;
-                xamlMember.Setter = set_81_DXExpander_AnimationDuration;
-                break;
-            case "DevExpress.UI.Xaml.Internal.DXExpander.ClipToBounds":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.DXExpander");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "ClipToBounds", "Boolean");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_82_DXExpander_ClipToBounds;
-                xamlMember.Setter = set_82_DXExpander_ClipToBounds;
-                break;
-            case "DevExpress.UI.Xaml.Internal.DXExpander.DefineLayoutFromLocation":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.DXExpander");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "DefineLayoutFromLocation", "Boolean");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_83_DXExpander_DefineLayoutFromLocation;
-                xamlMember.Setter = set_83_DXExpander_DefineLayoutFromLocation;
-                break;
-            case "DevExpress.UI.Xaml.Internal.DXExpander.Children":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.DXExpander");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "Children", "Windows.UI.Xaml.Controls.UIElementCollection");
-                xamlMember.Getter = get_84_DXExpander_Children;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "DevExpress.UI.Xaml.Internal.DXExpander.IsLoaded":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.DXExpander");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "IsLoaded", "Boolean");
-                xamlMember.Getter = get_85_DXExpander_IsLoaded;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "DevExpress.UI.Xaml.Internal.SelectorControl.ItemsSource":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.SelectorControl");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "ItemsSource", "Object");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_86_SelectorControl_ItemsSource;
-                xamlMember.Setter = set_86_SelectorControl_ItemsSource;
-                break;
-            case "DevExpress.UI.Xaml.Internal.SelectorControl.SelectedIndex":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.SelectorControl");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "SelectedIndex", "Int32");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_87_SelectorControl_SelectedIndex;
-                xamlMember.Setter = set_87_SelectorControl_SelectedIndex;
-                break;
-            case "DevExpress.UI.Xaml.Internal.SelectorControl.SelectedItem":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.SelectorControl");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "SelectedItem", "Object");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_88_SelectorControl_SelectedItem;
-                xamlMember.Setter = set_88_SelectorControl_SelectedItem;
-                break;
-            case "DevExpress.UI.Xaml.Internal.SelectorControl.SelectionEmptyAction":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.SelectorControl");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "SelectionEmptyAction", "DevExpress.UI.Xaml.Internal.SelectionEmptyAction");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_89_SelectorControl_SelectionEmptyAction;
-                xamlMember.Setter = set_89_SelectorControl_SelectionEmptyAction;
-                break;
-            case "DevExpress.UI.Xaml.Internal.SelectorControl.CanSelect":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.SelectorControl");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "CanSelect", "Boolean");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_90_SelectorControl_CanSelect;
-                xamlMember.Setter = set_90_SelectorControl_CanSelect;
-                break;
-            case "DevExpress.UI.Xaml.Internal.SelectorControlBase.Orientation":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.SelectorControlBase");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "Orientation", "Windows.UI.Xaml.Controls.Orientation");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_91_SelectorControlBase_Orientation;
-                xamlMember.Setter = set_91_SelectorControlBase_Orientation;
-                break;
-            case "DevExpress.UI.Xaml.Internal.SelectorControlBase.ItemTemplate":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.SelectorControlBase");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "ItemTemplate", "Windows.UI.Xaml.DataTemplate");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_92_SelectorControlBase_ItemTemplate;
-                xamlMember.Setter = set_92_SelectorControlBase_ItemTemplate;
-                break;
-            case "DevExpress.UI.Xaml.Internal.SelectorControlBase.ItemTemplateSelector":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.SelectorControlBase");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "ItemTemplateSelector", "Windows.UI.Xaml.Controls.DataTemplateSelector");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_93_SelectorControlBase_ItemTemplateSelector;
-                xamlMember.Setter = set_93_SelectorControlBase_ItemTemplateSelector;
-                break;
-            case "DevExpress.UI.Xaml.Internal.SelectorControlBase.ItemContainerStyle":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.SelectorControlBase");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "ItemContainerStyle", "Windows.UI.Xaml.Style");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_94_SelectorControlBase_ItemContainerStyle;
-                xamlMember.Setter = set_94_SelectorControlBase_ItemContainerStyle;
-                break;
-            case "DevExpress.UI.Xaml.Internal.SelectorControlBase.IsLockUpdate":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.SelectorControlBase");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "IsLockUpdate", "Boolean");
-                xamlMember.Getter = get_95_SelectorControlBase_IsLockUpdate;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "DevExpress.UI.Xaml.Internal.SelectorControlBase.Items":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.SelectorControlBase");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "Items", "DevExpress.UI.Xaml.Internal.SelectableItemCollection");
-                xamlMember.Getter = get_96_SelectorControlBase_Items;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "DevExpress.UI.Xaml.Internal.SelectorItemBase.IsSelected":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.SelectorItemBase");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "IsSelected", "Boolean");
-                xamlMember.Getter = get_97_SelectorItemBase_IsSelected;
-                xamlMember.Setter = set_97_SelectorItemBase_IsSelected;
-                break;
-            case "DevExpress.UI.Xaml.Internal.PointerItemBase.ClickMode":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.PointerItemBase");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "ClickMode", "Windows.UI.Xaml.Controls.ClickMode");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_98_PointerItemBase_ClickMode;
-                xamlMember.Setter = set_98_PointerItemBase_ClickMode;
-                break;
-            case "DevExpress.UI.Xaml.Internal.PointerItemBase.IsPointerOver":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.PointerItemBase");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "IsPointerOver", "Boolean");
-                xamlMember.Getter = get_99_PointerItemBase_IsPointerOver;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "DevExpress.UI.Xaml.Internal.PointerItemBase.IsPressed":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.PointerItemBase");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "IsPressed", "Boolean");
-                xamlMember.Getter = get_100_PointerItemBase_IsPressed;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "DevExpress.UI.Xaml.Internal.ContentControlEx.ActualSize":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.ContentControlEx");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "ActualSize", "Windows.Foundation.Size");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_101_ContentControlEx_ActualSize;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "DevExpress.UI.Xaml.Internal.ContentControlEx.IsLoaded":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.ContentControlEx");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "IsLoaded", "Boolean");
-                xamlMember.Getter = get_102_ContentControlEx_IsLoaded;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "DevExpress.UI.Xaml.Internal.ControlEx.ActualSize":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.ControlEx");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "ActualSize", "Windows.Foundation.Size");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_103_ControlEx_ActualSize;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "DevExpress.UI.Xaml.Internal.ControlEx.IsLoaded":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.ControlEx");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "IsLoaded", "Boolean");
-                xamlMember.Getter = get_104_ControlEx_IsLoaded;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "DevExpress.UI.Xaml.Internal.TreeNavigator.RootNode":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.TreeNavigator");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "RootNode", "DevExpress.UI.Xaml.Internal.TreeNavigatorNode");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_105_TreeNavigator_RootNode;
-                xamlMember.Setter = set_105_TreeNavigator_RootNode;
-                break;
-            case "DevExpress.UI.Xaml.Internal.TreeNavigator.CurrentNode":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.TreeNavigator");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "CurrentNode", "DevExpress.UI.Xaml.Internal.TreeNavigatorNode");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_106_TreeNavigator_CurrentNode;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "DevExpress.UI.Xaml.Internal.TreeNavigator.RootHeaderContent":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.TreeNavigator");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "RootHeaderContent", "Object");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_107_TreeNavigator_RootHeaderContent;
-                xamlMember.Setter = set_107_TreeNavigator_RootHeaderContent;
-                break;
-            case "DevExpress.UI.Xaml.Internal.TreeNavigator.RootHeaderContentTemplate":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.TreeNavigator");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "RootHeaderContentTemplate", "Windows.UI.Xaml.DataTemplate");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_108_TreeNavigator_RootHeaderContentTemplate;
-                xamlMember.Setter = set_108_TreeNavigator_RootHeaderContentTemplate;
-                break;
-            case "DevExpress.UI.Xaml.Internal.TreeNavigator.HeaderContent":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.TreeNavigator");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "HeaderContent", "Object");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_109_TreeNavigator_HeaderContent;
-                xamlMember.Setter = set_109_TreeNavigator_HeaderContent;
-                break;
-            case "DevExpress.UI.Xaml.Internal.TreeNavigator.HeaderContentTemplate":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.TreeNavigator");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "HeaderContentTemplate", "Windows.UI.Xaml.DataTemplate");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_110_TreeNavigator_HeaderContentTemplate;
-                xamlMember.Setter = set_110_TreeNavigator_HeaderContentTemplate;
-                break;
-            case "DevExpress.UI.Xaml.Internal.TreeNavigator.HeaderPadding":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.TreeNavigator");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "HeaderPadding", "Windows.UI.Xaml.Thickness");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_111_TreeNavigator_HeaderPadding;
-                xamlMember.Setter = set_111_TreeNavigator_HeaderPadding;
-                break;
-            case "DevExpress.UI.Xaml.Internal.TreeNavigator.HeaderFontSize":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.TreeNavigator");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "HeaderFontSize", "Double");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_112_TreeNavigator_HeaderFontSize;
-                xamlMember.Setter = set_112_TreeNavigator_HeaderFontSize;
-                break;
-            case "DevExpress.UI.Xaml.Internal.TreeNavigator.NavigateToItemCommand":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.TreeNavigator");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "NavigateToItemCommand", "System.Windows.Input.ICommand");
-                xamlMember.Getter = get_113_TreeNavigator_NavigateToItemCommand;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "DevExpress.UI.Xaml.Internal.TreeNavigator.NavigateUpperCommand":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.TreeNavigator");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "NavigateUpperCommand", "System.Windows.Input.ICommand");
-                xamlMember.Getter = get_114_TreeNavigator_NavigateUpperCommand;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "DevExpress.UI.Xaml.Internal.TreeNavigatorItem.Node":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.TreeNavigatorItem");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "Node", "DevExpress.UI.Xaml.Internal.TreeNavigatorNode");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_115_TreeNavigatorItem_Node;
-                xamlMember.Setter = set_115_TreeNavigatorItem_Node;
-                break;
-            case "DevExpress.UI.Xaml.Internal.TreeNavigatorItem.IconPadding":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.TreeNavigatorItem");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "IconPadding", "Windows.UI.Xaml.Thickness");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_116_TreeNavigatorItem_IconPadding;
-                xamlMember.Setter = set_116_TreeNavigatorItem_IconPadding;
-                break;
-            case "DevExpress.UI.Xaml.Internal.TreeNavigatorItem.ArrowGlyph":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.TreeNavigatorItem");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "ArrowGlyph", "Windows.UI.Xaml.Media.Geometry");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_117_TreeNavigatorItem_ArrowGlyph;
-                xamlMember.Setter = set_117_TreeNavigatorItem_ArrowGlyph;
-                break;
-            case "DevExpress.UI.Xaml.Internal.TreeNavigatorItem.ArrowGlyphPressed":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.TreeNavigatorItem");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "ArrowGlyphPressed", "Windows.UI.Xaml.Media.Geometry");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_118_TreeNavigatorItem_ArrowGlyphPressed;
-                xamlMember.Setter = set_118_TreeNavigatorItem_ArrowGlyphPressed;
-                break;
-            case "DevExpress.UI.Xaml.Internal.TreeNavigatorItem.IsSelected":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.TreeNavigatorItem");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "IsSelected", "Boolean");
-                xamlMember.Getter = get_119_TreeNavigatorItem_IsSelected;
-                xamlMember.Setter = set_119_TreeNavigatorItem_IsSelected;
-                break;
-            case "DevExpress.UI.Xaml.Internal.TreeNavigatorNode.Parent":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.TreeNavigatorNode");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "Parent", "DevExpress.UI.Xaml.Internal.TreeNavigatorNode");
-                xamlMember.Getter = get_120_TreeNavigatorNode_Parent;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "DevExpress.UI.Xaml.Internal.TreeNavigatorNode.IsRootNode":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.TreeNavigatorNode");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "IsRootNode", "Boolean");
-                xamlMember.Getter = get_121_TreeNavigatorNode_IsRootNode;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "DevExpress.UI.Xaml.Internal.TreeNavigatorNode.IsSubNode":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.TreeNavigatorNode");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "IsSubNode", "Boolean");
-                xamlMember.Getter = get_122_TreeNavigatorNode_IsSubNode;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "DevExpress.UI.Xaml.Internal.TreeNavigatorNode.Node":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.TreeNavigatorNode");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "Node", "Object");
-                xamlMember.Getter = get_123_TreeNavigatorNode_Node;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "DevExpress.UI.Xaml.Internal.TreeNavigatorNode.Children":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.TreeNavigatorNode");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "Children", "DevExpress.UI.Xaml.Internal.TreeNavigatorNodeCollection");
-                xamlMember.Getter = get_124_TreeNavigatorNode_Children;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "DevExpress.UI.Xaml.Internal.TreeNavigatorNode.HasChildren":
-                userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevExpress.UI.Xaml.Internal.TreeNavigatorNode");
-                xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "HasChildren", "Boolean");
-                xamlMember.Getter = get_125_TreeNavigatorNode_HasChildren;
+                xamlMember.Getter = get_37_Series_LegendItems;
                 xamlMember.SetIsReadOnly();
                 break;
             }

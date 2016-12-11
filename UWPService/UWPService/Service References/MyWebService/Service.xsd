@@ -13,4 +13,40 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="Ventes">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VentesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/UWPExam" minOccurs="0" name="VentesResult" nillable="true" type="q2:ArrayOfVente" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Clients">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClientsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/UWPExam" minOccurs="0" name="ClientsResult" nillable="true" type="q3:ArrayOfClient" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Resultats">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ResultatsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/UWPExam" minOccurs="0" name="ResultatsResult" nillable="true" type="q4:ArrayOfResultat" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>

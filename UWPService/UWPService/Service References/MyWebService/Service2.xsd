@@ -17,4 +17,45 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="Customer" nillable="true" type="tns:Customer" />
+  <xs:complexType name="ArrayOfVente">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Vente" nillable="true" type="tns:Vente" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVente" nillable="true" type="tns:ArrayOfVente" />
+  <xs:complexType name="Vente">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Count" type="xs:int" />
+      <xs:element minOccurs="0" name="ProductName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Vente" nillable="true" type="tns:Vente" />
+  <xs:complexType name="ArrayOfClient">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Client" nillable="true" type="tns:Client" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfClient" nillable="true" type="tns:ArrayOfClient" />
+  <xs:complexType name="Client">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Amount" type="xs:float" />
+      <xs:element minOccurs="0" name="Count" type="xs:int" />
+      <xs:element minOccurs="0" name="FullName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Client" nillable="true" type="tns:Client" />
+  <xs:complexType name="ArrayOfResultat">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Resultat" nillable="true" type="tns:Resultat" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfResultat" nillable="true" type="tns:ArrayOfResultat" />
+  <xs:complexType name="Resultat">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Amount" type="xs:float" />
+      <xs:element minOccurs="0" name="Month" type="xs:int" />
+      <xs:element minOccurs="0" name="Year" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Resultat" nillable="true" type="tns:Resultat" />
 </xs:schema>

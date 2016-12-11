@@ -40,7 +40,7 @@ namespace UWPService
         /// </summary>
         private void NavigationCortana()
         {
-            MyFrame.Navigate(typeof(Dashboard));
+            MyFrame.Navigate(typeof(Views.Dashboard));
             switch (Items.Constant.command)
             {
                 case "Panier":
@@ -56,7 +56,7 @@ namespace UWPService
                     MyFrame.Navigate(typeof(Produits));
                     break;
                 default:
-                    MyFrame.Navigate(typeof(Dashboard));
+                    MyFrame.Navigate(typeof(Views.Dashboard));
                     break;
             }
 

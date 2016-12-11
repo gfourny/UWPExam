@@ -1,9 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
-  <Roots.PropertyPathNames>
-    <RootPropertyPathName Name="Vente" />
-    <RootPropertyPathName Name="FirstName" />
-  </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
       <RootProperty Name="RequestedTheme" />
@@ -45,6 +41,9 @@
       <RootProperty Name="Foreground" />
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
+      <RootEvent Name="PointerPressed" />
+      <RootEvent Name="PointerEntered" />
+      <RootEvent Name="PointerExited" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Frame">
       <RootProperty Name="Margin" />
@@ -54,36 +53,25 @@
     <RootType FullName="Windows.UI.Xaml.Controls.RelativePanel">
       <RootProperty Name="Margin" />
       <RootProperty Name="Children" />
-      <RootMethod Name="GetAlignRightWith" />
-      <RootMethod Name="SetAlignRightWith" />
-      <RootMethod Name="GetAlignVerticalCenterWith" />
-      <RootMethod Name="SetAlignVerticalCenterWith" />
-      <RootMethod Name="GetRightOf" />
-      <RootMethod Name="SetRightOf" />
       <RootMethod Name="GetBelow" />
       <RootMethod Name="SetBelow" />
-    </RootType>
-    <RootType FullName="CrossPieCharts.UWP.PieCharts.RichPieChart">
-      <RootProperty Name="Radius" />
-      <RootProperty Name="StrokeThickness" />
-      <RootProperty Name="Margin" />
-    </RootType>
-    <RootType FullName="CrossPieCharts.UWP.PieCharts.PieChart">
-      <RootProperty Name="Radius" />
-      <RootProperty Name="Percentage" />
-      <RootProperty Name="StrokeThickness" />
+      <RootMethod Name="GetAlignHorizontalCenterWithPanel" />
+      <RootMethod Name="SetAlignHorizontalCenterWithPanel" />
+      <RootMethod Name="GetLeftOf" />
+      <RootMethod Name="SetLeftOf" />
     </RootType>
     <RootType FullName="WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart">
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
       <RootProperty Name="Series" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.GridView" />
     <RootType FullName="WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaSeries">
       <RootProperty Name="Title" />
-      <RootProperty Name="IndependentValueBinding" />
-      <RootProperty Name="DependentValueBinding" />
+      <RootProperty Name="IndependentValuePath" />
+      <RootProperty Name="DependentValuePath" />
       <RootProperty Name="IsSelectionEnabled" />
+      <RootProperty Name="Background" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Data.Binding" />
     <RootType FullName="UWPService.Views.Dashboard" />
     <RootType FullName="UWPService.Views.Factures" />
     <RootType FullName="UWPService.Views.Panier" />

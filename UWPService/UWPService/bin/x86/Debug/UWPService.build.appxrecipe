@@ -25,27 +25,6 @@
     <AppxPackagedFile Include="C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\UWPService.exe">
       <PackagePath>entrypoint\UWPService.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\DevExpress 16.1\Components\System\UAP\SDK\16.1.8\DevExpress.Core\16.1\References\CommonConfiguration\neutral\DevExpress.Core.v16.1.dll">
-      <PackagePath>DevExpress.Core.v16.1.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\DevExpress 16.1\Components\System\UAP\SDK\16.1.8\DevExpress.Core\16.1\References\CommonConfiguration\neutral\DevExpress.Drawing.v16.1.dll">
-      <PackagePath>DevExpress.Drawing.v16.1.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\DevExpress 16.1\Components\System\UAP\SDK\16.1.8\DevExpress.Core\16.1\References\CommonConfiguration\neutral\DevExpress.Mvvm.v16.1.dll">
-      <PackagePath>DevExpress.Mvvm.v16.1.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\DevExpress 16.1\Components\System\UAP\SDK\16.1.8\DevExpress.Visualization\16.1\References\CommonConfiguration\neutral\DevExpress.UI.Xaml.Charts.v16.1.dll">
-      <PackagePath>DevExpress.UI.Xaml.Charts.v16.1.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\DevExpress 16.1\Components\System\UAP\SDK\16.1.8\DevExpress.Visualization\16.1\References\CommonConfiguration\neutral\DevExpress.UI.Xaml.Gauges.v16.1.dll">
-      <PackagePath>DevExpress.UI.Xaml.Gauges.v16.1.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\DevExpress 16.1\Components\System\UAP\SDK\16.1.8\DevExpress.Visualization\16.1\References\CommonConfiguration\neutral\DevExpress.UI.Xaml.Map.v16.1.dll">
-      <PackagePath>DevExpress.UI.Xaml.Map.v16.1.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\DevExpress 16.1\Components\System\UAP\SDK\16.1.8\DevExpress.Core\16.1\References\CommonConfiguration\neutral\DevExpress.UI.Xaml.v16.1.dll">
-      <PackagePath>DevExpress.UI.Xaml.v16.1.dll</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\CrossPieCharts.UWP\1.0.2\lib\uap\CrossPieCharts.ClassLibrary.dll">
       <PackagePath>CrossPieCharts.ClassLibrary.dll</PackagePath>
     </AppxPackagedFile>
