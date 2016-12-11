@@ -26,7 +26,6 @@ namespace UWPService.Views
         public Client_Fournisseur()
         {
             this.InitializeComponent();
-            SystemNavigationManager.GetForCurrentView().BackRequested += MainPage_BackRequested;
         }
 
         private void MainPage_BackRequested(object sender, BackRequestedEventArgs e)

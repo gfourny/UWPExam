@@ -156,7 +156,6 @@ namespace UWPService.UWPService_XamlTypeInfo
 
         private void InitTypeTables()
         {
-<<<<<<< HEAD
             _typeNameTable = new string[47];
             _typeNameTable[0] = "UWPService.MainPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
@@ -254,117 +253,6 @@ namespace UWPService.UWPService_XamlTypeInfo
             _typeTable[44] = typeof(global::UWPService.Views.Factures);
             _typeTable[45] = typeof(global::UWPService.Views.Panier);
             _typeTable[46] = typeof(global::UWPService.Views.Produits);
-=======
-            _typeNameTable = new string[53];
-            _typeNameTable[0] = "UWPService.MainPage";
-            _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "UWPService.Views.Client_Fournisseur";
-            _typeNameTable[4] = "CrossPieCharts.UWP.PieCharts.RichPieChart";
-            _typeNameTable[5] = "Int32";
-            _typeNameTable[6] = "System.Collections.Generic.List`1<CrossPieCharts.UWP.PieCharts.PieChartArgs>";
-            _typeNameTable[7] = "Object";
-            _typeNameTable[8] = "CrossPieCharts.UWP.PieCharts.PieChartArgs";
-            _typeNameTable[9] = "Windows.UI.Xaml.Media.SolidColorBrush";
-            _typeNameTable[10] = "CrossPieCharts.UWP.PieCharts.PieChart";
-            _typeNameTable[11] = "Double";
-            _typeNameTable[12] = "Windows.UI.Xaml.Media.Brush";
-            _typeNameTable[13] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart";
-            _typeNameTable[14] = "Windows.UI.Xaml.Controls.Control";
-            _typeNameTable[15] = "System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries>";
-            _typeNameTable[16] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries";
-            _typeNameTable[17] = "System.Collections.ObjectModel.ObservableCollection`1<Object>";
-            _typeNameTable[18] = "System.Collections.ObjectModel.Collection`1<Object>";
-            _typeNameTable[19] = "System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>";
-            _typeNameTable[20] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis";
-            _typeNameTable[21] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.AxisOrientation";
-            _typeNameTable[22] = "System.Enum";
-            _typeNameTable[23] = "System.ValueType";
-            _typeNameTable[24] = "System.Collections.ObjectModel.ObservableCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>";
-            _typeNameTable[25] = "System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>";
-            _typeNameTable[26] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener";
-            _typeNameTable[27] = "System.Collections.ObjectModel.ObservableCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>";
-            _typeNameTable[28] = "System.Collections.ObjectModel.ReadOnlyCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>";
-            _typeNameTable[29] = "Windows.UI.Xaml.Style";
-            _typeNameTable[30] = "System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.ResourceDictionary>";
-            _typeNameTable[31] = "Windows.UI.Xaml.ResourceDictionary";
-            _typeNameTable[32] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaSeries";
-            _typeNameTable[33] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaDataPoint>";
-            _typeNameTable[34] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSingleSeriesWithAxes";
-            _typeNameTable[35] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeriesWithAxes";
-            _typeNameTable[36] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries";
-            _typeNameTable[37] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.Series";
-            _typeNameTable[38] = "Windows.UI.Xaml.Data.Binding";
-            _typeNameTable[39] = "Boolean";
-            _typeNameTable[40] = "Windows.UI.Xaml.Media.Geometry";
-            _typeNameTable[41] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis";
-            _typeNameTable[42] = "System.Nullable`1<Int32>";
-            _typeNameTable[43] = "String";
-            _typeNameTable[44] = "System.Collections.IEnumerable";
-            _typeNameTable[45] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.AnimationSequence";
-            _typeNameTable[46] = "Windows.UI.Xaml.Media.Animation.EasingFunctionBase";
-            _typeNameTable[47] = "TimeSpan";
-            _typeNameTable[48] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeriesHost";
-            _typeNameTable[49] = "UWPService.Views.Dashboard";
-            _typeNameTable[50] = "UWPService.Views.Factures";
-            _typeNameTable[51] = "UWPService.Views.Panier";
-            _typeNameTable[52] = "UWPService.Views.Produits";
-
-            _typeTable = new global::System.Type[53];
-            _typeTable[0] = typeof(global::UWPService.MainPage);
-            _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::UWPService.Views.Client_Fournisseur);
-            _typeTable[4] = typeof(global::CrossPieCharts.UWP.PieCharts.RichPieChart);
-            _typeTable[5] = typeof(global::System.Int32);
-            _typeTable[6] = typeof(global::System.Collections.Generic.List<global::CrossPieCharts.UWP.PieCharts.PieChartArgs>);
-            _typeTable[7] = typeof(global::System.Object);
-            _typeTable[8] = typeof(global::CrossPieCharts.UWP.PieCharts.PieChartArgs);
-            _typeTable[9] = typeof(global::Windows.UI.Xaml.Media.SolidColorBrush);
-            _typeTable[10] = typeof(global::CrossPieCharts.UWP.PieCharts.PieChart);
-            _typeTable[11] = typeof(global::System.Double);
-            _typeTable[12] = typeof(global::Windows.UI.Xaml.Media.Brush);
-            _typeTable[13] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart);
-            _typeTable[14] = typeof(global::Windows.UI.Xaml.Controls.Control);
-            _typeTable[15] = typeof(global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries>);
-            _typeTable[16] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries);
-            _typeTable[17] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::System.Object>);
-            _typeTable[18] = typeof(global::System.Collections.ObjectModel.Collection<global::System.Object>);
-            _typeTable[19] = typeof(global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>);
-            _typeTable[20] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis);
-            _typeTable[21] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AxisOrientation);
-            _typeTable[22] = typeof(global::System.Enum);
-            _typeTable[23] = typeof(global::System.ValueType);
-            _typeTable[24] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>);
-            _typeTable[25] = typeof(global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>);
-            _typeTable[26] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener);
-            _typeTable[27] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>);
-            _typeTable[28] = typeof(global::System.Collections.ObjectModel.ReadOnlyCollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>);
-            _typeTable[29] = typeof(global::Windows.UI.Xaml.Style);
-            _typeTable[30] = typeof(global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.ResourceDictionary>);
-            _typeTable[31] = typeof(global::Windows.UI.Xaml.ResourceDictionary);
-            _typeTable[32] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaSeries);
-            _typeTable[33] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaDataPoint>);
-            _typeTable[34] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSingleSeriesWithAxes);
-            _typeTable[35] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeriesWithAxes);
-            _typeTable[36] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries);
-            _typeTable[37] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Series);
-            _typeTable[38] = typeof(global::Windows.UI.Xaml.Data.Binding);
-            _typeTable[39] = typeof(global::System.Boolean);
-            _typeTable[40] = typeof(global::Windows.UI.Xaml.Media.Geometry);
-            _typeTable[41] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis);
-            _typeTable[42] = typeof(global::System.Nullable<global::System.Int32>);
-            _typeTable[43] = typeof(global::System.String);
-            _typeTable[44] = typeof(global::System.Collections.IEnumerable);
-            _typeTable[45] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AnimationSequence);
-            _typeTable[46] = typeof(global::Windows.UI.Xaml.Media.Animation.EasingFunctionBase);
-            _typeTable[47] = typeof(global::System.TimeSpan);
-            _typeTable[48] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeriesHost);
-            _typeTable[49] = typeof(global::UWPService.Views.Dashboard);
-            _typeTable[50] = typeof(global::UWPService.Views.Factures);
-            _typeTable[51] = typeof(global::UWPService.Views.Panier);
-            _typeTable[52] = typeof(global::UWPService.Views.Produits);
->>>>>>> origin/master
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -400,7 +288,6 @@ namespace UWPService.UWPService_XamlTypeInfo
         }
 
         private object Activate_0_MainPage() { return new global::UWPService.MainPage(); }
-<<<<<<< HEAD
         private object Activate_3_Chart() { return new global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart(); }
         private object Activate_5_Collection() { return new global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries>(); }
         private object Activate_8_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::System.Object>(); }
@@ -418,34 +305,6 @@ namespace UWPService.UWPService_XamlTypeInfo
         private object Activate_45_Panier() { return new global::UWPService.Views.Panier(); }
         private object Activate_46_Produits() { return new global::UWPService.Views.Produits(); }
         private void VectorAdd_5_Collection(object instance, object item)
-=======
-        private object Activate_3_Client_Fournisseur() { return new global::UWPService.Views.Client_Fournisseur(); }
-        private object Activate_4_RichPieChart() { return new global::CrossPieCharts.UWP.PieCharts.RichPieChart(); }
-        private object Activate_6_List() { return new global::System.Collections.Generic.List<global::CrossPieCharts.UWP.PieCharts.PieChartArgs>(); }
-        private object Activate_8_PieChartArgs() { return new global::CrossPieCharts.UWP.PieCharts.PieChartArgs(); }
-        private object Activate_10_PieChart() { return new global::CrossPieCharts.UWP.PieCharts.PieChart(); }
-        private object Activate_13_Chart() { return new global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart(); }
-        private object Activate_15_Collection() { return new global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries>(); }
-        private object Activate_17_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::System.Object>(); }
-        private object Activate_18_Collection() { return new global::System.Collections.ObjectModel.Collection<global::System.Object>(); }
-        private object Activate_19_Collection() { return new global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>(); }
-        private object Activate_24_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>(); }
-        private object Activate_25_Collection() { return new global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>(); }
-        private object Activate_27_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>(); }
-        private object Activate_30_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.ResourceDictionary>(); }
-        private object Activate_32_AreaSeries() { return new global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaSeries(); }
-        private object Activate_49_Dashboard() { return new global::UWPService.Views.Dashboard(); }
-        private object Activate_50_Factures() { return new global::UWPService.Views.Factures(); }
-        private object Activate_51_Panier() { return new global::UWPService.Views.Panier(); }
-        private object Activate_52_Produits() { return new global::UWPService.Views.Produits(); }
-        private void VectorAdd_6_List(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::CrossPieCharts.UWP.PieCharts.PieChartArgs>)instance;
-            var newItem = (global::CrossPieCharts.UWP.PieCharts.PieChartArgs)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_15_Collection(object instance, object item)
->>>>>>> origin/master
         {
             var collection = (global::System.Collections.Generic.ICollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries>)instance;
             var newItem = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries)item;
@@ -1462,11 +1321,7 @@ namespace UWPService.UWPService_XamlTypeInfo
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Series.LegendItems":
                 userType = (global::UWPService.UWPService_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Series");
                 xamlMember = new global::UWPService.UWPService_XamlTypeInfo.XamlMember(this, "LegendItems", "System.Collections.ObjectModel.ObservableCollection`1<Object>");
-<<<<<<< HEAD
                 xamlMember.Getter = get_37_Series_LegendItems;
-=======
-                xamlMember.Getter = get_47_Series_LegendItems;
->>>>>>> origin/master
                 xamlMember.SetIsReadOnly();
                 break;
             }
