@@ -17,14 +17,20 @@
                         </StackPanel>
                     </ListViewItem>
                     <ListViewItem>
-                        <StackPanel Orientation="Horizontal" x:Name="Client_Fournisseur" Margin="2,0,0,0">
+                    <StackPanel Orientation="Horizontal" x:Name="Fournisseurs" Margin="2,0,0,0">
+                        <TextBlock Text="&#xE7E3;" FontFamily="Segoe MDL2 Assets" FontSize="30" Foreground="White"/>
+                        <TextBlock Text="Fournisseurs" Margin="30,0,0,0" VerticalAlignment="Center" Foreground="White"/>
+                    </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem>
+                        <StackPanel Orientation="Horizontal" x:Name="Clients" Margin="2,0,0,0">
                             <TextBlock Text="&#xE77B;" FontFamily="Segoe MDL2 Assets" FontSize="30" Foreground="White"/>
-                            <TextBlock Text="Client / Fournisseur" Margin="30,0,0,0" VerticalAlignment="Center" Foreground="White"/>
+                            <TextBlock Text="Clients" Margin="30,0,0,0" VerticalAlignment="Center" Foreground="White"/>
                         </StackPanel>
                     </ListViewItem>
                     <ListViewItem>
                         <StackPanel Orientation="Horizontal" x:Name="Panier" Margin="2,0,0,0">
-                            <TextBlock Text="&#xE8A1;" FontFamily="Segoe MDL2 Assets" FontSize="30" Foreground="White"/>
+                            <TextBlock Text="&#xE7BF;" FontFamily="Segoe MDL2 Assets" FontSize="30" Foreground="White"/>
                             <TextBlock Text="Panier" Margin="30,0,0,0" VerticalAlignment="Center" Foreground="White"/>
                         </StackPanel>
                     </ListViewItem>

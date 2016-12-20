@@ -12,19 +12,25 @@
             <SplitView.Pane>
                 <ListView x:ConnectionId='2' IsItemClickEnabled="True"                                Background="#FF122940" Foreground="White">
                     <ListViewItem>
-                        <StackPanel x:ConnectionId='7' Orientation="Horizontal" x:Name="Ham" Margin="2,0,0,0">
+                        <StackPanel x:ConnectionId='8' Orientation="Horizontal" x:Name="Ham" Margin="2,0,0,0">
                             <TextBlock Text="&#xE700;" FontFamily="Segoe MDL2 Assets" FontSize="30" Foreground="White"/>
                         </StackPanel>
                     </ListViewItem>
                     <ListViewItem>
-                        <StackPanel x:ConnectionId='6' Orientation="Horizontal" x:Name="Client_Fournisseur" Margin="2,0,0,0">
+                    <StackPanel x:ConnectionId='7' Orientation="Horizontal" x:Name="Fournisseurs" Margin="2,0,0,0">
+                        <TextBlock Text="&#xE7E3;" FontFamily="Segoe MDL2 Assets" FontSize="30" Foreground="White"/>
+                        <TextBlock Text="Fournisseurs" Margin="30,0,0,0" VerticalAlignment="Center" Foreground="White"/>
+                    </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem>
+                        <StackPanel x:ConnectionId='6' Orientation="Horizontal" x:Name="Clients" Margin="2,0,0,0">
                             <TextBlock Text="&#xE77B;" FontFamily="Segoe MDL2 Assets" FontSize="30" Foreground="White"/>
-                            <TextBlock Text="Client / Fournisseur" Margin="30,0,0,0" VerticalAlignment="Center" Foreground="White"/>
+                            <TextBlock Text="Clients" Margin="30,0,0,0" VerticalAlignment="Center" Foreground="White"/>
                         </StackPanel>
                     </ListViewItem>
                     <ListViewItem>
                         <StackPanel x:ConnectionId='5' Orientation="Horizontal" x:Name="Panier" Margin="2,0,0,0">
-                            <TextBlock Text="&#xE8A1;" FontFamily="Segoe MDL2 Assets" FontSize="30" Foreground="White"/>
+                            <TextBlock Text="&#xE7BF;" FontFamily="Segoe MDL2 Assets" FontSize="30" Foreground="White"/>
                             <TextBlock Text="Panier" Margin="30,0,0,0" VerticalAlignment="Center" Foreground="White"/>
                         </StackPanel>
                     </ListViewItem>
@@ -43,7 +49,7 @@
                 </ListView>
             </SplitView.Pane>
             <SplitView.Content>
-                <Frame x:ConnectionId='8' x:Name="MyFrame" Margin="4"/>
+                <Frame x:ConnectionId='9' x:Name="MyFrame" Margin="4"/>
             </SplitView.Content>
         </SplitView>
     </Grid>

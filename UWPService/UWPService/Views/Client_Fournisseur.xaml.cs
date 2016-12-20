@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using UWPService.Items;
+using UWPService.MyWebService;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Core;
@@ -27,6 +29,18 @@ namespace UWPService.Views
         {
             this.InitializeComponent();
         }
+        
+        private void BindCustomers()
+        {
+            GridViewCustomer.ItemsSource = VariableGlobale.Clients;
+            GridViewSupplier.Visibility = Visibility.Collapsed;
+        }
+
+        private void BindSupplier()
+        {
+            GridViewSupplier.ItemsSource = VariableGlobale.Fournisseurs;
+            GridViewCustomer.Visibility = Visibility.Visible;
+        }
 
         private void MainPage_BackRequested(object sender, BackRequestedEventArgs e)
         {
@@ -39,6 +53,20 @@ namespace UWPService.Views
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            if (e.Parameter != null)
+            {
+                WindowsTitle.Text = e.Parameter.ToString();
+                switch (e.Parameter.ToString())
+                {
+                    case "Fournisseurs":
+                        BindSupplier();
+                        break;
+                    case "Clients":
+                        BindCustomers();
+                        break;
+                }
+            }
+
             SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
         }
     }

@@ -3,7 +3,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:UWPService"
     xmlns:Charting="using:WinRTXamlToolkit.Controls.DataVisualization.Charting">
-
+    
     <Charting:Chart x:Name="AreaChartCustom">
         <Charting:Chart.Palette>
             <Charting:ResourceDictionaryCollection>
@@ -14,5 +14,27 @@
         </Charting:Chart.Palette>
     </Charting:Chart>
     
+    <DataTemplate x:Key="Standard250x250ItemTemplateCustomer">
+        <Grid HorizontalAlignment="Left" Width="250" Height="250" Padding="50,0,0,0">
+            <Border Background="{StaticResource ListViewItemPlaceholderBackgroundThemeBrush}">
+                <TextBlock Text="&#xE13D;" Margin="25,25,25,25" FontFamily="Segoe MDL2 Assets" FontSize="200" Foreground="White"/>
+            </Border>
+            <StackPanel Opacity="0.8" VerticalAlignment="Bottom" Background="Black">
+                <TextBlock Text="{Binding FirstName}" Foreground="{StaticResource ListViewItemOverlayForegroundThemeBrush}" Style="{StaticResource TitleTextBlockStyle}" Margin="15,0,15,0"/>
+                <TextBlock Text="{Binding LastName}" Foreground="{StaticResource ListViewItemOverlaySecondaryForegroundThemeBrush}" Style="{StaticResource SubtitleTextBlockStyle}" TextWrapping="NoWrap" Margin="15,0,15,0"/>
+            </StackPanel>
+        </Grid>
+    </DataTemplate>
+
+    <DataTemplate x:Key="Standard250x250ItemTemplateSupplier">
+        <Grid HorizontalAlignment="Left" Width="250" Height="250">
+            <Border Background="{StaticResource ListViewItemPlaceholderBackgroundThemeBrush}">
+                <TextBlock Text="&#xE7E3;" Margin="25,25,25,25" FontFamily="Segoe MDL2 Assets" FontSize="200" Foreground="White"/>
+            </Border>
+            <StackPanel Opacity="0.8" VerticalAlignment="Bottom" Background="Black">
+                <TextBlock Text="{Binding CompanyName}" Foreground="{StaticResource ListViewItemOverlayForegroundThemeBrush}" Style="{StaticResource TitleTextBlockStyle}" Margin="15,0,15,0" />
+            </StackPanel>
+        </Grid>
+    </DataTemplate>
 </ResourceDictionary>
 

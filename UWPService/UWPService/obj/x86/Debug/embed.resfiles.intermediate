@@ -2,6 +2,7 @@ App.xbf
 MainPage.xbf
 RessourceDictionary.xbf
 Views\Client_Fournisseur.xbf
+Views\Clients_Fournisseur_Detaille.xbf
 Views\Dashboard.xbf
 Views\Factures.xbf
 Views\Panier.xbf

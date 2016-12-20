@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using UWPService.Views;
+using UWPService.Items;
 
 // Pour plus d'informations sur le modèle d'élément Page vierge, consultez la page http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -28,10 +29,7 @@ namespace UWPService
         {
             this.InitializeComponent();
             NavigationCortana();
-
-            YnovServiceClient Client = new YnovServiceClient();
-            //MyGridView.ItemsSource = Client.GetCustomersAsync().Result;
-            Client.CloseAsync();
+            Modele.LoadData();
         }
 
         /// <summary>
@@ -41,7 +39,7 @@ namespace UWPService
         private void NavigationCortana()
         {
             MyFrame.Navigate(typeof(Views.Dashboard));
-            switch (Items.Constant.command)
+            switch (Items.VariableGlobale.command)
             {
                 case "Panier":
                     MyFrame.Navigate(typeof(Panier));
@@ -60,15 +58,17 @@ namespace UWPService
                     break;
             }
 
-            Items.Constant.command = string.Empty;
+            Items.VariableGlobale.command = string.Empty;
         }
 
         private void ListView_ItemClick(object sender, ItemClickEventArgs e)
         {
             if (((StackPanel)e.ClickedItem).Name == "Ham")
                 MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
-            else if (((StackPanel)e.ClickedItem).Name == "Client_Fournisseur")
-                MyFrame.Navigate(typeof(Client_Fournisseur));
+            else if (((StackPanel)e.ClickedItem).Name == "Fournisseurs")
+                MyFrame.Navigate(typeof(Client_Fournisseur), "Fournisseurs");
+            else if (((StackPanel)e.ClickedItem).Name == "Clients")
+                MyFrame.Navigate(typeof(Client_Fournisseur), "Clients");
             else if (((StackPanel)e.ClickedItem).Name == "Factures")
                 MyFrame.Navigate(typeof(Factures));
             else if (((StackPanel)e.ClickedItem).Name == "Panier")

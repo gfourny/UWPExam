@@ -8,7 +8,8 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        
-
+        <TextBlock x:Name="WindowsTitle" FontSize="75" HorizontalAlignment="Center"/>
+        <GridView x:Name="GridViewCustomer" Margin="25" ItemTemplate="{StaticResource Standard250x250ItemTemplateCustomer}" IsItemClickEnabled="False" CanDrag="False"/>
+        <GridView x:Name="GridViewSupplier" Margin="25" ItemTemplate="{StaticResource Standard250x250ItemTemplateSupplier}" IsItemClickEnabled="False" CanDrag="False"/>
     </Grid>
 </Page>

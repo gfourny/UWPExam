@@ -95,7 +95,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Items\Constant.cs" />
+    <Compile Include="Items\Constante.cs" />
+    <Compile Include="Items\VariableGlobale.cs" />
+    <Compile Include="Items\Modele.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -104,6 +106,9 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Clients_Fournisseur_Detaille.xaml.cs">
+      <DependentUpon>Clients_Fournisseur_Detaille.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Client_Fournisseur.xaml.cs">
       <DependentUpon>Client_Fournisseur.xaml</DependentUpon>
@@ -141,7 +146,13 @@
     <None Include="Service References\MyWebService\UWPService.MyWebService.Customer.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\MyWebService\UWPService.MyWebService.Product.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\MyWebService\UWPService.MyWebService.Resultat.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MyWebService\UWPService.MyWebService.Supplier.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\MyWebService\UWPService.MyWebService.Vente.datasource">
@@ -181,6 +192,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Page>
+    <Page Include="Views\Clients_Fournisseur_Detaille.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Client_Fournisseur.xaml">
       <SubType>Designer</SubType>

@@ -45,7 +45,7 @@ namespace UWPService
             Frame rootFrame = Window.Current.Content as Frame;
             VoiceCommandActivatedEventArgs commandArgs = (VoiceCommandActivatedEventArgs)args;
             SpeechRecognitionResult speechResult = commandArgs.Result;
-            Items.Constant.command = speechResult.Text;
+            Items.VariableGlobale.command = speechResult.Text;
             rootFrame.Navigate(typeof(MainPage));                      
         }
         /// <summary>
