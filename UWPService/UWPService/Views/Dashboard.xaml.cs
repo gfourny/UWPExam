@@ -27,6 +27,7 @@ namespace UWPService.Views
     public sealed partial class Dashboard : Page
     {
         int Plus = 0;
+        int PlusB = 0;
         public Dashboard()
         {
             this.InitializeComponent();
@@ -56,6 +57,9 @@ namespace UWPService.Views
 
             ObservableCollection<MyWebService.Resultat> IResultat = await MyService.ResultatsAsync();
             (PieChart.Series[0] as PieSeries).ItemsSource = IResultat.Skip(0).Take(3);
+
+            ObservableCollection<MyWebService.Client> IClient = await MyService.ClientsAsync();
+            (BubbleChart.Series[0] as BubbleSeries).ItemsSource = IClient.Skip(0).Take(5);
         }
 
         private async void Suivant_PointerPressed(object sender, PointerRoutedEventArgs e)
@@ -102,6 +106,52 @@ namespace UWPService.Views
         private void Precedent_PointerExited(object sender, PointerRoutedEventArgs e)
         {
             Precedent.FontSize = 22;
+        }
+
+        private async void SuivantB_PointerPressed(object sender, PointerRoutedEventArgs e)
+        {
+            YnovServiceClient MyService = new YnovServiceClient();
+            ObservableCollection<MyWebService.Client> IClient = await MyService.ClientsAsync();
+
+            if (PlusB > IClient.Count - 14)
+            {
+                PlusB = 0;
+            }
+            else
+            {
+                PlusB += 5;
+            }
+            (BubbleChart.Series[0] as BubbleSeries).ItemsSource = IClient.Skip(PlusB).Take(5);
+        }
+
+        private async void PrecedentB_PointerPressed(object sender, PointerRoutedEventArgs e)
+        {
+            if (PlusB < 0)
+                PlusB = 0;
+            PlusB -= 5;
+            YnovServiceClient MyService = new YnovServiceClient();
+            ObservableCollection<MyWebService.Client> IClient = await MyService.ClientsAsync();
+            (BubbleChart.Series[0] as BubbleSeries).ItemsSource = IClient.Skip(PlusB).Take(5);
+        }
+
+        private void SuivantB_PointerEntered(object sender, PointerRoutedEventArgs e)
+        {
+            SuivantB.FontSize = 30;
+        }
+
+        private void SuivantB_PointerExited(object sender, PointerRoutedEventArgs e)
+        {
+            SuivantB.FontSize = 22;
+        }
+
+        private void PrecedentB_PointerEntered(object sender, PointerRoutedEventArgs e)
+        {
+            PrecedentB.FontSize = 30;
+        }
+
+        private void PrecedentB_PointerExited(object sender, PointerRoutedEventArgs e)
+        {
+            PrecedentB.FontSize = 22;
         }
     }
 }
