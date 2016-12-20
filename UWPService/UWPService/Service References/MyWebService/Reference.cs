@@ -285,6 +285,246 @@ namespace UWPService.MyWebService {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Supplier", Namespace="http://schemas.datacontract.org/2004/07/UWPExam")]
+    public partial class Supplier : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string CityField;
+        
+        private string CompanyNameField;
+        
+        private string ContactNameField;
+        
+        private string ContactTitleField;
+        
+        private string CountryField;
+        
+        private string FaxField;
+        
+        private int IdField;
+        
+        private string PhoneField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string City {
+            get {
+                return this.CityField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CityField, value) != true)) {
+                    this.CityField = value;
+                    this.RaisePropertyChanged("City");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string CompanyName {
+            get {
+                return this.CompanyNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CompanyNameField, value) != true)) {
+                    this.CompanyNameField = value;
+                    this.RaisePropertyChanged("CompanyName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ContactName {
+            get {
+                return this.ContactNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ContactNameField, value) != true)) {
+                    this.ContactNameField = value;
+                    this.RaisePropertyChanged("ContactName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ContactTitle {
+            get {
+                return this.ContactTitleField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ContactTitleField, value) != true)) {
+                    this.ContactTitleField = value;
+                    this.RaisePropertyChanged("ContactTitle");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Country {
+            get {
+                return this.CountryField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CountryField, value) != true)) {
+                    this.CountryField = value;
+                    this.RaisePropertyChanged("Country");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Fax {
+            get {
+                return this.FaxField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.FaxField, value) != true)) {
+                    this.FaxField = value;
+                    this.RaisePropertyChanged("Fax");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Id {
+            get {
+                return this.IdField;
+            }
+            set {
+                if ((this.IdField.Equals(value) != true)) {
+                    this.IdField = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Phone {
+            get {
+                return this.PhoneField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PhoneField, value) != true)) {
+                    this.PhoneField = value;
+                    this.RaisePropertyChanged("Phone");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Product", Namespace="http://schemas.datacontract.org/2004/07/UWPExam")]
+    public partial class Product : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private int IdField;
+        
+        private bool IsDiscontinuedField;
+        
+        private string PackageField;
+        
+        private string ProductNameField;
+        
+        private int SupplierIdField;
+        
+        private System.Nullable<decimal> UnitPriceField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Id {
+            get {
+                return this.IdField;
+            }
+            set {
+                if ((this.IdField.Equals(value) != true)) {
+                    this.IdField = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bool IsDiscontinued {
+            get {
+                return this.IsDiscontinuedField;
+            }
+            set {
+                if ((this.IsDiscontinuedField.Equals(value) != true)) {
+                    this.IsDiscontinuedField = value;
+                    this.RaisePropertyChanged("IsDiscontinued");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Package {
+            get {
+                return this.PackageField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PackageField, value) != true)) {
+                    this.PackageField = value;
+                    this.RaisePropertyChanged("Package");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ProductName {
+            get {
+                return this.ProductNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ProductNameField, value) != true)) {
+                    this.ProductNameField = value;
+                    this.RaisePropertyChanged("ProductName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int SupplierId {
+            get {
+                return this.SupplierIdField;
+            }
+            set {
+                if ((this.SupplierIdField.Equals(value) != true)) {
+                    this.SupplierIdField = value;
+                    this.RaisePropertyChanged("SupplierId");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<decimal> UnitPrice {
+            get {
+                return this.UnitPriceField;
+            }
+            set {
+                if ((this.UnitPriceField.Equals(value) != true)) {
+                    this.UnitPriceField = value;
+                    this.RaisePropertyChanged("UnitPrice");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="MyWebService.IYnovService")]
     public interface IYnovService {
@@ -300,6 +540,12 @@ namespace UWPService.MyWebService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IYnovService/Resultats", ReplyAction="http://tempuri.org/IYnovService/ResultatsResponse")]
         System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<UWPService.MyWebService.Resultat>> ResultatsAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IYnovService/GetAllSuppliers", ReplyAction="http://tempuri.org/IYnovService/GetAllSuppliersResponse")]
+        System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<UWPService.MyWebService.Supplier>> GetAllSuppliersAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IYnovService/GetAllProducts", ReplyAction="http://tempuri.org/IYnovService/GetAllProductsResponse")]
+        System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<UWPService.MyWebService.Product>> GetAllProductsAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -359,6 +605,14 @@ namespace UWPService.MyWebService {
         
         public System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<UWPService.MyWebService.Resultat>> ResultatsAsync() {
             return base.Channel.ResultatsAsync();
+        }
+        
+        public System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<UWPService.MyWebService.Supplier>> GetAllSuppliersAsync() {
+            return base.Channel.GetAllSuppliersAsync();
+        }
+        
+        public System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<UWPService.MyWebService.Product>> GetAllProductsAsync() {
+            return base.Channel.GetAllProductsAsync();
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync() {

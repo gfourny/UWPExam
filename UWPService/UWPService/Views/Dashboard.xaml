@@ -25,6 +25,13 @@
                     <Charting:PieSeries Title="Résultat" IndependentValuePath="Year" DependentValuePath="Amount" IsSelectionEnabled="True"/>
                 </Charting:Chart>
             </RelativePanel>
+            <RelativePanel>
+                <Charting:Chart x:Name="BubbleChart"  RelativePanel.AlignHorizontalCenterWithPanel="True" Width="1000" Height="500">
+                    <Charting:BubbleSeries Title="Client" IndependentValuePath="FullName" DependentValuePath="Amount"/>
+                </Charting:Chart>
+                <TextBlock x:Name="SuivantB" RelativePanel.Below="BubbleChart" RelativePanel.AlignHorizontalCenterWithPanel="True" FontFamily="Segoe MDL2 Assets" Text="&#xE893;" FontSize="22" Margin="10,0,0,0" PointerPressed="SuivantB_PointerPressed" PointerEntered="SuivantB_PointerEntered" PointerExited="SuivantB_PointerExited"/>
+                <TextBlock x:Name="PrecedentB" RelativePanel.Below="BubbleChart" RelativePanel.LeftOf="SuivantB" FontFamily="Segoe MDL2 Assets" Text="&#xE892;" FontSize="22" PointerPressed="PrecedentB_PointerPressed" PointerEntered="PrecedentB_PointerEntered" PointerExited="PrecedentB_PointerExited"/>
+            </RelativePanel>
         </FlipView>
     </Grid>
 </Page>

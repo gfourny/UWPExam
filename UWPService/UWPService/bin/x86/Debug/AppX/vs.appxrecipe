@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-11T20:06:03.862</Modified>
+      <Modified>2016-12-20T16:33:11.693</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\UWPService.exe">
       <PackagePath>entrypoint\UWPService.exe</PackagePath>
-      <Modified>2016-12-11T20:06:03.173</Modified>
+      <Modified>2016-12-20T16:33:10.999</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\CrossPieCharts.UWP\1.0.2\lib\uap\CrossPieCharts.ClassLibrary.dll">
       <PackagePath>CrossPieCharts.ClassLibrary.dll</PackagePath>
@@ -548,7 +548,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\UWPService.xr.xml">
       <PackagePath>UWPService.xr.xml</PackagePath>
-      <Modified>2016-12-11T19:51:56.436</Modified>
+      <Modified>2016-12-20T16:23:45.885</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -573,11 +573,11 @@
     <AppxPackagedFile Include="C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-11T20:06:03.585</Modified>
+      <Modified>2016-12-20T16:33:11.430</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\Core\UWPService.exe">
       <PackagePath>UWPService.exe</PackagePath>
-      <Modified>2016-12-11T20:06:03.858</Modified>
+      <Modified>2016-12-20T16:33:11.684</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

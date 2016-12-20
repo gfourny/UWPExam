@@ -76,6 +76,11 @@
       <RootMethod Name="GetLeftOf" />
       <RootMethod Name="SetLeftOf" />
     </RootType>
+    <RootType FullName="WinRTXamlToolkit.Controls.DataVisualization.Charting.BubbleSeries">
+      <RootProperty Name="Title" />
+      <RootProperty Name="IndependentValuePath" />
+      <RootProperty Name="DependentValuePath" />
+    </RootType>
     <RootType FullName="WinRTXamlToolkit.Controls.DataVisualization.Charting.PieSeries">
       <RootProperty Name="Title" />
       <RootProperty Name="IndependentValuePath" />

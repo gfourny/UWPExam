@@ -141,7 +141,13 @@
     <None Include="Service References\MyWebService\UWPService.MyWebService.Customer.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\MyWebService\UWPService.MyWebService.Product.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\MyWebService\UWPService.MyWebService.Resultat.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MyWebService\UWPService.MyWebService.Supplier.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\MyWebService\UWPService.MyWebService.Vente.datasource">

@@ -494,3 +494,4 @@ D:\belli\Bureau\UWPService\UWPService\obj\x86\Debug\resources.en-us.resfiles.int
 D:\belli\Bureau\UWPService\UWPService\obj\x86\Debug\WinRTXamlToolkit.pri.xml
 D:\belli\Bureau\UWPService\UWPService\obj\x86\Debug\WinRTXamlToolkit.Controls.DataVisualization.pri.xml
 D:\belli\Bureau\UWPService\UWPService\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\belli\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\UWPService.csprojResolveAssemblyReference.cache
