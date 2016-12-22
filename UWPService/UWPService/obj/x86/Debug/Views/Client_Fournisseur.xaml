@@ -1,0 +1,16 @@
+﻿<Page
+    x:Class="UWPService.Views.Client_Fournisseur"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UWPService.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock x:ConnectionId='1' x:Name="WindowsTitle" FontSize="75" HorizontalAlignment="Center"/>
+        <GridView x:ConnectionId='2' x:Name="GridViewCustomer" Margin="25" ItemTemplate="{StaticResource Standard250x250ItemTemplateCustomer}" IsItemClickEnabled="False" CanDrag="False"/>
+        <GridView x:ConnectionId='3' x:Name="GridViewSupplier" Margin="25" ItemTemplate="{StaticResource Standard250x250ItemTemplateSupplier}" IsItemClickEnabled="False" CanDrag="False"/>
+    </Grid>
+</Page>
+

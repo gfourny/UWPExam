@@ -56,7 +56,7 @@ namespace UWPService.Views
             (AreaChart.Series[0] as AreaSeries).ItemsSource = IVente.Skip(0).Take(7);
 
             ObservableCollection<MyWebService.Resultat> IResultat = await MyService.ResultatsAsync();
-            (PieChart.Series[0] as PieSeries).ItemsSource = IResultat.Skip(0).Take(3);
+            (PieChart.Series[0] as PieSeries).ItemsSource = IResultat.Skip(0).Take(12);
 
             ObservableCollection<MyWebService.Client> IClient = await MyService.ClientsAsync();
             (BubbleChart.Series[0] as BubbleSeries).ItemsSource = IClient.Skip(0).Take(5);

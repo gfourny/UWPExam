@@ -29,7 +29,6 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
-      <RootProperty Name="Padding" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.SplitView">
@@ -151,6 +150,11 @@
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="Items" />
+    </RootType>
+    <RootType FullName="WinRTXamlToolkit.Controls.DataVisualization.Charting.BubbleSeries">
+      <RootProperty Name="Title" />
+      <RootProperty Name="IndependentValuePath" />
+      <RootProperty Name="DependentValuePath" />
     </RootType>
     <RootType FullName="WinRTXamlToolkit.Controls.DataVisualization.Charting.PieSeries">
       <RootProperty Name="Title" />

@@ -15,7 +15,7 @@
     </Charting:Chart>
     
     <DataTemplate x:Key="Standard250x250ItemTemplateCustomer">
-        <Grid HorizontalAlignment="Left" Width="250" Height="250" Padding="50,0,0,0">
+        <Grid HorizontalAlignment="Left" Width="250" Height="250">
             <Border Background="{StaticResource ListViewItemPlaceholderBackgroundThemeBrush}">
                 <TextBlock Text="&#xE13D;" Margin="25,25,25,25" FontFamily="Segoe MDL2 Assets" FontSize="200" Foreground="White"/>
             </Border>
