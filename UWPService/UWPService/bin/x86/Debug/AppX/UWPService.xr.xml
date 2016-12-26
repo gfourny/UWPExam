@@ -74,9 +74,11 @@
       <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="UWPService.MainPage" />
-    <RootType FullName="UWPService.Items.MyDataTemplateSelector">
-      <RootProperty Name="SupplierTemplate" />
-      <RootProperty Name="CustomerTemplate" />
+    <RootType FullName="WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart">
+      <RootProperty Name="Palette" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Series" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
       <RootProperty Name="Template" />
@@ -89,6 +91,10 @@
       <RootProperty Name="Mode" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
+    <RootType FullName="WinRTXamlToolkit.Controls.DataVisualization.Charting.ResourceDictionaryCollection" />
+    <RootType FullName="Windows.UI.Xaml.Media.SolidColorBrush">
+      <RootProperty Name="Color" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.VisualStateManager">
       <RootMethod Name="GetVisualStateGroups" />
     </RootType>
@@ -117,7 +123,6 @@
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Content" />
       <RootProperty Name="Margin" />
-      <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.VisualStateGroup">
       <RootProperty Name="States" />
@@ -136,31 +141,15 @@
     <RootType FullName="UWPService.Views.Clients_Fournisseur_Detaille" />
     <RootType FullName="Windows.UI.Xaml.Controls.GridView">
       <RootProperty Name="Margin" />
-      <RootProperty Name="ItemTemplateSelector" />
+      <RootProperty Name="ItemTemplate" />
       <RootProperty Name="IsItemClickEnabled" />
       <RootProperty Name="CanDrag" />
-      <RootEvent Name="SelectionChanged" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.CommandBar">
-      <RootProperty Name="Background" />
-      <RootProperty Name="IsOpen" />
-      <RootProperty Name="PrimaryCommands" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton">
-      <RootProperty Name="Icon" />
-      <RootProperty Name="Label" />
-      <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="UWPService.Views.Client_Fournisseur" />
     <RootType FullName="Windows.UI.Xaml.Controls.FlipView">
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="Items" />
-    </RootType>
-    <RootType FullName="WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart">
-      <RootProperty Name="Width" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="Series" />
     </RootType>
     <RootType FullName="WinRTXamlToolkit.Controls.DataVisualization.Charting.BubbleSeries">
       <RootProperty Name="Title" />
