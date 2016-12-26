@@ -9,10 +9,11 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-        <TextBlock x:Name="WindowsTitle" FontSize="75" HorizontalAlignment="Center"/>
-        <GridView x:Name="GridView" Margin="25,100,25,25" ItemTemplateSelector="{StaticResource MyDataTemplateSelector}" IsItemClickEnabled="False" CanDrag="False" SelectionChanged="GridView_SelectionChanged"/>
+        <TextBlock x:ConnectionId='1' x:Name="WindowsTitle" FontSize="75" HorizontalAlignment="Center"/>
+        <GridView x:ConnectionId='2' x:Name="GridView" Margin="25,100,25,25" ItemTemplateSelector="{StaticResource MyDataTemplateSelector}" IsItemClickEnabled="False" CanDrag="False"                                             />
         <CommandBar Background="Transparent" IsOpen="False">
-            <AppBarButton Icon="Add" Label="Ajouter" Click="AppBarButton_Click" />
+            <AppBarButton x:ConnectionId='3' Icon="Add" Label="Ajouter"                            />
         </CommandBar>
     </Grid>
 </Page>
+

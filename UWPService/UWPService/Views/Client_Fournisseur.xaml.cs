@@ -32,14 +32,14 @@ namespace UWPService.Views
         
         private void BindCustomers()
         {
-            GridViewCustomer.ItemsSource = VariableGlobale.Clients;
-            GridViewSupplier.Visibility = Visibility.Collapsed;
+            GridView.ItemsSource = VariableGlobale.Clients;
+            //GridViewSupplier.Visibility = Visibility.Collapsed;
         }
 
         private void BindSupplier()
         {
-            GridViewSupplier.ItemsSource = VariableGlobale.Fournisseurs;
-            GridViewCustomer.Visibility = Visibility.Visible;
+            GridView.ItemsSource = VariableGlobale.Fournisseurs;
+            //GridViewCustomer.Visibility = Visibility.Visible;
         }
 
         private void MainPage_BackRequested(object sender, BackRequestedEventArgs e)
@@ -68,6 +68,34 @@ namespace UWPService.Views
             }
 
             SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
+        }
+
+        private void AppBarButton_Click(object sender, RoutedEventArgs e)
+        {
+            switch(WindowsTitle.Text)
+            {
+                case "Clients":
+                    Frame.Navigate(typeof(Clients_Fournisseur_Detaille), new Customer() { Id = (VariableGlobale.Clients.Count + 1)});
+                    break;
+                case "Fournisseurs":
+                    Frame.Navigate(typeof(Clients_Fournisseur_Detaille), new Supplier() { Id = (VariableGlobale.Fournisseurs.Count + 1 )});
+                    break;
+            }
+        }
+
+        private void GridView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            switch (WindowsTitle.Text)
+            {
+                case "Clients":
+                    var client = ((GridView)sender).SelectedItem as Customer;
+                    Frame.Navigate(typeof(Clients_Fournisseur_Detaille), client);
+                    break;
+                case "Fournisseurs":
+                    var fournisseur = ((GridView)sender).SelectedItem as Supplier;
+                    Frame.Navigate(typeof(Clients_Fournisseur_Detaille), fournisseur);
+                    break;
+            }
         }
     }
 }
