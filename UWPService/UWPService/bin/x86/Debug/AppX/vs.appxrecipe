@@ -28,13 +28,13 @@
     <AppXManifest Include="D:\belli\Documents\GitHub\UWPExam\UWPService\UWPService\UWPService\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-22T14:52:06.544</Modified>
+      <Modified>2016-12-26T17:34:49.088</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\belli\Documents\GitHub\UWPExam\UWPService\UWPService\UWPService\bin\x86\Debug\UWPService.exe">
       <PackagePath>entrypoint\UWPService.exe</PackagePath>
-      <Modified>2016-12-22T14:52:05.267</Modified>
+      <Modified>2016-12-26T17:34:48.235</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\belli\.nuget\packages\CrossPieCharts.UWP\1.0.2\lib\uap\CrossPieCharts.ClassLibrary.dll">
       <PackagePath>CrossPieCharts.ClassLibrary.dll</PackagePath>
@@ -506,49 +506,49 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\belli\Documents\GitHub\UWPExam\UWPService\UWPService\UWPService\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2016-12-21T11:15:30.528</Modified>
+      <Modified>2016-12-26T07:43:10.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\belli\Documents\GitHub\UWPExam\UWPService\UWPService\UWPService\VoiceCommandDefinition.xml">
       <PackagePath>VoiceCommandDefinition.xml</PackagePath>
-      <Modified>2016-12-21T11:15:30.618</Modified>
+      <Modified>2016-12-26T07:43:10.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\belli\Documents\GitHub\UWPExam\UWPService\UWPService\UWPService\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2016-12-21T11:15:23.612</Modified>
+      <Modified>2016-12-26T07:43:10.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\belli\Documents\GitHub\UWPExam\UWPService\UWPService\UWPService\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-21T11:15:23.612</Modified>
+      <Modified>2016-12-26T07:43:10.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\belli\Documents\GitHub\UWPExam\UWPService\UWPService\UWPService\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-21T11:15:23.613</Modified>
+      <Modified>2016-12-26T07:43:10.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\belli\Documents\GitHub\UWPExam\UWPService\UWPService\UWPService\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-21T11:15:23.614</Modified>
+      <Modified>2016-12-26T07:43:10.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\belli\Documents\GitHub\UWPExam\UWPService\UWPService\UWPService\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-21T11:15:23.616</Modified>
+      <Modified>2016-12-26T07:43:10.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\belli\Documents\GitHub\UWPExam\UWPService\UWPService\UWPService\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-21T11:15:23.616</Modified>
+      <Modified>2016-12-26T07:43:10.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\belli\Documents\GitHub\UWPExam\UWPService\UWPService\UWPService\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-21T11:15:23.617</Modified>
+      <Modified>2016-12-26T07:43:10.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\belli\Documents\GitHub\UWPExam\UWPService\UWPService\UWPService\bin\x86\Debug\UWPService.xr.xml">
       <PackagePath>UWPService.xr.xml</PackagePath>
-      <Modified>2016-12-21T11:16:09.667</Modified>
+      <Modified>2016-12-26T07:43:10.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -573,11 +573,11 @@
     <AppxPackagedFile Include="D:\belli\Documents\GitHub\UWPExam\UWPService\UWPService\UWPService\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-22T14:52:05.959</Modified>
+      <Modified>2016-12-26T17:34:48.712</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\belli\Documents\GitHub\UWPExam\UWPService\UWPService\UWPService\bin\x86\Debug\Core\UWPService.exe">
       <PackagePath>UWPService.exe</PackagePath>
-      <Modified>2016-12-22T14:52:06.520</Modified>
+      <Modified>2016-12-26T17:34:49.084</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -28,38 +28,9 @@ namespace UWPService
         public MainPage()
         {
             this.InitializeComponent();
-            NavigationCortana();
-            Modele.LoadData();
-        }
-
-        /// <summary>
-        /// Permet de réaliser la navigation avec Cortana
-        /// Gestion des différents onglets
-        /// </summary>
-        private void NavigationCortana()
-        {
-            MyFrame.Navigate(typeof(Views.Dashboard));
-            switch (Items.VariableGlobale.command)
-            {
-                case "Panier":
-                    MyFrame.Navigate(typeof(Panier));
-                    break;
-                case "Client fournisseur":
-                    MyFrame.Navigate(typeof(Client_Fournisseur));
-                    break;
-                case "Facture":
-                    MyFrame.Navigate(typeof(Factures));
-                    break;
-                case "Produit":
-                    MyFrame.Navigate(typeof(Produits));
-                    break;
-                default:
-                    MyFrame.Navigate(typeof(Views.Dashboard));
-                    break;
-            }
-
-            Items.VariableGlobale.command = string.Empty;
-        }
+            RecupDonnees();
+            NavigationCortana.Navigation(MyFrame);
+        }     
 
         private void ListView_ItemClick(object sender, ItemClickEventArgs e)
         {
@@ -76,5 +47,11 @@ namespace UWPService
             else if (((StackPanel)e.ClickedItem).Name == "Produits")
                 MyFrame.Navigate(typeof(Produits));
         }
+
+        private async void RecupDonnees()
+        {
+            await Modele.LoadData();
+            MyFrame.Navigate(typeof(Views.Dashboard));
+        } 
     }
 }

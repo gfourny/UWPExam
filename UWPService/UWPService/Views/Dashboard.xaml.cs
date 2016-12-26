@@ -16,6 +16,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using WinRTXamlToolkit.Controls.DataVisualization.Charting;
+using UWPService.Items;
 
 // Pour plus d'informations sur le modèle d'élément Page vierge, voir la page http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -32,9 +33,6 @@ namespace UWPService.Views
         {
             this.InitializeComponent();
             this.Loaded += Dashboard_Loaded;
-            YnovServiceClient Vente = new YnovServiceClient();
-            Vente.CloseAsync();
-
         }
 
         void Dashboard_Loaded(object sender, RoutedEventArgs e)
@@ -48,18 +46,13 @@ namespace UWPService.Views
                 SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Collapsed;
         }
 
-        private async void LoadChartContents()
+        private void LoadChartContents()
         {
-            YnovServiceClient MyService = new YnovServiceClient();
+            (AreaChart.Series[0] as AreaSeries).ItemsSource = VariableGlobale.IVente.Skip(0).Take(7);
 
-            ObservableCollection<MyWebService.Vente> IVente = await MyService.VentesAsync();
-            (AreaChart.Series[0] as AreaSeries).ItemsSource = IVente.Skip(0).Take(7);
+            (PieChart.Series[0] as PieSeries).ItemsSource = VariableGlobale.IResultat.Skip(0).Take(12);
 
-            ObservableCollection<MyWebService.Resultat> IResultat = await MyService.ResultatsAsync();
-            (PieChart.Series[0] as PieSeries).ItemsSource = IResultat.Skip(0).Take(12);
-
-            ObservableCollection<MyWebService.Client> IClient = await MyService.ClientsAsync();
-            (BubbleChart.Series[0] as BubbleSeries).ItemsSource = IClient.Skip(0).Take(5);
+            (BubbleChart.Series[0] as BubbleSeries).ItemsSource = VariableGlobale.IClient.Skip(0).Take(5);
         }
 
         private async void Suivant_PointerPressed(object sender, PointerRoutedEventArgs e)

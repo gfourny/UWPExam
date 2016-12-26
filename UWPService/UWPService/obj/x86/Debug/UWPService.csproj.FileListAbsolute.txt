@@ -499,7 +499,6 @@ C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\MainPage
 C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\RessourceDictionary.xbf
 C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\Views\Client_Fournisseur.xbf
 C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\Views\Dashboard.xbf
-C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\Views\Factures.xbf
 C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\Views\Panier.xbf
 C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\Views\Produits.xbf
 C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\UWPService.xr.xml
@@ -635,8 +634,6 @@ C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\Views\Cl
 C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\Views\Client_Fournisseur.g.cs
 C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\Views\Dashboard.g.i.cs
 C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\Views\Dashboard.g.cs
-C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\Views\Factures.g.i.cs
-C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\Views\Factures.g.cs
 C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\Views\Panier.g.i.cs
 C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\Views\Panier.g.cs
 C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\Views\Produits.g.i.cs
@@ -645,7 +642,6 @@ C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\XamlType
 C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\App.xaml
 C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\MainPage.xaml
 C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\Views\Dashboard.xaml
-C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\Views\Factures.xaml
 C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\Views\Panier.xaml
 C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\Views\Produits.xaml
 C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\RessourceDictionary.xaml
@@ -653,7 +649,6 @@ C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\Views\Cl
 C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\App.xbf
 C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\MainPage.xbf
 C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\Views\Dashboard.xbf
-C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\Views\Factures.xbf
 C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\Views\Panier.xbf
 C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\Views\Produits.xbf
 C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\RessourceDictionary.xbf
@@ -748,6 +743,11 @@ C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\Views\Cl
 C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\Views\Clients_Fournisseur_Detaille.xaml
 C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\Views\Clients_Fournisseur_Detaille.xbf
 C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\UWPService.csprojResolveAssemblyReference.cache
+C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\Views\Factures.xbf
+C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\Views\Factures.g.i.cs
+C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\Views\Factures.g.cs
+C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\Views\Factures.xaml
+C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\Views\Factures.xbf
 D:\belli\Documents\GitHub\UWPExam\UWPService\UWPService\UWPService\bin\x86\Debug\App.xbf
 D:\belli\Documents\GitHub\UWPExam\UWPService\UWPService\UWPService\bin\x86\Debug\MainPage.xbf
 D:\belli\Documents\GitHub\UWPExam\UWPService\UWPService\UWPService\bin\x86\Debug\RessourceDictionary.xbf

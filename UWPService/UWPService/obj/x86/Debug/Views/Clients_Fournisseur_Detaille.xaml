@@ -8,7 +8,7 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <RelativePanel x:ConnectionId='1' Margin="25" HorizontalAlignment="Center" x:Name="panelFournisseur" Visibility="Visible">
+        <RelativePanel x:ConnectionId='1' Margin="25" HorizontalAlignment="Center" x:Name="panelFournisseur" Visibility="Collapsed">
             <TextBlock x:ConnectionId='12' x:Name="WindowTitleSupplier" RelativePanel.AlignHorizontalCenterWithPanel="True" FontSize="25"/>
             <TextBlock x:ConnectionId='13' x:Name="IconSupplier"  Text="&#xE7E3;" Margin="25,25,25,25" FontFamily="Segoe MDL2 Assets" FontSize="200" RelativePanel.Below="WindowTitleSupplier" Foreground="Black"/>
             <TextBox x:ConnectionId='14' x:Name="tbIDSupplier" Header="ID"  Text="{Binding Id, Mode=TwoWay}" RelativePanel.Below="WindowTitleSupplier" IsEnabled="False" Margin="0,0,10,10" MinWidth="200" RelativePanel.RightOf="IconSupplier"/>
@@ -18,19 +18,19 @@
             <TextBox x:ConnectionId='18' x:Name="tbCountrySupplier" Header="Pays"  Text="{Binding Country, Mode=TwoWay}" RelativePanel.RightOf="tbCitySupplier" RelativePanel.Below="tbContactSupplier" PlaceholderText="Veuillez saisir un pays" Margin="0,0,10,10" MinWidth="200" />
             <TextBox x:ConnectionId='19' x:Name="tbPhoneSupplier" Header="Téléphone" Text="{Binding Phone, Mode=TwoWay}" RelativePanel.RightOf="IconSupplier" RelativePanel.Below="tbCountrySupplier" PlaceholderText="Veuillez saisir un n°" Margin="0,0,10,10" MinWidth="200"/>
             <TextBox x:ConnectionId='20' x:Name="tbFaxSupplier" Header="Fax" Text="{Binding Fax, Mode=TwoWay}" RelativePanel.RightOf="tbPhoneSupplier" RelativePanel.Below="tbCountrySupplier" PlaceholderText="Veuillez saisir un n°" Margin="0,0,10,10" MinWidth="200"/>
-            <Button x:ConnectionId='21' x:Name="btnSaveSupplier" Content="Enregistrer" RelativePanel.Below="tbFaxSupplier" Margin="30,45,0,0" RelativePanel.AlignHorizontalCenterWithPanel="True"/>
+            <Button x:ConnectionId='21' x:Name="btnSaveSupplier"                               Content="Enregistrer" RelativePanel.Below="tbFaxSupplier" Margin="30,45,0,0" RelativePanel.AlignHorizontalCenterWithPanel="True"/>
         </RelativePanel>
 
         <RelativePanel x:ConnectionId='2' Margin="25" HorizontalAlignment="Center" x:Name="panelClient" Visibility="Collapsed">
             <TextBlock x:ConnectionId='3' x:Name="WindowTitleClient" RelativePanel.AlignHorizontalCenterWithPanel="True" FontSize="25"/>
-            <TextBlock x:ConnectionId='4' x:Name="IconCustomer"  Text="&#xE13D;" Margin="25,25,25,25" FontFamily="Segoe MDL2 Assets" FontSize="200" RelativePanel.Below="WindowTitle" Foreground="Black"/>
-            <TextBox x:ConnectionId='5' x:Name="tbID" Header="ID"  Text="{Binding Id, Mode=TwoWay}" RelativePanel.Below="WindowTitle" IsEnabled="False" Margin="0,0,10,10" MinWidth="200" RelativePanel.RightOf="IconCustomer"/>
+            <TextBlock x:ConnectionId='4' x:Name="IconCustomer"  Text="&#xE13D;" Margin="25,25,25,25" FontFamily="Segoe MDL2 Assets" FontSize="200" RelativePanel.Below="WindowTitleClient" Foreground="Black"/>
+            <TextBox x:ConnectionId='5' x:Name="tbID" Header="ID"  Text="{Binding Id, Mode=TwoWay}" RelativePanel.Below="WindowTitleClient" IsEnabled="False" Margin="0,0,10,10" MinWidth="200" RelativePanel.RightOf="IconCustomer"/>
             <TextBox x:ConnectionId='6' x:Name="tbLastName" Header="Nom"  Text="{Binding LastName, Mode=TwoWay}" PlaceholderText="Veuillez saisir un nom" RelativePanel.RightOf="IconCustomer" RelativePanel.Below="tbID" Margin="0,0,10,10" MinWidth="200" />
             <TextBox x:ConnectionId='7' x:Name="tbFirstName" Header="Prénom"  Text="{Binding FirstName, Mode=TwoWay}" RelativePanel.RightOf="tbLastName" RelativePanel.Below="tbID" PlaceholderText="Veuillez saisir un prénom" Margin="0,0,0,10" MinWidth="200" />
             <TextBox x:ConnectionId='8' x:Name="tbCity" Header="Ville"  Text="{Binding City, Mode=TwoWay}"  RelativePanel.Below="tbLastName" RelativePanel.RightOf="IconCustomer" PlaceholderText="Veuillez saisir une ville" Margin="0,0,10,10" MinWidth="200" />
             <TextBox x:ConnectionId='9' x:Name="tbCountry" Header="Pays"  Text="{Binding Country, Mode=TwoWay}" RelativePanel.RightOf="tbCity" RelativePanel.Below="tbLastName" PlaceholderText="Veuillez saisir un pays" Margin="0,0,10,10" MinWidth="200" />
             <TextBox x:ConnectionId='10' x:Name="tbPhone" Header="Téléphone" Text="{Binding Phone, Mode=TwoWay}" RelativePanel.RightOf="tbCountry" RelativePanel.Below="tbLastName" PlaceholderText="Veuillez saisir un n°" Margin="0,0,10,10" MinWidth="200"/>
-            <Button x:ConnectionId='11' x:Name="btnSaveCustomer" Content="Enregistrer" RelativePanel.Below="tbPhone" Margin="30,45,0,0" RelativePanel.AlignHorizontalCenterWithPanel="True"/>
+            <Button x:ConnectionId='11' x:Name="btnSaveCustomer" Content="Enregistrer" RelativePanel.Below="tbPhone" Margin="30,45,0,0"                               RelativePanel.AlignHorizontalCenterWithPanel="True"/>
         </RelativePanel>
 
         <VisualStateManager.VisualStateGroups>
