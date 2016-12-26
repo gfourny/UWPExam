@@ -51,14 +51,14 @@
     <Command Name="FindSupplier">
       <Example>Fournisseurs</Example>
       <ListenFor>[le] fournisseur {Fournisseurs}</ListenFor>
-      <Feedback> Voici les fournisseurs</Feedback>
+      <Feedback> Voici le fournisseur recherché</Feedback>
       <Navigate Target="MainPage.xaml"/>
     </Command>
 
     <Command Name="FindSupplierID">
       <Example>Fournisseurs</Example>
       <ListenFor>[le] fournisseur dont l'id est égal à {FournisseursID}</ListenFor>
-      <Feedback> Voici les fournisseurs</Feedback>
+      <Feedback> Voici le fournisseur recherché</Feedback>
       <Navigate Target="MainPage.xaml"/>
     </Command>
 

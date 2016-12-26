@@ -22,7 +22,7 @@
             </RelativePanel>
             <RelativePanel>
                 <Charting:Chart x:ConnectionId='5' x:Name="PieChart" RelativePanel.AlignHorizontalCenterWithPanel="True" Width="600" Height="600">
-                    <Charting:PieSeries Title="Résultat" IndependentValuePath="Year" DependentValuePath="Amount" IsSelectionEnabled="True"/>
+                    <Charting:PieSeries Title="Résultat" IndependentValuePath="Month" DependentValuePath="Amount" IsSelectionEnabled="True"/>
                 </Charting:Chart>
             </RelativePanel>
             <RelativePanel>
