@@ -28,21 +28,13 @@
     <AppXManifest Include="C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-<<<<<<< HEAD
-      <Modified>2016-12-26T17:34:49.088</Modified>
-=======
-      <Modified>2016-12-26T16:36:48.468</Modified>
->>>>>>> origin/master
+      <Modified>2016-12-27T19:15:12.739</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\UWPService.exe">
       <PackagePath>entrypoint\UWPService.exe</PackagePath>
-<<<<<<< HEAD
-      <Modified>2016-12-26T17:34:48.235</Modified>
-=======
-      <Modified>2016-12-26T16:35:50.405</Modified>
->>>>>>> origin/master
+      <Modified>2016-12-27T19:15:12.360</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tbadi\.nuget\packages\CrossPieCharts.UWP\1.0.2\lib\uap\CrossPieCharts.ClassLibrary.dll">
       <PackagePath>CrossPieCharts.ClassLibrary.dll</PackagePath>
@@ -514,89 +506,49 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-<<<<<<< HEAD
-      <Modified>2016-12-26T07:43:10.000</Modified>
-=======
       <Modified>2016-11-29T14:12:44.933</Modified>
->>>>>>> origin/master
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\VoiceCommandDefinition.xml">
       <PackagePath>VoiceCommandDefinition.xml</PackagePath>
-<<<<<<< HEAD
-      <Modified>2016-12-26T07:43:10.000</Modified>
-=======
-      <Modified>2016-12-26T16:27:01.510</Modified>
->>>>>>> origin/master
+      <Modified>2016-12-27T18:58:43.178</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-<<<<<<< HEAD
-      <Modified>2016-12-26T07:43:10.000</Modified>
-=======
       <Modified>2016-11-29T14:12:44.838</Modified>
->>>>>>> origin/master
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-<<<<<<< HEAD
-      <Modified>2016-12-26T07:43:10.000</Modified>
-=======
       <Modified>2016-11-29T14:12:44.839</Modified>
->>>>>>> origin/master
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-<<<<<<< HEAD
-      <Modified>2016-12-26T07:43:10.000</Modified>
-=======
       <Modified>2016-11-29T14:12:44.841</Modified>
->>>>>>> origin/master
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-<<<<<<< HEAD
-      <Modified>2016-12-26T07:43:10.000</Modified>
-=======
       <Modified>2016-11-29T14:12:44.842</Modified>
->>>>>>> origin/master
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-<<<<<<< HEAD
-      <Modified>2016-12-26T07:43:10.000</Modified>
-=======
       <Modified>2016-11-29T14:12:44.844</Modified>
->>>>>>> origin/master
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-<<<<<<< HEAD
-      <Modified>2016-12-26T07:43:10.000</Modified>
-=======
       <Modified>2016-11-29T14:12:44.845</Modified>
->>>>>>> origin/master
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-<<<<<<< HEAD
-      <Modified>2016-12-26T07:43:10.000</Modified>
-=======
       <Modified>2016-11-29T14:12:44.846</Modified>
->>>>>>> origin/master
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\UWPService.xr.xml">
       <PackagePath>UWPService.xr.xml</PackagePath>
-<<<<<<< HEAD
-      <Modified>2016-12-26T07:43:10.000</Modified>
-=======
-      <Modified>2016-12-26T16:33:11.744</Modified>
->>>>>>> origin/master
+      <Modified>2016-12-27T19:13:03.402</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -621,19 +573,11 @@
     <AppxPackagedFile Include="C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-<<<<<<< HEAD
-      <Modified>2016-12-26T17:34:48.712</Modified>
-=======
-      <Modified>2016-12-26T16:36:48.209</Modified>
->>>>>>> origin/master
+      <Modified>2016-12-27T19:13:58.514</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\bin\x86\Debug\Core\UWPService.exe">
       <PackagePath>UWPService.exe</PackagePath>
-<<<<<<< HEAD
-      <Modified>2016-12-26T17:34:49.084</Modified>
-=======
-      <Modified>2016-12-26T16:36:48.463</Modified>
->>>>>>> origin/master
+      <Modified>2016-12-27T19:15:12.734</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

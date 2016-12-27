@@ -29,6 +29,7 @@ namespace UWPService
         {
             this.InitializeComponent();
             NavigationCortana.Navigation(MyFrame);
+            RecupDonnees();
         }     
 
         private void ListView_ItemClick(object sender, ItemClickEventArgs e)
