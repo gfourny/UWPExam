@@ -28,7 +28,12 @@ namespace UWPService
         public MainPage()
         {
             this.InitializeComponent();
+<<<<<<< HEAD
             RecupDonnees();
+=======
+            MyFrame.Navigate(typeof(Views.Dashboard));
+            Modele.LoadData();
+>>>>>>> origin/master
             NavigationCortana.Navigation(MyFrame);
         }     
 

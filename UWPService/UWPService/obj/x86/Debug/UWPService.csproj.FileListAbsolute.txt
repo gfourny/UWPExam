@@ -748,6 +748,7 @@ C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\Views\Fa
 C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\Views\Factures.g.cs
 C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\Views\Factures.xaml
 C:\Users\tbadi\Source\Repos\UWPExam\UWPService\UWPService\obj\x86\Debug\Views\Factures.xbf
+<<<<<<< HEAD
 D:\belli\Documents\GitHub\UWPExam\UWPService\UWPService\UWPService\bin\x86\Debug\App.xbf
 D:\belli\Documents\GitHub\UWPExam\UWPService\UWPService\UWPService\bin\x86\Debug\MainPage.xbf
 D:\belli\Documents\GitHub\UWPExam\UWPService\UWPService\UWPService\bin\x86\Debug\RessourceDictionary.xbf
@@ -1002,3 +1003,5 @@ D:\belli\Documents\GitHub\UWPExam\UWPService\UWPService\UWPService\obj\x86\Debug
 D:\belli\Documents\GitHub\UWPExam\UWPService\UWPService\UWPService\obj\x86\Debug\WinRTXamlToolkit.pri.xml
 D:\belli\Documents\GitHub\UWPExam\UWPService\UWPService\UWPService\obj\x86\Debug\WinRTXamlToolkit.Controls.DataVisualization.pri.xml
 D:\belli\Documents\GitHub\UWPExam\UWPService\UWPService\UWPService\obj\x86\Debug\ProjectArchitectures.txt
+=======
+>>>>>>> origin/master
