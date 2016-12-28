@@ -33,13 +33,11 @@ namespace UWPService.Views
         private void BindCustomers()
         {
             GridView.ItemsSource = VariableGlobale.Clients;
-            //GridViewSupplier.Visibility = Visibility.Collapsed;
         }
 
         private void BindSupplier()
         {
             GridView.ItemsSource = VariableGlobale.Fournisseurs;
-            //GridViewCustomer.Visibility = Visibility.Visible;
         }
 
         private void MainPage_BackRequested(object sender, BackRequestedEventArgs e)

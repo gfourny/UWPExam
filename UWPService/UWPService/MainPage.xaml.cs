@@ -28,13 +28,8 @@ namespace UWPService
         public MainPage()
         {
             this.InitializeComponent();
-<<<<<<< HEAD
-            RecupDonnees();
-=======
-            MyFrame.Navigate(typeof(Views.Dashboard));
-            Modele.LoadData();
->>>>>>> origin/master
             NavigationCortana.Navigation(MyFrame);
+            RecupDonnees();
         }     
 
         private void ListView_ItemClick(object sender, ItemClickEventArgs e)
@@ -56,6 +51,7 @@ namespace UWPService
         private async void RecupDonnees()
         {
             await Modele.LoadData();
+            Modele.Resultat();
             MyFrame.Navigate(typeof(Views.Dashboard));
         } 
     }
