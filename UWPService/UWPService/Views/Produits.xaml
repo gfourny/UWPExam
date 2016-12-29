@@ -9,7 +9,7 @@
 
     <Grid Background="#FF122940">
         <RelativePanel>
-            <TextBlock x:Name="WindowsTitle" FontSize="75" HorizontalAlignment="Center" Text="Produits"/>
+            <TextBlock x:Name="WindowsTitle" FontSize="75" HorizontalAlignment="Center" Text="Produits" Foreground="White" TextAlignment="Center"/>
             <ListView x:Name="MasterListView" 
                       RelativePanel.Below="WindowsTitle"
                   SelectionMode="Extended"

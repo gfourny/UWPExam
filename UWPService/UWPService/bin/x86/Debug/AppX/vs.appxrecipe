@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\ehounguevou\Documents\GitHub\UWPExam\UWPService\UWPService\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-29T13:39:28.346</Modified>
+      <Modified>2016-12-29T14:27:09.485</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\ehounguevou\Documents\GitHub\UWPExam\UWPService\UWPService\bin\x86\Debug\UWPService.exe">
       <PackagePath>entrypoint\UWPService.exe</PackagePath>
-      <Modified>2016-12-29T13:39:27.064</Modified>
+      <Modified>2016-12-29T14:27:08.296</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ehounguevou\.nuget\packages\CrossPieCharts.UWP\1.0.2\lib\uap\CrossPieCharts.ClassLibrary.dll">
       <PackagePath>CrossPieCharts.ClassLibrary.dll</PackagePath>
@@ -506,49 +506,49 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ehounguevou\Documents\GitHub\UWPExam\UWPService\UWPService\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2016-12-27T19:22:12.572</Modified>
+      <Modified>2016-12-29T14:18:12.046</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ehounguevou\Documents\GitHub\UWPExam\UWPService\UWPService\VoiceCommandDefinition.xml">
       <PackagePath>VoiceCommandDefinition.xml</PackagePath>
-      <Modified>2016-12-29T10:09:31.576</Modified>
+      <Modified>2016-12-29T14:18:12.181</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ehounguevou\Documents\GitHub\UWPExam\UWPService\UWPService\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2016-12-27T19:22:12.547</Modified>
+      <Modified>2016-12-29T14:18:12.018</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ehounguevou\Documents\GitHub\UWPExam\UWPService\UWPService\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-27T19:22:12.548</Modified>
+      <Modified>2016-12-29T14:18:12.019</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ehounguevou\Documents\GitHub\UWPExam\UWPService\UWPService\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-27T19:22:12.550</Modified>
+      <Modified>2016-12-29T14:18:12.030</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ehounguevou\Documents\GitHub\UWPExam\UWPService\UWPService\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-27T19:22:12.551</Modified>
+      <Modified>2016-12-29T14:18:12.032</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ehounguevou\Documents\GitHub\UWPExam\UWPService\UWPService\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-27T19:22:12.552</Modified>
+      <Modified>2016-12-29T14:18:12.033</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ehounguevou\Documents\GitHub\UWPExam\UWPService\UWPService\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-27T19:22:12.553</Modified>
+      <Modified>2016-12-29T14:18:12.033</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ehounguevou\Documents\GitHub\UWPExam\UWPService\UWPService\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-27T19:22:12.556</Modified>
+      <Modified>2016-12-29T14:18:12.034</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ehounguevou\Documents\GitHub\UWPExam\UWPService\UWPService\bin\x86\Debug\UWPService.xr.xml">
       <PackagePath>UWPService.xr.xml</PackagePath>
-      <Modified>2016-12-29T13:32:55.121</Modified>
+      <Modified>2016-12-29T14:27:07.981</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -573,11 +573,11 @@
     <AppxPackagedFile Include="C:\Users\ehounguevou\Documents\GitHub\UWPExam\UWPService\UWPService\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-29T13:39:27.810</Modified>
+      <Modified>2016-12-29T14:27:08.896</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ehounguevou\Documents\GitHub\UWPExam\UWPService\UWPService\bin\x86\Debug\Core\UWPService.exe">
       <PackagePath>UWPService.exe</PackagePath>
-      <Modified>2016-12-29T13:39:28.335</Modified>
+      <Modified>2016-12-29T14:27:09.477</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

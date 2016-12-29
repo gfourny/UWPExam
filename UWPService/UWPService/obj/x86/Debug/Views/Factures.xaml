@@ -9,7 +9,7 @@
 
     <Grid Background="#FF122940">
         <RelativePanel>
-            <TextBlock x:ConnectionId='1' x:Name="WindowsTitle" FontSize="75" HorizontalAlignment="Center" Text="Factures"/>
+            <TextBlock x:ConnectionId='1' x:Name="WindowsTitle" FontSize="75" HorizontalAlignment="Center" Text="Factures" Foreground="White" TextAlignment="Center"/>
             <ListView x:ConnectionId='2' x:Name="tete" RelativePanel.Below="WindowsTitle" IsItemClickEnabled="True" IsSwipeEnabled="False" CanDragItems="False" SelectionMode="Single" HorizontalAlignment="Center" VerticalAlignment="Center"                           >
                 <ListView.ItemTemplate>
                     <DataTemplate>
@@ -76,7 +76,7 @@
                         <AdaptiveTrigger MinWindowWidth="0"/>
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <Setter Target="tutu.Width" Value="100"/>
+                        <Setter Target="tutu.Width" Value="120"/>
                         <Setter Target="tete.Width" Value="100"/>
                     </VisualState.Setters>
                 </VisualState>
@@ -85,7 +85,7 @@
                         <AdaptiveTrigger MinWindowWidth="320"/>
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <Setter Target="tutu.Width" Value="100"/>
+                        <Setter Target="tutu.Width" Value="120"/>
                         <Setter Target="tete.Width" Value="100"/>
                         
                     </VisualState.Setters>
@@ -95,7 +95,7 @@
                         <AdaptiveTrigger MinWindowWidth="548"/>
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <Setter Target="tutu.Width" Value="100"/>
+                        <Setter Target="tutu.Width" Value="120"/>
                         <Setter Target="tete.Width" Value="100"/>
                         
                     </VisualState.Setters>
