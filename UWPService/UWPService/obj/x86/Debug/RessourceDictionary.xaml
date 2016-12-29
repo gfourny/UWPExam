@@ -35,12 +35,13 @@
     </DataTemplate>
 
     <DataTemplate x:Key="ProductListViewTemplate">
-        <Grid HorizontalAlignment="Left" Width="250" Height="200">
-            <StackPanel Opacity="0.8" VerticalAlignment="Center" Background="Black" Height="200" Width="250">
+        <Grid x:Name="gridProd" HorizontalAlignment="Left" Width="150" Height="170">
+            <StackPanel x:Name="stackProd" Opacity="0.8" VerticalAlignment="Center" Background="Black" Height="170" Width="150">
 
-                <TextBlock Text="{Binding ProductName}" Foreground="White" Style="{StaticResource TitleTextBlockStyle}" Margin="5,10,5,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <TextBlock Text="&#xE7BF;" FontFamily="Segoe MDL2 Assets" FontSize="70" Foreground="White" Margin="5,20,5,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </StackPanel>
+                <TextBlock x:Name="NomP" Text="{Binding ProductName}" Foreground="White" Style="{StaticResource SubtitleTextBlockStyle}" Margin="5,10,5,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock x:Name="IconP" Text="&#xE7BF;" FontFamily="Segoe MDL2 Assets" FontSize="40" Foreground="White" Margin="5,20,5,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </StackPanel>           
+            
         </Grid>
     </DataTemplate>
 
@@ -75,5 +76,8 @@
     <SolidColorBrush x:Key="ToggleSwitchCurtainPressedBackgroundThemeBrush" Color="White" />
     <SolidColorBrush x:Key="ToggleSwitchDisabledForegroundThemeBrush" Color="White" />
     <SolidColorBrush x:Key="ToggleSwitchForegroundThemeBrush" Color="White" />
+    
+    
+    
 </ResourceDictionary>
 

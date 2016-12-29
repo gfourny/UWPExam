@@ -9,7 +9,8 @@
 
     <Grid Background="#FF122940">
         <RelativePanel>
-            <ListView x:ConnectionId='1' x:Name="tete" IsItemClickEnabled="True" IsSwipeEnabled="False" CanDragItems="False" SelectionMode="Single" HorizontalAlignment="Center" VerticalAlignment="Center"                           >
+            <TextBlock x:ConnectionId='1' x:Name="WindowsTitle" FontSize="75" HorizontalAlignment="Center" Text="Factures"/>
+            <ListView x:ConnectionId='2' x:Name="tete" RelativePanel.Below="WindowsTitle" IsItemClickEnabled="True" IsSwipeEnabled="False" CanDragItems="False" SelectionMode="Single" HorizontalAlignment="Center" VerticalAlignment="Center"                           >
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Margin="10,10,10,10" >
@@ -21,7 +22,7 @@
                 </ListView.ItemTemplate>
             </ListView>
 
-            <ListView x:ConnectionId='2' x:Name="tutu" RelativePanel.RightOf="tete" IsItemClickEnabled="True" IsSwipeEnabled="False" CanDragItems="False" SelectionMode="Single" HorizontalAlignment="Center" VerticalAlignment="Center"                           >
+            <ListView x:ConnectionId='3' x:Name="tutu" RelativePanel.Below="WindowsTitle" RelativePanel.RightOf="tete" IsItemClickEnabled="True" IsSwipeEnabled="False" CanDragItems="False" SelectionMode="Single" HorizontalAlignment="Center" VerticalAlignment="Center"                           >
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Margin="10,10,10,10" BorderBrush="White" >
@@ -34,22 +35,22 @@
                 </ListView.ItemTemplate>
             </ListView>
 
-            <RelativePanel x:ConnectionId='3' x:Name="OrderForm" RelativePanel.RightOf="tutu" Margin="2" HorizontalAlignment="Center" Visibility="Collapsed">
-                <RelativePanel x:ConnectionId='4' x:Name="panelCustomer">
-                    <TextBlock x:ConnectionId='13' x:Name="HeaderNomClient" FontWeight="SemiBold" Text="Nom du client:" Margin="2" Foreground="White"></TextBlock>
-                    <TextBlock x:ConnectionId='14' x:Name="NomClient" Text="{Binding FirstName}" FontStyle="Italic" RelativePanel.Below="HeaderNomClient" Margin="2" Foreground="White"></TextBlock>
-                    <TextBlock x:ConnectionId='15' x:Name="HeaderPrenomClient" FontWeight="SemiBold" Text="Prénom du client:" Foreground="White" RelativePanel.Below="NomClient" Margin="2"></TextBlock>
-                    <TextBlock x:ConnectionId='16' x:Name="PrenomClient" Text="{Binding LastName}" FontStyle="Italic" RelativePanel.Below="HeaderPrenomClient" Margin="2" Foreground="White"></TextBlock>
+            <RelativePanel x:ConnectionId='4' x:Name="OrderForm" RelativePanel.Below="WindowsTitle"  RelativePanel.RightOf="tutu" Margin="2" HorizontalAlignment="Center" Visibility="Collapsed">
+                <RelativePanel x:ConnectionId='5' x:Name="panelCustomer">
+                    <TextBlock x:ConnectionId='14' x:Name="HeaderNomClient" FontWeight="SemiBold" Text="Nom du client:" Margin="2" Foreground="White"></TextBlock>
+                    <TextBlock x:ConnectionId='15' x:Name="NomClient" Text="{Binding FirstName}" FontStyle="Italic" RelativePanel.Below="HeaderNomClient" Margin="2" Foreground="White"></TextBlock>
+                    <TextBlock x:ConnectionId='16' x:Name="HeaderPrenomClient" FontWeight="SemiBold" Text="Prénom du client:" Foreground="White" RelativePanel.Below="NomClient" Margin="2"></TextBlock>
+                    <TextBlock x:ConnectionId='17' x:Name="PrenomClient" Text="{Binding LastName}" FontStyle="Italic" RelativePanel.Below="HeaderPrenomClient" Margin="2" Foreground="White"></TextBlock>
                 </RelativePanel>
-                <RelativePanel x:ConnectionId='5' x:Name="panelOrder" RelativePanel.Below="panelCustomer">
-                    <TextBlock x:ConnectionId='7' x:Name="HeaderNumFact" FontWeight="SemiBold" Foreground="White" Text="Numéro de facture:" Margin="2"></TextBlock>
-                    <TextBlock x:ConnectionId='8' x:Name="NumFact" Text="{Binding OrderNumber}" FontStyle="Italic" RelativePanel.Below="HeaderNumFact" Margin="2" Foreground="White"></TextBlock>
-                    <TextBlock x:ConnectionId='9' x:Name="HeaderDatFact" FontWeight="SemiBold" Text="Date de la facture:" Foreground="White" Margin="2" RelativePanel.Below="NumFact"></TextBlock>
-                    <TextBlock x:ConnectionId='10' x:Name="DatFact" Text="{Binding OrderDate}" FontStyle="Italic" RelativePanel.Below="HeaderDatFact" Foreground="White" Margin="2"></TextBlock>
-                    <TextBlock x:ConnectionId='11' x:Name="HeaderPrixTTC" FontWeight="SemiBold" Text="Montant total de la facture:" Foreground="White" Margin="2" RelativePanel.Below="DatFact"></TextBlock>
-                    <TextBlock x:ConnectionId='12' x:Name="PrixTTC" Text="{Binding TotalAmount}" FontStyle="Italic" RelativePanel.Below="HeaderPrixTTC" Foreground="White" Margin="2"></TextBlock>
+                <RelativePanel x:ConnectionId='6' x:Name="panelOrder" RelativePanel.Below="panelCustomer">
+                    <TextBlock x:ConnectionId='8' x:Name="HeaderNumFact" FontWeight="SemiBold" Foreground="White" Text="Numéro de facture:" Margin="2"></TextBlock>
+                    <TextBlock x:ConnectionId='9' x:Name="NumFact" Text="{Binding OrderNumber}" FontStyle="Italic" RelativePanel.Below="HeaderNumFact" Margin="2" Foreground="White"></TextBlock>
+                    <TextBlock x:ConnectionId='10' x:Name="HeaderDatFact" FontWeight="SemiBold" Text="Date de la facture:" Foreground="White" Margin="2" RelativePanel.Below="NumFact"></TextBlock>
+                    <TextBlock x:ConnectionId='11' x:Name="DatFact" Text="{Binding OrderDate}" FontStyle="Italic" RelativePanel.Below="HeaderDatFact" Foreground="White" Margin="2"></TextBlock>
+                    <TextBlock x:ConnectionId='12' x:Name="HeaderPrixTTC" FontWeight="SemiBold" Text="Montant total de la facture:" Foreground="White" Margin="2" RelativePanel.Below="DatFact"></TextBlock>
+                    <TextBlock x:ConnectionId='13' x:Name="PrixTTC" Text="{Binding TotalAmount}" FontStyle="Italic" RelativePanel.Below="HeaderPrixTTC" Foreground="White" Margin="2"></TextBlock>
                 </RelativePanel>
-                <ListView x:ConnectionId='6' x:Name="lv" RelativePanel.Below="panelOrder" IsItemClickEnabled="True" IsSwipeEnabled="False" CanDragItems="False" SelectionMode="Single" HorizontalAlignment="Center" VerticalAlignment="Center" >
+                <ListView x:ConnectionId='7' x:Name="lv" RelativePanel.Below="panelOrder" IsItemClickEnabled="True" IsSwipeEnabled="False" CanDragItems="False" SelectionMode="Single" HorizontalAlignment="Center" VerticalAlignment="Center" >
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <StackPanel Margin="10,10,10,10">
@@ -67,6 +68,53 @@
                 </ListView>
             </RelativePanel>
         </RelativePanel>
+
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState x:ConnectionId='18' x:Name="VisualState0min">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="tutu.Width" Value="100"/>
+                        <Setter Target="tete.Width" Value="100"/>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:ConnectionId='19' x:Name="VisualState320min">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="320"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="tutu.Width" Value="100"/>
+                        <Setter Target="tete.Width" Value="100"/>
+                        
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:ConnectionId='20' x:Name="VisualState548min">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="548"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="tutu.Width" Value="100"/>
+                        <Setter Target="tete.Width" Value="100"/>
+                        
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:ConnectionId='21' x:Name="VisualState720min">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="720"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:ConnectionId='22' x:Name="VisualState1024min">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="1024"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters></VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
     </Grid>
 </Page>
 

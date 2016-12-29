@@ -9,12 +9,14 @@
 
     <Grid Background="#FF122940">
         <RelativePanel>
+            <TextBlock x:Name="WindowsTitle" FontSize="75" HorizontalAlignment="Center" Text="Produits"/>
             <ListView x:Name="MasterListView" 
+                      RelativePanel.Below="WindowsTitle"
                   SelectionMode="Extended"
                   IsItemClickEnabled="True"
                   ShowsScrollingPlaceholders="False"
                   ItemTemplate="{StaticResource ProductListViewTemplate }"                  
-                  Width="270"
+                  Width="170"
                     ItemClick="MasterListView_ItemClick">
                 <ListView.ItemContainerStyle>
                     <Style TargetType="ListViewItem">
@@ -24,6 +26,7 @@
             </ListView>
             <ContentPresenter
                 RelativePanel.RightOf="MasterListView"
+                RelativePanel.Below="WindowsTitle"
                 x:Name="DetailContentPresenter"
                 BorderThickness="1,0,0,0"
                 Padding="24,0"
@@ -36,6 +39,6 @@
                     <TransitionCollection/>
                 </ContentPresenter.ContentTransitions>
             </ContentPresenter>
-        </RelativePanel>
+        </RelativePanel>        
     </Grid>
 </Page>

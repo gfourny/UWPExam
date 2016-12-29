@@ -9,7 +9,8 @@
 
     <Grid Background="#FF122940">
         <RelativePanel>
-            <ListView x:Name="tete" IsItemClickEnabled="True" IsSwipeEnabled="False" CanDragItems="False" SelectionMode="Single" HorizontalAlignment="Center" VerticalAlignment="Center" ItemClick="tete_ItemClick">
+            <TextBlock x:Name="WindowsTitle" FontSize="75" HorizontalAlignment="Center" Text="Factures"/>
+            <ListView x:Name="tete" RelativePanel.Below="WindowsTitle" IsItemClickEnabled="True" IsSwipeEnabled="False" CanDragItems="False" SelectionMode="Single" HorizontalAlignment="Center" VerticalAlignment="Center" ItemClick="tete_ItemClick">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Margin="10,10,10,10" >
@@ -21,7 +22,7 @@
                 </ListView.ItemTemplate>
             </ListView>
 
-            <ListView x:Name="tutu" RelativePanel.RightOf="tete" IsItemClickEnabled="True" IsSwipeEnabled="False" CanDragItems="False" SelectionMode="Single" HorizontalAlignment="Center" VerticalAlignment="Center" ItemClick="tutu_ItemClick">
+            <ListView x:Name="tutu" RelativePanel.Below="WindowsTitle" RelativePanel.RightOf="tete" IsItemClickEnabled="True" IsSwipeEnabled="False" CanDragItems="False" SelectionMode="Single" HorizontalAlignment="Center" VerticalAlignment="Center" ItemClick="tutu_ItemClick">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Margin="10,10,10,10" BorderBrush="White" >
@@ -34,7 +35,7 @@
                 </ListView.ItemTemplate>
             </ListView>
 
-            <RelativePanel x:Name="OrderForm" RelativePanel.RightOf="tutu" Margin="2" HorizontalAlignment="Center" Visibility="Collapsed">
+            <RelativePanel x:Name="OrderForm" RelativePanel.Below="WindowsTitle"  RelativePanel.RightOf="tutu" Margin="2" HorizontalAlignment="Center" Visibility="Collapsed">
                 <RelativePanel x:Name="panelCustomer">
                     <TextBlock x:Name="HeaderNomClient" FontWeight="SemiBold" Text="Nom du client:" Margin="2" Foreground="White"></TextBlock>
                     <TextBlock x:Name="NomClient" Text="{Binding FirstName}" FontStyle="Italic" RelativePanel.Below="HeaderNomClient" Margin="2" Foreground="White"></TextBlock>
@@ -67,5 +68,52 @@
                 </ListView>
             </RelativePanel>
         </RelativePanel>
+
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState x:Name="VisualState0min">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="tutu.Width" Value="100"/>
+                        <Setter Target="tete.Width" Value="100"/>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="VisualState320min">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="320"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="tutu.Width" Value="100"/>
+                        <Setter Target="tete.Width" Value="100"/>
+                        
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="VisualState548min">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="548"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="tutu.Width" Value="100"/>
+                        <Setter Target="tete.Width" Value="100"/>
+                        
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="VisualState720min">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="720"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="VisualState1024min">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="1024"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters></VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
     </Grid>
 </Page>
