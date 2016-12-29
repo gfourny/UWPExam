@@ -98,6 +98,7 @@
     <Compile Include="Items\Constante.cs" />
     <Compile Include="Items\MyDataTemplateSelector.cs" />
     <Compile Include="Items\NavigationCortana.cs" />
+    <Compile Include="Items\ResultatPie.cs" />
     <Compile Include="Items\VariableGlobale.cs" />
     <Compile Include="Items\Modele.cs" />
     <Compile Include="MainPage.xaml.cs">

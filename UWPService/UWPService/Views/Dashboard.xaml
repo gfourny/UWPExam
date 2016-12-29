@@ -23,7 +23,7 @@
             </RelativePanel>
             <RelativePanel>
                 <Charting:Chart x:Name="PieChart" RelativePanel.AlignHorizontalCenterWithPanel="True" Width="600" Height="600">
-                    <Charting:PieSeries Title="Résultat" IndependentValuePath="Month" DependentValuePath="Amount" IsSelectionEnabled="True"/>
+                    <Charting:PieSeries Title="Résultat" IndependentValuePath="MonthToString" DependentValuePath="Amount" IsSelectionEnabled="True"/>
                 </Charting:Chart>
                 <TextBlock x:Name="Titre2" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.Below="PieChart" Text="Résultat par mois" FontSize="32"/>
             </RelativePanel>

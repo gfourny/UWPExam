@@ -144,6 +144,22 @@ namespace UWPService.Items
             RemoveSupplier(oldSupplier);
             AddSupplier(newSupplier);
         }
-        #endregion 
+        #endregion
+
+        #region Méthode Résultat
+        /// <summary>
+        /// Ecrit les mois en string et non en int
+        /// </summary>
+        public static void Resultat()
+        {
+            VariableGlobale.Resultats = new ObservableCollection<ResultatPie>();
+            foreach (Resultat item in VariableGlobale.IResultat)
+            {
+                ResultatPie item2 = new ResultatPie() { Year = item.Year, Amount = item.Amount, Month = item.Month };
+                item2.AffectMonthToString();
+                VariableGlobale.Resultats.Add(item2);
+            }
+        }
+        #endregion
     }
 }

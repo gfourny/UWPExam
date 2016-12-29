@@ -50,7 +50,7 @@ namespace UWPService.Views
         {
             (AreaChart.Series[0] as AreaSeries).ItemsSource = VariableGlobale.IVente.Skip(0).Take(7);
 
-            (PieChart.Series[0] as PieSeries).ItemsSource = VariableGlobale.IResultat.Skip(0).Take(12);
+            (PieChart.Series[0] as PieSeries).ItemsSource = VariableGlobale.Resultats.Skip(0).Take(12);
 
             (BubbleChart.Series[0] as BubbleSeries).ItemsSource = VariableGlobale.IClient.Skip(0).Take(5);
         }

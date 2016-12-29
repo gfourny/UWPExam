@@ -19,5 +19,6 @@ namespace UWPService.Items
         public static ObservableCollection<Product> Produits { get; set; }
         public static ObservableCollection<OrderItem> FacturesElement { get; set; }
         public static ObservableCollection<Order> Factures { get; set; }
+        public static ObservableCollection<ResultatPie> Resultats { get; set; }
     }
 }

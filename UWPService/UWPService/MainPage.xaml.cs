@@ -49,6 +49,7 @@ namespace UWPService
         private async void RecupDonnees()
         {
             await Modele.LoadData();
+            Modele.Resultat();
             MyFrame.Navigate(typeof(Views.Dashboard));
         } 
     }
