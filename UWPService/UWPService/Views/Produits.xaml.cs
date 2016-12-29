@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using UWPService.Items;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Core;
@@ -27,6 +28,7 @@ namespace UWPService.Views
         {
             this.InitializeComponent();
             SystemNavigationManager.GetForCurrentView().BackRequested += MainPage_BackRequested;
+            MasterListView.ItemsSource = VariableGlobale.Produits;
         }
 
         private void MainPage_BackRequested(object sender, BackRequestedEventArgs e)
@@ -41,6 +43,11 @@ namespace UWPService.Views
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
+        }
+
+        private void MasterListView_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            DetailContentPresenter.Visibility = Visibility.Visible;
         }
     }
 }

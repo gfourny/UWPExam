@@ -156,7 +156,7 @@ namespace UWPService.UWPService_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[51];
+            _typeNameTable = new string[50];
             _typeNameTable[0] = "UWPService.MainPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -206,10 +206,9 @@ namespace UWPService.UWPService_XamlTypeInfo
             _typeNameTable[46] = "Windows.UI.Xaml.Media.Geometry";
             _typeNameTable[47] = "UWPService.Views.Dashboard";
             _typeNameTable[48] = "UWPService.Views.Factures";
-            _typeNameTable[49] = "UWPService.Views.Panier";
-            _typeNameTable[50] = "UWPService.Views.Produits";
+            _typeNameTable[49] = "UWPService.Views.Produits";
 
-            _typeTable = new global::System.Type[51];
+            _typeTable = new global::System.Type[50];
             _typeTable[0] = typeof(global::UWPService.MainPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -259,8 +258,7 @@ namespace UWPService.UWPService_XamlTypeInfo
             _typeTable[46] = typeof(global::Windows.UI.Xaml.Media.Geometry);
             _typeTable[47] = typeof(global::UWPService.Views.Dashboard);
             _typeTable[48] = typeof(global::UWPService.Views.Factures);
-            _typeTable[49] = typeof(global::UWPService.Views.Panier);
-            _typeTable[50] = typeof(global::UWPService.Views.Produits);
+            _typeTable[49] = typeof(global::UWPService.Views.Produits);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -313,8 +311,7 @@ namespace UWPService.UWPService_XamlTypeInfo
         private object Activate_44_AreaSeries() { return new global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AreaSeries(); }
         private object Activate_47_Dashboard() { return new global::UWPService.Views.Dashboard(); }
         private object Activate_48_Factures() { return new global::UWPService.Views.Factures(); }
-        private object Activate_49_Panier() { return new global::UWPService.Views.Panier(); }
-        private object Activate_50_Produits() { return new global::UWPService.Views.Produits(); }
+        private object Activate_49_Produits() { return new global::UWPService.Views.Produits(); }
         private void VectorAdd_10_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries>)instance;
@@ -704,16 +701,9 @@ namespace UWPService.UWPService_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 49:   //  UWPService.Views.Panier
+            case 49:   //  UWPService.Views.Produits
                 userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_49_Panier;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 50:   //  UWPService.Views.Produits
-                userType = new global::UWPService.UWPService_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_50_Produits;
+                userType.Activator = Activate_49_Produits;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

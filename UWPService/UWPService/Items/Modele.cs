@@ -18,6 +18,9 @@ namespace UWPService.Items
             VariableGlobale.IClient = await ysc.ClientsAsync();
             VariableGlobale.Fournisseurs = await ysc.GetAllSuppliersAsync();
             VariableGlobale.Clients = await ysc.GetCustomersAsync();
+            VariableGlobale.Produits = await ysc.GetAllProductsAsync();
+            VariableGlobale.Factures = await ysc.GetAllOrderAsync();
+            VariableGlobale.FacturesElement = await ysc.GetAllOrderItemAsync();
             await ysc.CloseAsync();
         }
 

@@ -121,9 +121,6 @@
     <Compile Include="Views\Factures.xaml.cs">
       <DependentUpon>Factures.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Panier.xaml.cs">
-      <DependentUpon>Panier.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Views\Produits.xaml.cs">
       <DependentUpon>Produits.xaml</DependentUpon>
     </Compile>
@@ -146,6 +143,12 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\MyWebService\UWPService.MyWebService.Customer.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MyWebService\UWPService.MyWebService.Order.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MyWebService\UWPService.MyWebService.OrderItem.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\MyWebService\UWPService.MyWebService.Product.datasource">
@@ -208,10 +211,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\Factures.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Views\Panier.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

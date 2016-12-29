@@ -42,8 +42,6 @@ namespace UWPService
                 MyFrame.Navigate(typeof(Client_Fournisseur), "Clients");
             else if (((StackPanel)e.ClickedItem).Name == "Factures")
                 MyFrame.Navigate(typeof(Factures));
-            else if (((StackPanel)e.ClickedItem).Name == "Panier")
-                MyFrame.Navigate(typeof(Panier));
             else if (((StackPanel)e.ClickedItem).Name == "Produits")
                 MyFrame.Navigate(typeof(Produits));
         }

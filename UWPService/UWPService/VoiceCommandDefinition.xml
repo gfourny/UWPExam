@@ -15,12 +15,18 @@
       <Feedback> Voici les produits </Feedback>
       <Navigate Target="MainPage.xaml"/>
     </Command>
-    <Command Name="showPanier">
-      <Example>Panier</Example>
-      <ListenFor>[les] paniers</ListenFor>
-      <Feedback> Voici les paniers </Feedback>
+    <Command Name="showCreateCustomer">
+      <Example>la page de création des clients</Example>
+      <ListenFor>la page de création des clients</ListenFor>
+      <Feedback> Voici la page de création des clients</Feedback>
       <Navigate Target="MainPage.xaml"/>
     </Command>
+    <Command Name="showCreateSupplier">
+      <Example>la page de création des fournisseurs</Example>
+      <ListenFor>la page de création des fournisseurs</ListenFor>
+      <Feedback> Voici la page de création des fournisseurs</Feedback>
+      <Navigate Target="MainPage.xaml"/>
+    </Command>    
     <Command Name="showCustomer">
       <Example>Clients</Example>
       <ListenFor>[les] clients</ListenFor>

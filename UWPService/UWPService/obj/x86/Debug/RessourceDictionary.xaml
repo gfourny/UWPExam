@@ -9,7 +9,7 @@
         SupplierTemplate="{StaticResource Standard250x250ItemTemplateSupplier}"
         CustomerTemplate="{StaticResource Standard250x250ItemTemplateCustomer}">
     </Items:MyDataTemplateSelector>
-    
+
     <DataTemplate x:Key="Standard250x250ItemTemplateCustomer">
         <Grid HorizontalAlignment="Left" Width="250" Height="250">
             <Border Background="#FF122940">
@@ -20,7 +20,7 @@
                 <TextBlock Text="{Binding LastName}" Foreground="{StaticResource ListViewItemOverlaySecondaryForegroundThemeBrush}" Style="{StaticResource SubtitleTextBlockStyle}" TextWrapping="NoWrap" Margin="15,0,15,0"/>
             </StackPanel>
         </Grid>
-        
+
     </DataTemplate>
 
     <DataTemplate x:Key="Standard250x250ItemTemplateSupplier">
@@ -33,5 +33,47 @@
             </StackPanel>
         </Grid>
     </DataTemplate>
+
+    <DataTemplate x:Key="ProductListViewTemplate">
+        <Grid HorizontalAlignment="Left" Width="250" Height="200">
+            <StackPanel Opacity="0.8" VerticalAlignment="Center" Background="Black" Height="200" Width="250">
+
+                <TextBlock Text="{Binding ProductName}" Foreground="White" Style="{StaticResource TitleTextBlockStyle}" Margin="5,10,5,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Text="&#xE7BF;" FontFamily="Segoe MDL2 Assets" FontSize="70" Foreground="White" Margin="5,20,5,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </StackPanel>
+        </Grid>
+    </DataTemplate>
+
+    <DataTemplate x:Key="ProductContentTemplate">
+        <StackPanel >
+            <TextBlock x:Name="headerNomProduit" Foreground="White" Text="Nom du produit:" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" FontWeight="SemiBold"></TextBlock>
+            <TextBlock Style="{ThemeResource TitleTextBlockStyle}" 
+                                   Margin="0,8"  Foreground="White"      
+                                   Text="{Binding ProductName}" VerticalAlignment="Center" HorizontalAlignment="Center" FontStyle="Italic"/>
+            <TextBlock x:Name="headerContenuProduit" Foreground="White" Text="Package du produit:" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" FontWeight="SemiBold"></TextBlock>
+            <TextBlock Style="{ThemeResource BodyTextBlockStyle}" Foreground="White"
+                                   Margin="0,9" 
+                                   Text="{Binding Package}" VerticalAlignment="Center" HorizontalAlignment="Center" FontStyle="Italic"/>
+            <TextBlock x:Name="headerPrixProduit" Text="Prix du produit:" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" FontWeight="SemiBold"></TextBlock>
+            <TextBlock Style="{ThemeResource BodyTextBlockStyle}"  Foreground="White"
+                                   Margin="0,9" 
+                                   Text="{Binding UnitPrice}" VerticalAlignment="Center" HorizontalAlignment="Center" FontStyle="Italic"/>
+
+            <ToggleSwitch x:Name="toggleDispoProduit" Foreground="White" Header="Disponibilité:" OnContent="Disponible" OffContent="Non Disponible"         
+                                   Margin="0,9"                                  
+                                   IsOn="{Binding IsDiscontinued}" VerticalAlignment="Center" HorizontalAlignment="Center" FontStyle="Italic"/>
+            <TextBlock x:Name="headerIDProduit" Foreground="White" Text="ID du produit:" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" FontWeight="SemiBold"></TextBlock>
+            <TextBlock Style="{ThemeResource BodyTextBlockStyle}"  Foreground="White"
+                                   Margin="0,9" 
+                                   TextWrapping="WrapWholeWords"
+                                   Text="{Binding Id}" VerticalAlignment="Center" HorizontalAlignment="Center" FontStyle="Italic"/>
+        </StackPanel>
+    </DataTemplate>
+
+    <SolidColorBrush x:Key="ToggleSwitchCurtainBackgroundThemeBrush" Color="White" />
+    <SolidColorBrush x:Key="ToggleSwitchCurtainPointerOverBackgroundThemeBrush" Color="White" />
+    <SolidColorBrush x:Key="ToggleSwitchCurtainPressedBackgroundThemeBrush" Color="White" />
+    <SolidColorBrush x:Key="ToggleSwitchDisabledForegroundThemeBrush" Color="White" />
+    <SolidColorBrush x:Key="ToggleSwitchForegroundThemeBrush" Color="White" />
 </ResourceDictionary>
 

@@ -43,6 +43,18 @@
   <wsdl:message name="IYnovService_GetAllProducts_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetAllProductsResponse" />
   </wsdl:message>
+  <wsdl:message name="IYnovService_GetAllOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllOrder" />
+  </wsdl:message>
+  <wsdl:message name="IYnovService_GetAllOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IYnovService_GetAllOrderItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllOrderItem" />
+  </wsdl:message>
+  <wsdl:message name="IYnovService_GetAllOrderItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllOrderItemResponse" />
+  </wsdl:message>
   <wsdl:portType name="IYnovService">
     <wsdl:operation name="GetCustomers">
       <wsdl:input wsaw:Action="http://tempuri.org/IYnovService/GetCustomers" message="tns:IYnovService_GetCustomers_InputMessage" />
@@ -67,6 +79,14 @@
     <wsdl:operation name="GetAllProducts">
       <wsdl:input wsaw:Action="http://tempuri.org/IYnovService/GetAllProducts" message="tns:IYnovService_GetAllProducts_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IYnovService/GetAllProductsResponse" message="tns:IYnovService_GetAllProducts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IYnovService/GetAllOrder" message="tns:IYnovService_GetAllOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IYnovService/GetAllOrderResponse" message="tns:IYnovService_GetAllOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllOrderItem">
+      <wsdl:input wsaw:Action="http://tempuri.org/IYnovService/GetAllOrderItem" message="tns:IYnovService_GetAllOrderItem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IYnovService/GetAllOrderItemResponse" message="tns:IYnovService_GetAllOrderItem_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IYnovService" type="tns:IYnovService">
@@ -118,6 +138,24 @@
     </wsdl:operation>
     <wsdl:operation name="GetAllProducts">
       <soap:operation soapAction="http://tempuri.org/IYnovService/GetAllProducts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllOrder">
+      <soap:operation soapAction="http://tempuri.org/IYnovService/GetAllOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllOrderItem">
+      <soap:operation soapAction="http://tempuri.org/IYnovService/GetAllOrderItem" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

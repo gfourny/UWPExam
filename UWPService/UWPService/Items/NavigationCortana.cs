@@ -17,10 +17,7 @@ namespace UWPService.Items
             if (valuesCommand.ContainsKey("FrameName"))
             {
                 switch (valuesCommand["FrameName"])
-                {
-                    case "paniers":
-                        MyFrame.Navigate(typeof(Panier));
-                        break;
+                {                    
                     case "clients":
                         MyFrame.Navigate(typeof(Client_Fournisseur), "Clients");
                         break;
@@ -44,6 +41,12 @@ namespace UWPService.Items
                         break;
                     case "produits":
                         MyFrame.Navigate(typeof(Produits));
+                        break;
+                    case "création":
+                        if (valuesCommand["options"].Contains("client"))
+                            MyFrame.Navigate(typeof(Clients_Fournisseur_Detaille), new Customer() { Id = (VariableGlobale.Clients.Count + 1)});
+                        else if(valuesCommand["options"].Contains("fournisseur"))
+                            MyFrame.Navigate(typeof(Clients_Fournisseur_Detaille), new Supplier() { Id = (VariableGlobale.Fournisseurs.Count + 1) });
                         break;
                     default:
                         break;
@@ -85,7 +88,7 @@ namespace UWPService.Items
 
         private static bool IsWindowFrameName(string value)
         {
-             return (value.ToLower().Contains("client") || value.ToLower().Contains("fournisseur") || value.ToLower().Contains("panier") || value.ToLower().Contains("produit") || value.ToLower().Contains("facture"));
+             return (value.ToLower().Contains("client") || value.ToLower().Contains("fournisseur") || value.ToLower().Contains("panier") || value.ToLower().Contains("produit") || value.ToLower().Contains("facture") || value.ToLower().Contains("création"));
         }
     }
 }

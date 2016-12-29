@@ -73,4 +73,28 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="GetAllOrder">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/UWPExam" minOccurs="0" name="GetAllOrderResult" nillable="true" type="q7:ArrayOfOrder" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllOrderItem">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllOrderItemResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/UWPExam" minOccurs="0" name="GetAllOrderItemResult" nillable="true" type="q8:ArrayOfOrderItem" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>
