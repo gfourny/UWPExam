@@ -28,29 +28,34 @@ namespace UWPService
         public MainPage()
         {
             this.InitializeComponent();
-            NavigationCortana.Navigation(MyFrame);
             RecupDonnees();
         }     
 
         private void ListView_ItemClick(object sender, ItemClickEventArgs e)
-        {
+        {            
             var qualifiers = Windows.ApplicationModel.Resources.Core.ResourceContext.GetForCurrentView().QualifierValues;
 
-            if (qualifiers["DeviceFamily"] == "DeviceFamily-Mobile")
+            if (((StackPanel)e.ClickedItem).Name == "Ham")
+                MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
+            else if (((StackPanel)e.ClickedItem).Name == "Fournisseurs")
+                MyFrame.Navigate(typeof(Client_Fournisseur), "Fournisseurs");
+            else if (((StackPanel)e.ClickedItem).Name == "Clients")
+                MyFrame.Navigate(typeof(Client_Fournisseur), "Clients");
+            else if (((StackPanel)e.ClickedItem).Name == "Factures")
             {
-                MyFrame.Navigate(typeof(FacturePhone));
-            }
-            else
-            {
-                if (((StackPanel)e.ClickedItem).Name == "Ham")
-                    MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
-                else if (((StackPanel)e.ClickedItem).Name == "Fournisseurs")
-                    MyFrame.Navigate(typeof(Client_Fournisseur), "Fournisseurs");
-                else if (((StackPanel)e.ClickedItem).Name == "Clients")
-                    MyFrame.Navigate(typeof(Client_Fournisseur), "Clients");
-                else if (((StackPanel)e.ClickedItem).Name == "Factures")
+                if (qualifiers["DeviceFamily"] == "Mobile")
+                {
+                    MyFrame.Navigate(typeof(FacturesPhone));
+                }
+                else
                     MyFrame.Navigate(typeof(Factures));
-                else if (((StackPanel)e.ClickedItem).Name == "Produits")
+            }
+
+            else if (((StackPanel)e.ClickedItem).Name == "Produits")
+            {
+                if (qualifiers["DeviceFamily"] == "Mobile")
+                    MyFrame.Navigate(typeof(ProduitsPhone));
+                else
                     MyFrame.Navigate(typeof(Produits));
             }
         }
@@ -60,6 +65,7 @@ namespace UWPService
             await Modele.LoadData();
             Modele.Resultat();
             MyFrame.Navigate(typeof(Views.Dashboard));
+            NavigationCortana.Navigation(MyFrame);
         } 
     }
 }

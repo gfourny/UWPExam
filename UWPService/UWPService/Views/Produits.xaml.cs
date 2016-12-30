@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using UWPService.Items;
+using UWPService.MyWebService;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Core;
@@ -43,6 +44,12 @@ namespace UWPService.Views
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
+
+            if (e.Parameter != null)
+            {
+                MasterListView.SelectedItem = (Product)e.Parameter;
+                MasterListView_ItemClick(this, null);
+            }
         }
 
         private void MasterListView_ItemClick(object sender, ItemClickEventArgs e)

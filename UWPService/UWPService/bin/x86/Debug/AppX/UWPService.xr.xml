@@ -229,8 +229,8 @@
       <RootProperty Name="IsSelectionEnabled" />
     </RootType>
     <RootType FullName="UWPService.Views.Dashboard" />
-    <RootType FullName="UWPService.Views.FacturePhone" />
     <RootType FullName="UWPService.Views.Factures" />
+    <RootType FullName="UWPService.Views.FacturesPhone" />
     <RootType FullName="Windows.UI.Xaml.Controls.ContentPresenter">
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="Padding" />
@@ -248,5 +248,6 @@
       <RootProperty Name="HorizontalContentAlignment" />
     </RootType>
     <RootType FullName="UWPService.Views.Produits" />
+    <RootType FullName="UWPService.Views.ProduitsPhone" />
   </Roots.RootTypes>
 </Roots>

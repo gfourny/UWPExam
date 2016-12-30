@@ -60,7 +60,7 @@ namespace UWPService.Views
             YnovServiceClient MyService = new YnovServiceClient();
             ObservableCollection<MyWebService.Vente> IVente = await MyService.VentesAsync();
 
-            if (Plus > IVente.Count-14)
+            if (Plus > IVente.Count - 14)
             {
                 Plus = 0;
             }

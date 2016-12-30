@@ -11,7 +11,7 @@
     </Command>
     <Command Name="showProducts">
       <Example>Produit</Example>
-      <ListenFor>Produit</ListenFor>
+      <ListenFor>[les] produits</ListenFor>
       <Feedback> Voici les produits </Feedback>
       <Navigate Target="MainPage.xaml"/>
     </Command>
@@ -26,7 +26,7 @@
       <ListenFor>la page de création des fournisseurs</ListenFor>
       <Feedback> Voici la page de création des fournisseurs</Feedback>
       <Navigate Target="MainPage.xaml"/>
-    </Command>    
+    </Command>
     <Command Name="showCustomer">
       <Example>Clients</Example>
       <ListenFor>[les] clients</ListenFor>
@@ -39,35 +39,1046 @@
       <Feedback> Voici les fournisseurs</Feedback>
       <Navigate Target="MainPage.xaml"/>
     </Command>
-
     <Command Name="FindCustomer">
-      <Example>Clients</Example>
+      <Example>le client</Example>
       <ListenFor>[le] client {Clients}</ListenFor>
       <Feedback> Voici le client recherché</Feedback>
       <Navigate Target="MainPage.xaml"/>
     </Command>
-
     <Command Name="FindCustomerbyID">
-      <Example>Clients</Example>
+      <Example>le client dont l'id est égal à</Example>
       <ListenFor>[le] client dont l'id est égal à {ClientsID}</ListenFor>
       <Feedback> Voici le client recherché</Feedback>
       <Navigate Target="MainPage.xaml"/>
     </Command>
-
     <Command Name="FindSupplier">
-      <Example>Fournisseurs</Example>
+      <Example>le fournisseur</Example>
       <ListenFor>[le] fournisseur {Fournisseurs}</ListenFor>
       <Feedback> Voici le fournisseur recherché</Feedback>
       <Navigate Target="MainPage.xaml"/>
     </Command>
-
     <Command Name="FindSupplierID">
-      <Example>Fournisseurs</Example>
+      <Example>le fournisseur dont l'id est égal à</Example>
       <ListenFor>[le] fournisseur dont l'id est égal à {FournisseursID}</ListenFor>
       <Feedback> Voici le fournisseur recherché</Feedback>
       <Navigate Target="MainPage.xaml"/>
     </Command>
-
+    <Command Name="FindProductID">
+      <Example>le produit dont l'id est égal à </Example>
+      <ListenFor>[le] produit dont l'id est égal à {ProductID}</ListenFor>
+      <Feedback> Voici le produit recherché</Feedback>
+      <Navigate Target="MainPage.xaml"/>
+    </Command>
+    <Command Name="FindProduct">
+      <Example>le produit</Example>
+      <ListenFor>[le] produit {Product}</ListenFor>
+      <Feedback> Voici le produit recherché</Feedback>
+      <Navigate Target="MainPage.xaml"/>
+    </Command>
+    <Command Name="FindOrderForCustomer">
+      <Example>le produit</Example>
+      <ListenFor>[les] factures du client {Clients}</ListenFor>
+      <Feedback> Voici les factures recherchées</Feedback>
+      <Navigate Target="MainPage.xaml"/>
+    </Command>
+    <Command Name="FindOrderFromNumber">
+      <Example>la facture</Example>
+      <ListenFor>[la] facture numéro {OrderNumber}</ListenFor>
+      <Feedback> Voici les factures recherchées</Feedback>
+      <Navigate Target="MainPage.xaml"/>
+    </Command>
+    <PhraseList Label="OrderNumber">
+      <Item>542378</Item>
+      <Item>542379</Item>
+      <Item>542380</Item>
+      <Item>542381</Item>
+      <Item>542382</Item>
+      <Item>542383</Item>
+      <Item>542384</Item>
+      <Item>542385</Item>
+      <Item>542386</Item>
+      <Item>542387</Item>
+      <Item>542388</Item>
+      <Item>542389</Item>
+      <Item>542390</Item>
+      <Item>542391</Item>
+      <Item>542392</Item>
+      <Item>542393</Item>
+      <Item>542394</Item>
+      <Item>542395</Item>
+      <Item>542396</Item>
+      <Item>542397</Item>
+      <Item>542398</Item>
+      <Item>542399</Item>
+      <Item>542400</Item>
+      <Item>542401</Item>
+      <Item>542402</Item>
+      <Item>542403</Item>
+      <Item>542404</Item>
+      <Item>542405</Item>
+      <Item>542406</Item>
+      <Item>542407</Item>
+      <Item>542408</Item>
+      <Item>542409</Item>
+      <Item>542410</Item>
+      <Item>542411</Item>
+      <Item>542412</Item>
+      <Item>542413</Item>
+      <Item>542414</Item>
+      <Item>542415</Item>
+      <Item>542416</Item>
+      <Item>542417</Item>
+      <Item>542418</Item>
+      <Item>542419</Item>
+      <Item>542420</Item>
+      <Item>542421</Item>
+      <Item>542422</Item>
+      <Item>542423</Item>
+      <Item>542424</Item>
+      <Item>542425</Item>
+      <Item>542426</Item>
+      <Item>542427</Item>
+      <Item>542428</Item>
+      <Item>542429</Item>
+      <Item>542430</Item>
+      <Item>542431</Item>
+      <Item>542432</Item>
+      <Item>542433</Item>
+      <Item>542434</Item>
+      <Item>542435</Item>
+      <Item>542436</Item>
+      <Item>542437</Item>
+      <Item>542438</Item>
+      <Item>542439</Item>
+      <Item>542440</Item>
+      <Item>542441</Item>
+      <Item>542442</Item>
+      <Item>542443</Item>
+      <Item>542444</Item>
+      <Item>542445</Item>
+      <Item>542446</Item>
+      <Item>542447</Item>
+      <Item>542448</Item>
+      <Item>542449</Item>
+      <Item>542450</Item>
+      <Item>542451</Item>
+      <Item>542452</Item>
+      <Item>542453</Item>
+      <Item>542454</Item>
+      <Item>542455</Item>
+      <Item>542456</Item>
+      <Item>542457</Item>
+      <Item>542458</Item>
+      <Item>542459</Item>
+      <Item>542460</Item>
+      <Item>542461</Item>
+      <Item>542462</Item>
+      <Item>542463</Item>
+      <Item>542464</Item>
+      <Item>542465</Item>
+      <Item>542466</Item>
+      <Item>542467</Item>
+      <Item>542468</Item>
+      <Item>542469</Item>
+      <Item>542470</Item>
+      <Item>542471</Item>
+      <Item>542472</Item>
+      <Item>542473</Item>
+      <Item>542474</Item>
+      <Item>542475</Item>
+      <Item>542476</Item>
+      <Item>542477</Item>
+      <Item>542478</Item>
+      <Item>542479</Item>
+      <Item>542480</Item>
+      <Item>542481</Item>
+      <Item>542482</Item>
+      <Item>542483</Item>
+      <Item>542484</Item>
+      <Item>542485</Item>
+      <Item>542486</Item>
+      <Item>542487</Item>
+      <Item>542488</Item>
+      <Item>542489</Item>
+      <Item>542490</Item>
+      <Item>542491</Item>
+      <Item>542492</Item>
+      <Item>542493</Item>
+      <Item>542494</Item>
+      <Item>542495</Item>
+      <Item>542496</Item>
+      <Item>542497</Item>
+      <Item>542498</Item>
+      <Item>542499</Item>
+      <Item>542500</Item>
+      <Item>542501</Item>
+      <Item>542502</Item>
+      <Item>542503</Item>
+      <Item>542504</Item>
+      <Item>542505</Item>
+      <Item>542506</Item>
+      <Item>542507</Item>
+      <Item>542508</Item>
+      <Item>542509</Item>
+      <Item>542510</Item>
+      <Item>542511</Item>
+      <Item>542512</Item>
+      <Item>542513</Item>
+      <Item>542514</Item>
+      <Item>542515</Item>
+      <Item>542516</Item>
+      <Item>542517</Item>
+      <Item>542518</Item>
+      <Item>542519</Item>
+      <Item>542520</Item>
+      <Item>542521</Item>
+      <Item>542522</Item>
+      <Item>542523</Item>
+      <Item>542524</Item>
+      <Item>542525</Item>
+      <Item>542526</Item>
+      <Item>542527</Item>
+      <Item>542528</Item>
+      <Item>542529</Item>
+      <Item>542530</Item>
+      <Item>542531</Item>
+      <Item>542532</Item>
+      <Item>542533</Item>
+      <Item>542534</Item>
+      <Item>542535</Item>
+      <Item>542536</Item>
+      <Item>542537</Item>
+      <Item>542538</Item>
+      <Item>542539</Item>
+      <Item>542540</Item>
+      <Item>542541</Item>
+      <Item>542542</Item>
+      <Item>542543</Item>
+      <Item>542544</Item>
+      <Item>542545</Item>
+      <Item>542546</Item>
+      <Item>542547</Item>
+      <Item>542548</Item>
+      <Item>542549</Item>
+      <Item>542550</Item>
+      <Item>542551</Item>
+      <Item>542552</Item>
+      <Item>542553</Item>
+      <Item>542554</Item>
+      <Item>542555</Item>
+      <Item>542556</Item>
+      <Item>542557</Item>
+      <Item>542558</Item>
+      <Item>542559</Item>
+      <Item>542560</Item>
+      <Item>542561</Item>
+      <Item>542562</Item>
+      <Item>542563</Item>
+      <Item>542564</Item>
+      <Item>542565</Item>
+      <Item>542566</Item>
+      <Item>542567</Item>
+      <Item>542568</Item>
+      <Item>542569</Item>
+      <Item>542570</Item>
+      <Item>542571</Item>
+      <Item>542572</Item>
+      <Item>542573</Item>
+      <Item>542574</Item>
+      <Item>542575</Item>
+      <Item>542576</Item>
+      <Item>542577</Item>
+      <Item>542578</Item>
+      <Item>542579</Item>
+      <Item>542580</Item>
+      <Item>542581</Item>
+      <Item>542582</Item>
+      <Item>542583</Item>
+      <Item>542584</Item>
+      <Item>542585</Item>
+      <Item>542586</Item>
+      <Item>542587</Item>
+      <Item>542588</Item>
+      <Item>542589</Item>
+      <Item>542590</Item>
+      <Item>542591</Item>
+      <Item>542592</Item>
+      <Item>542593</Item>
+      <Item>542594</Item>
+      <Item>542595</Item>
+      <Item>542596</Item>
+      <Item>542597</Item>
+      <Item>542598</Item>
+      <Item>542599</Item>
+      <Item>542600</Item>
+      <Item>542601</Item>
+      <Item>542602</Item>
+      <Item>542603</Item>
+      <Item>542604</Item>
+      <Item>542605</Item>
+      <Item>542606</Item>
+      <Item>542607</Item>
+      <Item>542608</Item>
+      <Item>542609</Item>
+      <Item>542610</Item>
+      <Item>542611</Item>
+      <Item>542612</Item>
+      <Item>542613</Item>
+      <Item>542614</Item>
+      <Item>542615</Item>
+      <Item>542616</Item>
+      <Item>542617</Item>
+      <Item>542618</Item>
+      <Item>542619</Item>
+      <Item>542620</Item>
+      <Item>542621</Item>
+      <Item>542622</Item>
+      <Item>542623</Item>
+      <Item>542624</Item>
+      <Item>542625</Item>
+      <Item>542626</Item>
+      <Item>542627</Item>
+      <Item>542628</Item>
+      <Item>542629</Item>
+      <Item>542630</Item>
+      <Item>542631</Item>
+      <Item>542632</Item>
+      <Item>542633</Item>
+      <Item>542634</Item>
+      <Item>542635</Item>
+      <Item>542636</Item>
+      <Item>542637</Item>
+      <Item>542638</Item>
+      <Item>542639</Item>
+      <Item>542640</Item>
+      <Item>542641</Item>
+      <Item>542642</Item>
+      <Item>542643</Item>
+      <Item>542644</Item>
+      <Item>542645</Item>
+      <Item>542646</Item>
+      <Item>542647</Item>
+      <Item>542648</Item>
+      <Item>542649</Item>
+      <Item>542650</Item>
+      <Item>542651</Item>
+      <Item>542652</Item>
+      <Item>542653</Item>
+      <Item>542654</Item>
+      <Item>542655</Item>
+      <Item>542656</Item>
+      <Item>542657</Item>
+      <Item>542658</Item>
+      <Item>542659</Item>
+      <Item>542660</Item>
+      <Item>542661</Item>
+      <Item>542662</Item>
+      <Item>542663</Item>
+      <Item>542664</Item>
+      <Item>542665</Item>
+      <Item>542666</Item>
+      <Item>542667</Item>
+      <Item>542668</Item>
+      <Item>542669</Item>
+      <Item>542670</Item>
+      <Item>542671</Item>
+      <Item>542672</Item>
+      <Item>542673</Item>
+      <Item>542674</Item>
+      <Item>542675</Item>
+      <Item>542676</Item>
+      <Item>542677</Item>
+      <Item>542678</Item>
+      <Item>542679</Item>
+      <Item>542680</Item>
+      <Item>542681</Item>
+      <Item>542682</Item>
+      <Item>542683</Item>
+      <Item>542684</Item>
+      <Item>542685</Item>
+      <Item>542686</Item>
+      <Item>542687</Item>
+      <Item>542688</Item>
+      <Item>542689</Item>
+      <Item>542690</Item>
+      <Item>542691</Item>
+      <Item>542692</Item>
+      <Item>542693</Item>
+      <Item>542694</Item>
+      <Item>542695</Item>
+      <Item>542696</Item>
+      <Item>542697</Item>
+      <Item>542698</Item>
+      <Item>542699</Item>
+      <Item>542700</Item>
+      <Item>542701</Item>
+      <Item>542702</Item>
+      <Item>542703</Item>
+      <Item>542704</Item>
+      <Item>542705</Item>
+      <Item>542706</Item>
+      <Item>542707</Item>
+      <Item>542708</Item>
+      <Item>542709</Item>
+      <Item>542710</Item>
+      <Item>542711</Item>
+      <Item>542712</Item>
+      <Item>542713</Item>
+      <Item>542714</Item>
+      <Item>542715</Item>
+      <Item>542716</Item>
+      <Item>542717</Item>
+      <Item>542718</Item>
+      <Item>542719</Item>
+      <Item>542720</Item>
+      <Item>542721</Item>
+      <Item>542722</Item>
+      <Item>542723</Item>
+      <Item>542724</Item>
+      <Item>542725</Item>
+      <Item>542726</Item>
+      <Item>542727</Item>
+      <Item>542728</Item>
+      <Item>542729</Item>
+      <Item>542730</Item>
+      <Item>542731</Item>
+      <Item>542732</Item>
+      <Item>542733</Item>
+      <Item>542734</Item>
+      <Item>542735</Item>
+      <Item>542736</Item>
+      <Item>542737</Item>
+      <Item>542738</Item>
+      <Item>542739</Item>
+      <Item>542740</Item>
+      <Item>542741</Item>
+      <Item>542742</Item>
+      <Item>542743</Item>
+      <Item>542744</Item>
+      <Item>542745</Item>
+      <Item>542746</Item>
+      <Item>542747</Item>
+      <Item>542748</Item>
+      <Item>542749</Item>
+      <Item>542750</Item>
+      <Item>542751</Item>
+      <Item>542752</Item>
+      <Item>542753</Item>
+      <Item>542754</Item>
+      <Item>542755</Item>
+      <Item>542756</Item>
+      <Item>542757</Item>
+      <Item>542758</Item>
+      <Item>542759</Item>
+      <Item>542760</Item>
+      <Item>542761</Item>
+      <Item>542762</Item>
+      <Item>542763</Item>
+      <Item>542764</Item>
+      <Item>542765</Item>
+      <Item>542766</Item>
+      <Item>542767</Item>
+      <Item>542768</Item>
+      <Item>542769</Item>
+      <Item>542770</Item>
+      <Item>542771</Item>
+      <Item>542772</Item>
+      <Item>542773</Item>
+      <Item>542774</Item>
+      <Item>542775</Item>
+      <Item>542776</Item>
+      <Item>542777</Item>
+      <Item>542778</Item>
+      <Item>542779</Item>
+      <Item>542780</Item>
+      <Item>542781</Item>
+      <Item>542782</Item>
+      <Item>542783</Item>
+      <Item>542784</Item>
+      <Item>542785</Item>
+      <Item>542786</Item>
+      <Item>542787</Item>
+      <Item>542788</Item>
+      <Item>542789</Item>
+      <Item>542790</Item>
+      <Item>542791</Item>
+      <Item>542792</Item>
+      <Item>542793</Item>
+      <Item>542794</Item>
+      <Item>542795</Item>
+      <Item>542796</Item>
+      <Item>542797</Item>
+      <Item>542798</Item>
+      <Item>542799</Item>
+      <Item>542800</Item>
+      <Item>542801</Item>
+      <Item>542802</Item>
+      <Item>542803</Item>
+      <Item>542804</Item>
+      <Item>542805</Item>
+      <Item>542806</Item>
+      <Item>542807</Item>
+      <Item>542808</Item>
+      <Item>542809</Item>
+      <Item>542810</Item>
+      <Item>542811</Item>
+      <Item>542812</Item>
+      <Item>542813</Item>
+      <Item>542814</Item>
+      <Item>542815</Item>
+      <Item>542816</Item>
+      <Item>542817</Item>
+      <Item>542818</Item>
+      <Item>542819</Item>
+      <Item>542820</Item>
+      <Item>542821</Item>
+      <Item>542822</Item>
+      <Item>542823</Item>
+      <Item>542824</Item>
+      <Item>542825</Item>
+      <Item>542826</Item>
+      <Item>542827</Item>
+      <Item>542828</Item>
+      <Item>542829</Item>
+      <Item>542830</Item>
+      <Item>542831</Item>
+      <Item>542832</Item>
+      <Item>542833</Item>
+      <Item>542834</Item>
+      <Item>542835</Item>
+      <Item>542836</Item>
+      <Item>542837</Item>
+      <Item>542838</Item>
+      <Item>542839</Item>
+      <Item>542840</Item>
+      <Item>542841</Item>
+      <Item>542842</Item>
+      <Item>542843</Item>
+      <Item>542844</Item>
+      <Item>542845</Item>
+      <Item>542846</Item>
+      <Item>542847</Item>
+      <Item>542848</Item>
+      <Item>542849</Item>
+      <Item>542850</Item>
+      <Item>542851</Item>
+      <Item>542852</Item>
+      <Item>542853</Item>
+      <Item>542854</Item>
+      <Item>542855</Item>
+      <Item>542856</Item>
+      <Item>542857</Item>
+      <Item>542858</Item>
+      <Item>542859</Item>
+      <Item>542860</Item>
+      <Item>542861</Item>
+      <Item>542862</Item>
+      <Item>542863</Item>
+      <Item>542864</Item>
+      <Item>542865</Item>
+      <Item>542866</Item>
+      <Item>542867</Item>
+      <Item>542868</Item>
+      <Item>542869</Item>
+      <Item>542870</Item>
+      <Item>542871</Item>
+      <Item>542872</Item>
+      <Item>542873</Item>
+      <Item>542874</Item>
+      <Item>542875</Item>
+      <Item>542876</Item>
+      <Item>542877</Item>
+      <Item>542878</Item>
+      <Item>542879</Item>
+      <Item>542880</Item>
+      <Item>542881</Item>
+      <Item>542882</Item>
+      <Item>542883</Item>
+      <Item>542884</Item>
+      <Item>542885</Item>
+      <Item>542886</Item>
+      <Item>542887</Item>
+      <Item>542888</Item>
+      <Item>542889</Item>
+      <Item>542890</Item>
+      <Item>542891</Item>
+      <Item>542892</Item>
+      <Item>542893</Item>
+      <Item>542894</Item>
+      <Item>542895</Item>
+      <Item>542896</Item>
+      <Item>542897</Item>
+      <Item>542898</Item>
+      <Item>542899</Item>
+      <Item>542900</Item>
+      <Item>542901</Item>
+      <Item>542902</Item>
+      <Item>542903</Item>
+      <Item>542904</Item>
+      <Item>542905</Item>
+      <Item>542906</Item>
+      <Item>542907</Item>
+      <Item>542908</Item>
+      <Item>542909</Item>
+      <Item>542910</Item>
+      <Item>542911</Item>
+      <Item>542912</Item>
+      <Item>542913</Item>
+      <Item>542914</Item>
+      <Item>542915</Item>
+      <Item>542916</Item>
+      <Item>542917</Item>
+      <Item>542918</Item>
+      <Item>542919</Item>
+      <Item>542920</Item>
+      <Item>542921</Item>
+      <Item>542922</Item>
+      <Item>542923</Item>
+      <Item>542924</Item>
+      <Item>542925</Item>
+      <Item>542926</Item>
+      <Item>542927</Item>
+      <Item>542928</Item>
+      <Item>542929</Item>
+      <Item>542930</Item>
+      <Item>542931</Item>
+      <Item>542932</Item>
+      <Item>542933</Item>
+      <Item>542934</Item>
+      <Item>542935</Item>
+      <Item>542936</Item>
+      <Item>542937</Item>
+      <Item>542938</Item>
+      <Item>542939</Item>
+      <Item>542940</Item>
+      <Item>542941</Item>
+      <Item>542942</Item>
+      <Item>542943</Item>
+      <Item>542944</Item>
+      <Item>542945</Item>
+      <Item>542946</Item>
+      <Item>542947</Item>
+      <Item>542948</Item>
+      <Item>542949</Item>
+      <Item>542950</Item>
+      <Item>542951</Item>
+      <Item>542952</Item>
+      <Item>542953</Item>
+      <Item>542954</Item>
+      <Item>542955</Item>
+      <Item>542956</Item>
+      <Item>542957</Item>
+      <Item>542958</Item>
+      <Item>542959</Item>
+      <Item>542960</Item>
+      <Item>542961</Item>
+      <Item>542962</Item>
+      <Item>542963</Item>
+      <Item>542964</Item>
+      <Item>542965</Item>
+      <Item>542966</Item>
+      <Item>542967</Item>
+      <Item>542968</Item>
+      <Item>542969</Item>
+      <Item>542970</Item>
+      <Item>542971</Item>
+      <Item>542972</Item>
+      <Item>542973</Item>
+      <Item>542974</Item>
+      <Item>542975</Item>
+      <Item>542976</Item>
+      <Item>542977</Item>
+      <Item>542978</Item>
+      <Item>542979</Item>
+      <Item>542980</Item>
+      <Item>542981</Item>
+      <Item>542982</Item>
+      <Item>542983</Item>
+      <Item>542984</Item>
+      <Item>542985</Item>
+      <Item>542986</Item>
+      <Item>542987</Item>
+      <Item>542988</Item>
+      <Item>542989</Item>
+      <Item>542990</Item>
+      <Item>542991</Item>
+      <Item>542992</Item>
+      <Item>542993</Item>
+      <Item>542994</Item>
+      <Item>542995</Item>
+      <Item>542996</Item>
+      <Item>542997</Item>
+      <Item>542998</Item>
+      <Item>542999</Item>
+      <Item>543000</Item>
+      <Item>543001</Item>
+      <Item>543002</Item>
+      <Item>543003</Item>
+      <Item>543004</Item>
+      <Item>543005</Item>
+      <Item>543006</Item>
+      <Item>543007</Item>
+      <Item>543008</Item>
+      <Item>543009</Item>
+      <Item>543010</Item>
+      <Item>543011</Item>
+      <Item>543012</Item>
+      <Item>543013</Item>
+      <Item>543014</Item>
+      <Item>543015</Item>
+      <Item>543016</Item>
+      <Item>543017</Item>
+      <Item>543018</Item>
+      <Item>543019</Item>
+      <Item>543020</Item>
+      <Item>543021</Item>
+      <Item>543022</Item>
+      <Item>543023</Item>
+      <Item>543024</Item>
+      <Item>543025</Item>
+      <Item>543026</Item>
+      <Item>543027</Item>
+      <Item>543028</Item>
+      <Item>543029</Item>
+      <Item>543030</Item>
+      <Item>543031</Item>
+      <Item>543032</Item>
+      <Item>543033</Item>
+      <Item>543034</Item>
+      <Item>543035</Item>
+      <Item>543036</Item>
+      <Item>543037</Item>
+      <Item>543038</Item>
+      <Item>543039</Item>
+      <Item>543040</Item>
+      <Item>543041</Item>
+      <Item>543042</Item>
+      <Item>543043</Item>
+      <Item>543044</Item>
+      <Item>543045</Item>
+      <Item>543046</Item>
+      <Item>543047</Item>
+      <Item>543048</Item>
+      <Item>543049</Item>
+      <Item>543050</Item>
+      <Item>543051</Item>
+      <Item>543052</Item>
+      <Item>543053</Item>
+      <Item>543054</Item>
+      <Item>543055</Item>
+      <Item>543056</Item>
+      <Item>543057</Item>
+      <Item>543058</Item>
+      <Item>543059</Item>
+      <Item>543060</Item>
+      <Item>543061</Item>
+      <Item>543062</Item>
+      <Item>543063</Item>
+      <Item>543064</Item>
+      <Item>543065</Item>
+      <Item>543066</Item>
+      <Item>543067</Item>
+      <Item>543068</Item>
+      <Item>543069</Item>
+      <Item>543070</Item>
+      <Item>543071</Item>
+      <Item>543072</Item>
+      <Item>543073</Item>
+      <Item>543074</Item>
+      <Item>543075</Item>
+      <Item>543076</Item>
+      <Item>543077</Item>
+      <Item>543078</Item>
+      <Item>543079</Item>
+      <Item>543080</Item>
+      <Item>543081</Item>
+      <Item>543082</Item>
+      <Item>543083</Item>
+      <Item>543084</Item>
+      <Item>543085</Item>
+      <Item>543086</Item>
+      <Item>543087</Item>
+      <Item>543088</Item>
+      <Item>543089</Item>
+      <Item>543090</Item>
+      <Item>543091</Item>
+      <Item>543092</Item>
+      <Item>543093</Item>
+      <Item>543094</Item>
+      <Item>543095</Item>
+      <Item>543096</Item>
+      <Item>543097</Item>
+      <Item>543098</Item>
+      <Item>543099</Item>
+      <Item>543100</Item>
+      <Item>543101</Item>
+      <Item>543102</Item>
+      <Item>543103</Item>
+      <Item>543104</Item>
+      <Item>543105</Item>
+      <Item>543106</Item>
+      <Item>543107</Item>
+      <Item>543108</Item>
+      <Item>543109</Item>
+      <Item>543110</Item>
+      <Item>543111</Item>
+      <Item>543112</Item>
+      <Item>543113</Item>
+      <Item>543114</Item>
+      <Item>543115</Item>
+      <Item>543116</Item>
+      <Item>543117</Item>
+      <Item>543118</Item>
+      <Item>543119</Item>
+      <Item>543120</Item>
+      <Item>543121</Item>
+      <Item>543122</Item>
+      <Item>543123</Item>
+      <Item>543124</Item>
+      <Item>543125</Item>
+      <Item>543126</Item>
+      <Item>543127</Item>
+      <Item>543128</Item>
+      <Item>543129</Item>
+      <Item>543130</Item>
+      <Item>543131</Item>
+      <Item>543132</Item>
+      <Item>543133</Item>
+      <Item>543134</Item>
+      <Item>543135</Item>
+      <Item>543136</Item>
+      <Item>543137</Item>
+      <Item>543138</Item>
+      <Item>543139</Item>
+      <Item>543140</Item>
+      <Item>543141</Item>
+      <Item>543142</Item>
+      <Item>543143</Item>
+      <Item>543144</Item>
+      <Item>543145</Item>
+      <Item>543146</Item>
+      <Item>543147</Item>
+      <Item>543148</Item>
+      <Item>543149</Item>
+      <Item>543150</Item>
+      <Item>543151</Item>
+      <Item>543152</Item>
+      <Item>543153</Item>
+      <Item>543154</Item>
+      <Item>543155</Item>
+      <Item>543156</Item>
+      <Item>543157</Item>
+      <Item>543158</Item>
+      <Item>543159</Item>
+      <Item>543160</Item>
+      <Item>543161</Item>
+      <Item>543162</Item>
+      <Item>543163</Item>
+      <Item>543164</Item>
+      <Item>543165</Item>
+      <Item>543166</Item>
+      <Item>543167</Item>
+      <Item>543168</Item>
+      <Item>543169</Item>
+      <Item>543170</Item>
+      <Item>543171</Item>
+      <Item>543172</Item>
+      <Item>543173</Item>
+      <Item>543174</Item>
+      <Item>543175</Item>
+      <Item>543176</Item>
+      <Item>543177</Item>
+      <Item>543178</Item>
+      <Item>543179</Item>
+      <Item>543180</Item>
+      <Item>543181</Item>
+      <Item>543182</Item>
+      <Item>543183</Item>
+      <Item>543184</Item>
+      <Item>543185</Item>
+      <Item>543186</Item>
+      <Item>543187</Item>
+      <Item>543188</Item>
+      <Item>543189</Item>
+      <Item>543190</Item>
+      <Item>543191</Item>
+      <Item>543192</Item>
+      <Item>543193</Item>
+      <Item>543194</Item>
+      <Item>543195</Item>
+      <Item>543196</Item>
+      <Item>543197</Item>
+      <Item>543198</Item>
+      <Item>543199</Item>
+      <Item>543200</Item>
+      <Item>543201</Item>
+      <Item>543202</Item>
+      <Item>543203</Item>
+      <Item>543204</Item>
+      <Item>543205</Item>
+      <Item>543206</Item>
+      <Item>543207</Item>
+    </PhraseList>
+    <PhraseList Label="Product">
+      <Item>Alice Mutton</Item>
+      <Item>Aniseed Syrup</Item>
+      <Item>Boston Crab Meat</Item>
+      <Item>Camembert Pierrot</Item>
+      <Item>Carnarvon Tigers</Item>
+      <Item>Chai</Item>
+      <Item>Chang</Item>
+      <Item>Chartreuse verte</Item>
+      <Item>Chef Anton's Cajun Seasoning</Item>
+      <Item>Chef Anton's Gumbo Mix</Item>
+      <Item>Chocolade</Item>
+      <Item>Côte de Blaye</Item>
+      <Item>Escargots de Bourgogne</Item>
+      <Item>Filo Mix</Item>
+      <Item>Flotemysost</Item>
+      <Item>Geitost</Item>
+      <Item>Genen Shouyu</Item>
+      <Item>Gnocchi di nonna Alice</Item>
+      <Item>Gorgonzola Telino</Item>
+      <Item>Grandma's Boysenberry Spread</Item>
+      <Item>Gravad lax</Item>
+      <Item>Guaraná Fantástica</Item>
+      <Item>Gudbrandsdalsost</Item>
+      <Item>Gula Malacca</Item>
+      <Item>Gumbär Gummibärchen</Item>
+      <Item>Gustaf's Knäckebröd</Item>
+      <Item>Ikura</Item>
+      <Item>Inlagd Sill</Item>
+      <Item>Ipoh Coffee</Item>
+      <Item>Jack's New England Clam Chowder</Item>
+      <Item>Konbu</Item>
+      <Item>Lakkalikööri</Item>
+      <Item>Laughing Lumberjack Lager</Item>
+      <Item>Longlife Tofu</Item>
+      <Item>Louisiana Fiery Hot Pepper Sauce</Item>
+      <Item>Louisiana Hot Spiced Okra</Item>
+      <Item>Manjimup Dried Apples</Item>
+      <Item>Mascarpone Fabioli</Item>
+      <Item>Maxilaku</Item>
+      <Item>Mishi Kobe Niku</Item>
+      <Item>Mozzarella di Giovanni</Item>
+      <Item>Nord-Ost Matjeshering</Item>
+      <Item>Northwoods Cranberry Sauce</Item>
+      <Item>NuNuCa Nuß-Nougat-Creme</Item>
+      <Item>Original Frankfurter grüne Soße</Item>
+      <Item>Outback Lager</Item>
+      <Item>Pâté chinois</Item>
+      <Item>Pavlova</Item>
+      <Item>Perth Pasties</Item>
+      <Item>Queso Cabrales</Item>
+      <Item>Queso Manchego La Pastora</Item>
+      <Item>Raclette Courdavault</Item>
+      <Item>Ravioli Angelo</Item>
+      <Item>Rhönbräu Klosterbier</Item>
+      <Item>Röd Kaviar</Item>
+      <Item>Rogede sild</Item>
+      <Item>Rössle Sauerkraut</Item>
+      <Item>Sasquatch Ale</Item>
+      <Item>Schoggi Schokolade</Item>
+      <Item>Scottish Longbreads</Item>
+      <Item>Singaporean Hokkien Fried Mee</Item>
+      <Item>Sir Rodney's Marmalade</Item>
+      <Item>Sir Rodney's Scones</Item>
+      <Item>Sirop d'érable</Item>
+      <Item>Spegesild</Item>
+      <Item>Steeleye Stout</Item>
+      <Item>Stroopwafels</Item>
+      <Item>Tarte au sucre</Item>
+      <Item>Teatime Chocolate Biscuits</Item>
+      <Item>Thüringer Rostbratwurst</Item>
+      <Item>Tofu</Item>
+      <Item>Tourtière</Item>
+      <Item>Tunnbröd</Item>
+      <Item>Uncle Bob's Organic Dried Pears</Item>
+      <Item>Valkoinen suklaa</Item>
+      <Item>Vegie-spread</Item>
+      <Item>Wimmers gute Semmelknödel</Item>
+      <Item>Zaanse koeken</Item>
+    </PhraseList>
+    <PhraseList Label="ProductID">
+      <Item>1</Item>
+      <Item>2</Item>
+      <Item>3</Item>
+      <Item>4</Item>
+      <Item>5</Item>
+      <Item>6</Item>
+      <Item>7</Item>
+      <Item>8</Item>
+      <Item>9</Item>
+      <Item>10</Item>
+      <Item>11</Item>
+      <Item>12</Item>
+      <Item>13</Item>
+      <Item>14</Item>
+      <Item>15</Item>
+      <Item>16</Item>
+      <Item>17</Item>
+      <Item>18</Item>
+      <Item>19</Item>
+      <Item>20</Item>
+      <Item>21</Item>
+      <Item>22</Item>
+      <Item>23</Item>
+      <Item>24</Item>
+      <Item>25</Item>
+      <Item>26</Item>
+      <Item>27</Item>
+      <Item>28</Item>
+      <Item>29</Item>
+      <Item>30</Item>
+      <Item>31</Item>
+      <Item>32</Item>
+      <Item>33</Item>
+      <Item>34</Item>
+      <Item>35</Item>
+      <Item>36</Item>
+      <Item>37</Item>
+      <Item>38</Item>
+      <Item>39</Item>
+      <Item>40</Item>
+      <Item>41</Item>
+      <Item>42</Item>
+      <Item>43</Item>
+      <Item>44</Item>
+      <Item>45</Item>
+      <Item>46</Item>
+      <Item>47</Item>
+      <Item>48</Item>
+      <Item>49</Item>
+      <Item>50</Item>
+      <Item>51</Item>
+      <Item>52</Item>
+      <Item>53</Item>
+      <Item>54</Item>
+      <Item>55</Item>
+      <Item>56</Item>
+      <Item>57</Item>
+      <Item>58</Item>
+      <Item>59</Item>
+      <Item>60</Item>
+      <Item>61</Item>
+      <Item>62</Item>
+      <Item>63</Item>
+      <Item>64</Item>
+      <Item>65</Item>
+      <Item>66</Item>
+      <Item>67</Item>
+      <Item>68</Item>
+      <Item>69</Item>
+      <Item>70</Item>
+      <Item>71</Item>
+      <Item>72</Item>
+      <Item>73</Item>
+      <Item>74</Item>
+      <Item>75</Item>
+      <Item>76</Item>
+      <Item>77</Item>
+      <Item>78</Item>
+    </PhraseList>
     <PhraseList Label="Clients">
       <Item>Paolo Accorti</Item>
       <Item>Pedro Afonso</Item>
@@ -161,7 +1172,6 @@
       <Item>Liu Wong</Item>
       <Item>Jaime Yorres</Item>
     </PhraseList>
-
     <PhraseList Label="ClientsID">
       <Item>1</Item>
       <Item>2</Item>
@@ -255,7 +1265,6 @@
       <Item>90</Item>
       <Item>91</Item>
     </PhraseList>
-
     <PhraseList Label="Fournisseurs">
       <Item>Aux joyeux ecclésiastiques</Item>
       <Item>Bigfoot Breweries</Item>
@@ -287,7 +1296,6 @@
       <Item>Tokyo Traders</Item>
       <Item>Zaanse Snoepfabriek</Item>
     </PhraseList>
-
     <PhraseList Label="FournisseursID">
       <Item>1</Item>
       <Item>2</Item>

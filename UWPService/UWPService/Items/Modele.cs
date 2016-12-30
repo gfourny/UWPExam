@@ -161,5 +161,24 @@ namespace UWPService.Items
             }
         }
         #endregion
+
+        #region Méthode PRODUIT
+        public static Product GetProductById(int id)
+        {
+            return VariableGlobale.Produits.FirstOrDefault(x => x.Id == id);
+        }
+
+        public static Product GetProductFromName(string value)
+        {
+            return VariableGlobale.Produits.FirstOrDefault(x => x.ProductName == value);
+        }
+        #endregion
+
+        #region Méthode FACTURE
+        public static Order GetOrderFromNumber(string value)
+        {
+            return VariableGlobale.Factures.FirstOrDefault(x => x.OrderNumber == value);
+        }
+        #endregion
     }
 }

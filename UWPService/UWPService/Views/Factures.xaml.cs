@@ -27,6 +27,9 @@ namespace UWPService.Views
     public sealed partial class Factures : Page
     {
         private ObservableCollection<OrderProduct> OrderProducts;
+        private Customer customerNavigation = null;
+        private Order orderNavigation = null;
+
         public Factures()
         {
             this.InitializeComponent();
@@ -70,6 +73,26 @@ namespace UWPService.Views
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
+
+            if (e.Parameter != null)
+            {
+                if (e.Parameter is Customer)
+                {
+                    customerNavigation = (Customer)e.Parameter;
+                    tete.SelectedItem = customerNavigation;
+                    tete_ItemClick(this, null);
+                }
+
+                if (e.Parameter is Order)
+                {
+                    orderNavigation = (Order)e.Parameter;
+                    customerNavigation = VariableGlobale.Clients.FirstOrDefault(x => x.Id == orderNavigation.CustomerId);
+                    tete.SelectedItem = customerNavigation;
+                    tete_ItemClick(this, null);
+                    tutu.SelectedItem = orderNavigation;
+                    tutu_ItemClick(this, null);
+                }
+            }
         }
 
         private void tete_ItemClick(object sender, ItemClickEventArgs e)
