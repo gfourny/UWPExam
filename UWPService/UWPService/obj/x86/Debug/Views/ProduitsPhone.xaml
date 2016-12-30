@@ -1,0 +1,47 @@
+﻿<Page x:ConnectionId='1'
+    x:Class="UWPService.Views.ProduitsPhone"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UWPService.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="#FF122940">
+        <RelativePanel>
+            <TextBlock x:ConnectionId='2' x:Name="WindowsTitle" FontSize="75" HorizontalAlignment="Center" Text="Produits" Foreground="White"/>
+            <FlipView x:ConnectionId='3' x:Name="MyFlipView" RelativePanel.Below="WindowsTitle">
+                <ListView x:ConnectionId='4' x:Name="MasterListView" 
+                      RelativePanel.Below="WindowsTitle"
+                  SelectionMode="Extended"
+                  IsItemClickEnabled="True"
+                  ShowsScrollingPlaceholders="False"
+                  ItemTemplate="{StaticResource ProductListViewTemplate }"                  
+                  Width="170"
+                                                        >
+                    <ListView.ItemContainerStyle>
+                        <Style TargetType="ListViewItem">
+                            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                        </Style>
+                    </ListView.ItemContainerStyle>
+                </ListView>
+                <ContentPresenter x:ConnectionId='5'
+                RelativePanel.RightOf="MasterListView"
+                RelativePanel.Below="WindowsTitle"
+                x:Name="DetailContentPresenter"
+                BorderThickness="1,0,0,0"
+                Padding="24,0"
+                BorderBrush="{ThemeResource SystemControlForegroundBaseLowBrush}"
+                                                                           
+                ContentTemplate="{StaticResource ProductContentTemplate}"
+                Visibility="Collapsed">
+
+                    <ContentPresenter.ContentTransitions>
+                        <TransitionCollection/>
+                    </ContentPresenter.ContentTransitions>
+                </ContentPresenter>
+            </FlipView>
+        </RelativePanel>
+    </Grid>
+</Page>
+

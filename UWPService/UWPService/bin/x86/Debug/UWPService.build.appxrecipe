@@ -376,17 +376,19 @@
     <AppxPackagedFile Include="C:\Users\tbadi\.nuget\packages\WinRTXamlToolkit.Controls.DataVisualization\2.0.0\lib\uap10.0\WinRTXamlToolkit.Controls.DataVisualization.dll">
       <PackagePath>WinRTXamlToolkit.Controls.DataVisualization.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tbadi\Documents\GitHub\UWPExam\UWPService\UWPService\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tbadi\Documents\GitHub\UWPExam\UWPService\UWPService\VoiceCommandDefinition.xml">
-      <PackagePath>VoiceCommandDefinition.xml</PackagePath>
+    <AppxPackagedFile Include="C:\Users\tbadi\Documents\GitHub\UWPExam\UWPService\UWPService\Assets\SplashScreen.scale-200.png">
+      <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tbadi\Documents\GitHub\UWPExam\UWPService\UWPService\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tbadi\Documents\GitHub\UWPExam\UWPService\UWPService\Assets\SplashScreen.scale-200.png">
-      <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\tbadi\Documents\GitHub\UWPExam\UWPService\UWPService\Assets\Wide310x150Logo.scale-200.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tbadi\Documents\GitHub\UWPExam\UWPService\UWPService\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tbadi\Documents\GitHub\UWPExam\UWPService\UWPService\Assets\Square150x150Logo.scale-200.png">
@@ -397,17 +399,15 @@
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tbadi\Documents\GitHub\UWPExam\UWPService\UWPService\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
-      <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tbadi\Documents\GitHub\UWPExam\UWPService\UWPService\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tbadi\Documents\GitHub\UWPExam\UWPService\UWPService\Assets\Wide310x150Logo.scale-200.png">
-      <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    <AppxPackagedFile Include="C:\Users\tbadi\Documents\GitHub\UWPExam\UWPService\UWPService\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tbadi\Documents\GitHub\UWPExam\UWPService\UWPService\VoiceCommandDefinition.xml">
+      <PackagePath>VoiceCommandDefinition.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tbadi\Documents\GitHub\UWPExam\UWPService\UWPService\bin\x86\Debug\UWPService.xr.xml">
       <PackagePath>UWPService.xr.xml</PackagePath>
