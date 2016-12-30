@@ -122,11 +122,15 @@
     <Compile Include="Views\Factures.xaml.cs">
       <DependentUpon>Factures.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\FacturesPhone.xaml.cs" />
+    <Compile Include="Views\FacturesPhone.xaml.cs">
+      <DependentUpon>FacturesPhone.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Produits.xaml.cs">
       <DependentUpon>Produits.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\ProduitsPhone.xaml.cs" />
+    <Compile Include="Views\ProduitsPhone.xaml.cs">
+      <DependentUpon>ProduitsPhone.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -218,16 +222,16 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\FacturesPhone.xaml">
-      <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Produits.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\ProduitsPhone.xaml">
-      <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
