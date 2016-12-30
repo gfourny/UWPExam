@@ -501,3 +501,8 @@ C:\Users\ehounguevou\Documents\GitHub\UWPExam\UWPService\UWPService\obj\x86\Debu
 C:\Users\ehounguevou\Documents\GitHub\UWPExam\UWPService\UWPService\obj\x86\Debug\WinRTXamlToolkit.Controls.DataVisualization.pri.xml
 C:\Users\ehounguevou\Documents\GitHub\UWPExam\UWPService\UWPService\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\ehounguevou\Documents\GitHub\UWPExam\UWPService\UWPService\obj\x86\Debug\UWPService.csprojResolveAssemblyReference.cache
+C:\Users\ehounguevou\Documents\GitHub\UWPExam\UWPService\UWPService\bin\x86\Debug\Views\FacturePhone.xbf
+C:\Users\ehounguevou\Documents\GitHub\UWPExam\UWPService\UWPService\obj\x86\Debug\Views\FacturePhone.g.i.cs
+C:\Users\ehounguevou\Documents\GitHub\UWPExam\UWPService\UWPService\obj\x86\Debug\Views\FacturePhone.g.cs
+C:\Users\ehounguevou\Documents\GitHub\UWPExam\UWPService\UWPService\obj\x86\Debug\Views\FacturePhone.xaml
+C:\Users\ehounguevou\Documents\GitHub\UWPExam\UWPService\UWPService\obj\x86\Debug\Views\FacturePhone.xbf

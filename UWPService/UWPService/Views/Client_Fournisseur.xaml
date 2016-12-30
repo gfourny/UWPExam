@@ -9,8 +9,8 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-        <TextBlock x:Name="WindowsTitle" FontSize="75" HorizontalAlignment="Center"/>
-        <GridView x:Name="GridView" Margin="25,100,25,25" ItemTemplateSelector="{StaticResource MyDataTemplateSelector}" IsItemClickEnabled="False" CanDrag="False" SelectionChanged="GridView_SelectionChanged"/>
+        <TextBlock x:Name="WindowsTitle" FontSize="50" HorizontalAlignment="Center" Margin="0,50,0,0"/>
+        <GridView x:Name="GridView" Margin="25,150,25,25" ItemTemplateSelector="{StaticResource MyDataTemplateSelector}" IsItemClickEnabled="False" CanDrag="False" SelectionChanged="GridView_SelectionChanged" HorizontalAlignment="Center"/>
         <CommandBar Background="Transparent" IsOpen="False">
             <AppBarButton Icon="Add" Label="Ajouter" Click="AppBarButton_Click" />
         </CommandBar>

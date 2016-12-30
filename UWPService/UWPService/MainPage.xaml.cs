@@ -34,16 +34,25 @@ namespace UWPService
 
         private void ListView_ItemClick(object sender, ItemClickEventArgs e)
         {
-            if (((StackPanel)e.ClickedItem).Name == "Ham")
-                MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
-            else if (((StackPanel)e.ClickedItem).Name == "Fournisseurs")
-                MyFrame.Navigate(typeof(Client_Fournisseur), "Fournisseurs");
-            else if (((StackPanel)e.ClickedItem).Name == "Clients")
-                MyFrame.Navigate(typeof(Client_Fournisseur), "Clients");
-            else if (((StackPanel)e.ClickedItem).Name == "Factures")
-                MyFrame.Navigate(typeof(Factures));
-            else if (((StackPanel)e.ClickedItem).Name == "Produits")
-                MyFrame.Navigate(typeof(Produits));
+            var qualifiers = Windows.ApplicationModel.Resources.Core.ResourceContext.GetForCurrentView().QualifierValues;
+
+            if (qualifiers["DeviceFamily"] == "DeviceFamily-Mobile")
+            {
+                MyFrame.Navigate(typeof(FacturePhone));
+            }
+            else
+            {
+                if (((StackPanel)e.ClickedItem).Name == "Ham")
+                    MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
+                else if (((StackPanel)e.ClickedItem).Name == "Fournisseurs")
+                    MyFrame.Navigate(typeof(Client_Fournisseur), "Fournisseurs");
+                else if (((StackPanel)e.ClickedItem).Name == "Clients")
+                    MyFrame.Navigate(typeof(Client_Fournisseur), "Clients");
+                else if (((StackPanel)e.ClickedItem).Name == "Factures")
+                    MyFrame.Navigate(typeof(Factures));
+                else if (((StackPanel)e.ClickedItem).Name == "Produits")
+                    MyFrame.Navigate(typeof(Produits));
+            }
         }
 
         private async void RecupDonnees()

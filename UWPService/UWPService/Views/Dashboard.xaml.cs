@@ -48,7 +48,7 @@ namespace UWPService.Views
 
         private void LoadChartContents()
         {
-            (AreaChart.Series[0] as AreaSeries).ItemsSource = VariableGlobale.IVente.Skip(0).Take(7);
+            (AreaChart.Series[0] as AreaSeries).ItemsSource = VariableGlobale.IVente.Skip(0).Take(3);
 
             (PieChart.Series[0] as PieSeries).ItemsSource = VariableGlobale.Resultats.Skip(0).Take(12);
 
@@ -66,19 +66,19 @@ namespace UWPService.Views
             }
             else
             {
-                Plus += 7;
+                Plus += 3;
             }
-            (AreaChart.Series[0] as AreaSeries).ItemsSource = IVente.Skip(Plus).Take(7);
+            (AreaChart.Series[0] as AreaSeries).ItemsSource = IVente.Skip(Plus).Take(3);
         }
 
         private async void Precedent_PointerPressed(object sender, PointerRoutedEventArgs e)
         {
             if (Plus < 0)
                 Plus = 0;
-            Plus -= 7;
+            Plus -= 3;
             YnovServiceClient MyService = new YnovServiceClient();
             ObservableCollection<MyWebService.Vente> IVente = await MyService.VentesAsync();
-            (AreaChart.Series[0] as AreaSeries).ItemsSource = IVente.Skip(Plus).Take(7);
+            (AreaChart.Series[0] as AreaSeries).ItemsSource = IVente.Skip(Plus).Take(3);
         }
 
         private void Suivant_PointerEntered(object sender, PointerRoutedEventArgs e)

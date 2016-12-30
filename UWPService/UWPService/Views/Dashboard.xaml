@@ -36,5 +36,30 @@
                 <TextBlock x:Name="Titre3" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.Below="SuivantB" Text="Montant dépensé par client" FontSize="32"/>
             </RelativePanel>
         </FlipView>
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState x:Name="VisualState0min">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="AreaChart.(Width)" Value="400"/>
+                        <Setter Target="AreaChart.(Height)" Value="250"/>
+                        <Setter Target="Titre1.(FontSize)" Value="22"/>
+                        <Setter Target="Titre2.(FontSize)" Value="22"/>
+                        <Setter Target="Titre3.(FontSize)" Value="22"/>
+                        <Setter Target="PieChart.(Width)" Value="350"/>
+                        <Setter Target="PieChart.(Height)" Value="350"/>
+                        <Setter Target="BubbleChart.(Width)" Value="400"/>
+                        <Setter Target="BubbleChart.(Height)" Value="250"/>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="VisualState720min">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="720"/>
+                    </VisualState.StateTriggers>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
     </Grid>
 </Page>
