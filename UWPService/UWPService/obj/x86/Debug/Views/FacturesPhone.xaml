@@ -1,0 +1,75 @@
+﻿<Page
+    x:Class="UWPService.Views.FacturesPhone"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UWPService.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="#FF122940">
+        <RelativePanel>
+            <TextBlock x:ConnectionId='1' x:Name="WindowsTitle" FontSize="75" Foreground="White" HorizontalAlignment="Center" Text="Factures"/>
+            <FlipView x:ConnectionId='2' x:Name="MyFlipView">
+            <ListView x:ConnectionId='3' x:Name="tete" RelativePanel.Below="WindowsTitle" IsItemClickEnabled="True" IsSwipeEnabled="False" CanDragItems="False" SelectionMode="Single" HorizontalAlignment="Center" VerticalAlignment="Center"                           >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Margin="10,10,10,10" >
+                            <TextBlock Text="&#xE77B;" FontFamily="Segoe MDL2 Assets" x:Name="icone" Foreground="White"></TextBlock>
+                            <TextBlock x:Name="nom" Text="{Binding LastName}" Foreground="White"></TextBlock>
+                            <TextBlock x:Name="prenom" Text="{Binding FirstName}" Foreground="White"></TextBlock>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <ListView x:ConnectionId='4' x:Name="tutu" RelativePanel.Below="WindowsTitle" RelativePanel.RightOf="tete" IsItemClickEnabled="True" IsSwipeEnabled="False" CanDragItems="False" SelectionMode="Single" HorizontalAlignment="Center" VerticalAlignment="Center"                           >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Margin="10,10,10,10" BorderBrush="White" >
+                            <TextBlock Text="&#59621;" FontSize="50" FontFamily="Segoe MDL2 Assets" x:Name="iconeFacture" Foreground="White"></TextBlock>
+                            <TextBlock x:Name="NumeroFacture" Text="{Binding OrderNumber}" Foreground="White"></TextBlock>
+                            <TextBlock x:Name="DateFacture" Text="{Binding OrderDate}" Foreground="White"></TextBlock>
+                            <TextBlock x:Name="TotalFacture" Text="{Binding TotalAmount}" Foreground="White"></TextBlock>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <RelativePanel x:ConnectionId='5' x:Name="OrderForm" RelativePanel.Below="WindowsTitle"  RelativePanel.RightOf="tutu" Margin="2" HorizontalAlignment="Center" Visibility="Collapsed">
+                <RelativePanel x:ConnectionId='6' x:Name="panelCustomer">
+                    <TextBlock x:ConnectionId='15' x:Name="HeaderNomClient" FontWeight="SemiBold" Text="Nom du client:" Margin="2" Foreground="White"></TextBlock>
+                    <TextBlock x:ConnectionId='16' x:Name="NomClient" Text="{Binding FirstName}" FontStyle="Italic" RelativePanel.Below="HeaderNomClient" Margin="2" Foreground="White"></TextBlock>
+                    <TextBlock x:ConnectionId='17' x:Name="HeaderPrenomClient" FontWeight="SemiBold" Text="Prénom du client:" Foreground="White" RelativePanel.Below="NomClient" Margin="2"></TextBlock>
+                    <TextBlock x:ConnectionId='18' x:Name="PrenomClient" Text="{Binding LastName}" FontStyle="Italic" RelativePanel.Below="HeaderPrenomClient" Margin="2" Foreground="White"></TextBlock>
+                </RelativePanel>
+                <RelativePanel x:ConnectionId='7' x:Name="panelOrder" RelativePanel.Below="panelCustomer">
+                    <TextBlock x:ConnectionId='9' x:Name="HeaderNumFact" FontWeight="SemiBold" Foreground="White" Text="Numéro de facture:" Margin="2"></TextBlock>
+                    <TextBlock x:ConnectionId='10' x:Name="NumFact" Text="{Binding OrderNumber}" FontStyle="Italic" RelativePanel.Below="HeaderNumFact" Margin="2" Foreground="White"></TextBlock>
+                    <TextBlock x:ConnectionId='11' x:Name="HeaderDatFact" FontWeight="SemiBold" Text="Date de la facture:" Foreground="White" Margin="2" RelativePanel.Below="NumFact"></TextBlock>
+                    <TextBlock x:ConnectionId='12' x:Name="DatFact" Text="{Binding OrderDate}" FontStyle="Italic" RelativePanel.Below="HeaderDatFact" Foreground="White" Margin="2"></TextBlock>
+                    <TextBlock x:ConnectionId='13' x:Name="HeaderPrixTTC" FontWeight="SemiBold" Text="Montant total de la facture:" Foreground="White" Margin="2" RelativePanel.Below="DatFact"></TextBlock>
+                    <TextBlock x:ConnectionId='14' x:Name="PrixTTC" Text="{Binding TotalAmount}" FontStyle="Italic" RelativePanel.Below="HeaderPrixTTC" Foreground="White" Margin="2"></TextBlock>
+                </RelativePanel>
+                <ListView x:ConnectionId='8' x:Name="lv" RelativePanel.Below="panelOrder" IsItemClickEnabled="True" IsSwipeEnabled="False" CanDragItems="False" SelectionMode="Single" HorizontalAlignment="Center" VerticalAlignment="Center" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Margin="10,10,10,10">
+                                <TextBlock x:Name="HeaderNomProd" FontWeight="SemiBold" Text="Nom du produit:" Foreground="White" RelativePanel.Below="DatFact" Margin="2"></TextBlock>
+                                <TextBlock x:Name="NomProd" Text="{Binding ProductName}" FontStyle="Italic" RelativePanel.Below="HeaderNomProd" Foreground="White" Margin="2"></TextBlock>
+                                <TextBlock x:Name="HeaderLibProd" FontWeight="SemiBold" Text="Désignation du produit:" Foreground="White" Margin="2" RelativePanel.Below="NomProd"></TextBlock>
+                                <TextBlock x:Name="LibProd" Text="{Binding Package}" FontStyle="Italic" RelativePanel.Below="HeaderLibProd" Foreground="White" Margin="2"></TextBlock>
+                                <TextBlock x:Name="HeaderQteProd" FontWeight="SemiBold" Text="Quantité:" Margin="2" Foreground="White" RelativePanel.Below="LibProd" ></TextBlock>
+                                <TextBlock x:Name="QteProd" Text="{Binding Quantity}" FontStyle="Italic" RelativePanel.Below="HeaderQteProd" Foreground="White" Margin="2"></TextBlock>
+                                <TextBlock x:Name="HeaderPrixUnit" FontWeight="SemiBold" Text="Prix unitaire:" Foreground="White" Margin="2" RelativePanel.Below="QteProd"></TextBlock>
+                                <TextBlock x:Name="PrixUnit" Text="{Binding UnitPrice}"  FontStyle="Italic" RelativePanel.Below="HeaderPrixUnit" Foreground="White" Margin="2"></TextBlock>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </RelativePanel>
+            </FlipView>
+        </RelativePanel>
+    </Grid>
+</Page>
+

@@ -97,16 +97,16 @@ namespace UWPService.Views
 
         private void tete_ItemClick(object sender, ItemClickEventArgs e)
         {
-            int clientid = ((Customer)e.ClickedItem).Id;
+
+            int clientid = e != null ? ((Customer)e.ClickedItem).Id : customerNavigation.Id;
             tutu.ItemsSource = VariableGlobale.Factures.Where(x => x.CustomerId == clientid);
-            
         }
 
         private void tutu_ItemClick(object sender, ItemClickEventArgs e)
         {
-            int orderid = ((Order)e.ClickedItem).Id;
+            int orderid = e != null ? ((Order)e.ClickedItem).Id : orderNavigation.Id;
             panelCustomer.DataContext = (Customer)tete.SelectedItem;
-            panelOrder.DataContext = (Order)e.ClickedItem;
+            panelOrder.DataContext = e != null ? (Order)e.ClickedItem : orderNavigation;
             lv.ItemsSource = OrderProducts.Where(x => x.OrderId == orderid).ToList();
             OrderForm.Visibility = Visibility.Visible;
         }
