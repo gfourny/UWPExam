@@ -10,7 +10,7 @@
     <Grid Background="#FF122940">
         <RelativePanel>
             <TextBlock x:Name="WindowsTitle" FontSize="75" HorizontalAlignment="Center" Text="Produits" Foreground="White"/>
-            <FlipView x:Name="MyFlipView">
+            <FlipView x:Name="MyFlipView" RelativePanel.Below="WindowsTitle">
                 <ListView x:Name="MasterListView" 
                       RelativePanel.Below="WindowsTitle"
                   SelectionMode="Extended"
