@@ -9,9 +9,9 @@
 
     <Grid Background="#FF122940">
         <RelativePanel>
-            <TextBlock x:Name="WindowsTitle" FontSize="75" HorizontalAlignment="Center" Text="Factures"/>
-            <FlipView x:Name="MyFlipView">
-                <ListView x:Name="tete" RelativePanel.Below="WindowsTitle" IsItemClickEnabled="True" IsSwipeEnabled="False" CanDragItems="False" SelectionMode="Single" HorizontalAlignment="Center" VerticalAlignment="Center" ItemClick="tete_ItemClick">
+            <TextBlock x:Name="WindowsTitle" FontSize="75" Foreground="White" HorizontalAlignment="Center" Text="Factures"/>
+            <FlipView x:Name="MyFlipView" RelativePanel.Below="WindowsTitle">
+                <ListView x:Name="tete" IsItemClickEnabled="True" IsSwipeEnabled="False" CanDragItems="False" SelectionMode="Single" HorizontalAlignment="Center" VerticalAlignment="Center" ItemClick="tete_ItemClick">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <StackPanel Margin="10,10,10,10" >
